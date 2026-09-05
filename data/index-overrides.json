@@ -1,0 +1,300 @@
+{
+  "5-best-core-workouts": {
+    "title": "The 5 Best Core Workouts",
+    "desc": "Evidence-based mat core circuit: forearm plank, side plank, bird dog, dead bug, McGill curl-up. Just a mat.",
+    "tags": [
+      "Core",
+      "Mat Only",
+      "Mat only"
+    ],
+    "cat": "core",
+    "gear": [
+      "mat"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><polyline points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"/></svg>5 exercises",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>Mat only"
+    ],
+    "search": "core abs plank bird dog dead bug mcgill mat The 5 Best Core Workouts"
+  },
+  "chest-lats-shoulders-30-min": {
+    "title": "30-Min Gym Upper Body — Chest · Lats · Shoulders",
+    "desc": "7-exercise, 3-block gym session: DB bench press, push-up, cable pulldown, bent-over row, overhead press, lateral raise, biceps curl.",
+    "tags": [
+      "Gym",
+      "Upper Body",
+      "Dumbbells",
+      "Cable"
+    ],
+    "cat": "upper gym",
+    "gear": [
+      "dumbbell",
+      "cable"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~30 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>7 exercises",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M6 7 h12 M6 17 h12 M9 3 v18 M15 3 v18\"/></svg>Dumbbells + cable"
+    ],
+    "search": "gym chest lats shoulders dumbbell upper body 30 min cable bench 30-Min Gym Upper Body — Chest · Lats · Shoulders"
+  },
+  "depth-squat": {
+    "title": "Deep Squat Mobility Workout",
+    "desc": "13-station deep squat routine to open hips, ankles and trunk. From @cali.hoss — no equipment needed.",
+    "tags": [
+      "Legs &amp; Knees",
+      "Mobility"
+    ],
+    "cat": "legs mobility",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><polyline points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"/></svg>13 exercises",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "squat depth legs mobility cali.hoss ankle hips Deep Squat Mobility Workout"
+  },
+  "desk-worker-counter-exercises": {
+    "title": "4 Counter-Exercises for Desk Workers",
+    "desc": "Hip flexor stretch, TVA brace, lower trap Y-raise, shoulder external rotation — each with beginner→advanced progressions. From @skylerfelt.",
+    "tags": [
+      "Mobility",
+      "Posture"
+    ],
+    "cat": "mobility core",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~5 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 exercises",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "desk worker posture hip flexor tva lower trap external rotation skylerfelt sitting counter exercise 4 Counter-Exercises for Desk Workers"
+  },
+  "elbows-on-box-stretch": {
+    "title": "Elbows-on-Box Stretch: Thoracic vs Lat",
+    "desc": "One setup, two targets — drop the chest for the thoracic mid-back, or elbows in a V + round the back to hit tight lats. 5 deep breaths each.",
+    "tags": [
+      "Mobility",
+      "Posture",
+      "No equipment"
+    ],
+    "cat": "mobility",
+    "gear": [
+      "none",
+      "bench",
+      "box"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~2 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>2 ways",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M6 7 h12 M6 17 h12 M9 3 v18 M15 3 v18\"/></svg>Box/bench"
+    ],
+    "search": "elbows box thoracic spine lats mid-back stretch mobility posture bench Elbows-on-Box Stretch: Thoracic vs Lat"
+  },
+  "knee-morning-pt": {
+    "title": "Knee Morning PT — Daily ACL Rehab Routine",
+    "desc": "~15 min daily block: backwards walking, wall-sit ball squeeze, ball-behind-knee extension, VMO band work, floor drills, stair/landing triads.",
+    "tags": [
+      "Rehab",
+      "Legs &amp; Knees",
+      "Band"
+    ],
+    "cat": "rehab legs",
+    "gear": [
+      "band"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~15 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>Daily",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>Band + ball"
+    ],
+    "search": "knee acl rehab morning pt physical therapy elastic band ball vmo Knee Morning PT — Daily ACL Rehab Routine"
+  },
+  "mastery-01-legs-knees": {
+    "title": "Mastery 1 · Legs &amp; Knees",
+    "desc": "4 movements, no equipment, ~20 min. Foundation of the \"Mastery in 20 Movements\" series.",
+    "tags": [
+      "Mastery",
+      "Legs &amp; Knees"
+    ],
+    "cat": "mastery legs",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~20 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 movements",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "mastery legs knees 20 min no equipment Mastery 1 · Legs &amp; Knees"
+  },
+  "mastery-02-core-abs": {
+    "title": "Mastery 2 · Core &amp; Abs",
+    "desc": "4 movements, mat only, ~20 min. Mastery in 20 Movements — part two.",
+    "tags": [
+      "Mastery",
+      "Core",
+      "Mat only"
+    ],
+    "cat": "mastery core",
+    "gear": [
+      "mat"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~20 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 movements",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>Mat only"
+    ],
+    "search": "mastery core abs 20 min mat Mastery 2 · Core &amp; Abs"
+  },
+  "mastery-03-obliques-rotation": {
+    "title": "Mastery 3 · Obliques &amp; Rotation",
+    "desc": "4 movements, mat only, ~20 min. Mastery in 20 Movements — part three.",
+    "tags": [
+      "Mastery",
+      "Core",
+      "Mat only"
+    ],
+    "cat": "mastery core",
+    "gear": [
+      "mat"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~20 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 movements",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>Mat only"
+    ],
+    "search": "mastery obliques rotation core 20 min mat Mastery 3 · Obliques &amp; Rotation"
+  },
+  "mastery-04-shoulders-spine": {
+    "title": "Mastery 4 · Shoulders &amp; Spine",
+    "desc": "4 movements, no equipment, ~20 min. Mastery in 20 Movements — part four.",
+    "tags": [
+      "Mastery",
+      "Upper Body"
+    ],
+    "cat": "mastery upper mobility",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~20 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 movements",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "mastery shoulders spine 20 min no equipment Mastery 4 · Shoulders &amp; Spine"
+  },
+  "mastery-05-hips-balance": {
+    "title": "Mastery 5 · Hips &amp; Balance",
+    "desc": "4 movements, no equipment, ~20 min. Mastery in 20 Movements — part five.",
+    "tags": [
+      "Mastery",
+      "Hips"
+    ],
+    "cat": "mastery hips",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~20 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 movements",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "mastery hips balance 20 min no equipment Mastery 5 · Hips &amp; Balance"
+  },
+  "nervous-system-reset": {
+    "title": "Nervous System Reset — 5-Step Somatic Release",
+    "desc": "Free the gut, release glutes, open armpits, expose throat, wake hands &amp; feet. A ~60 second down-regulation routine from @shrednoir.",
+    "tags": [
+      "Mobility",
+      "Recovery"
+    ],
+    "cat": "mobility",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~60s",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>5 steps",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "nervous system reset somatic shrednoir stress recovery down regulation Nervous System Reset — 5-Step Somatic Release"
+  },
+  "prawn-posture-4-tests": {
+    "title": "Fix Your Prawn Posture — 4 Mobility Tests",
+    "desc": "Diagnose why sitting upright hurts: seated good morning, deep squat, cobra, superman — with fixes. From Dr. Andrew Harkin.",
+    "tags": [
+      "Mobility",
+      "Posture"
+    ],
+    "cat": "mobility",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~10 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 tests",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "prawn posture harkin mobility back sitting Fix Your Prawn Posture — 4 Mobility Tests"
+  },
+  "solo-core-plank-routine": {
+    "title": "Solo Core &amp; Plank Routine — 5 Bodyweight Moves",
+    "desc": "5 bodyweight moves on a mat — hold the tuck and planks for time, keep V-ups and crunches slow and controlled. From Guy's own session footage.",
+    "tags": [
+      "Core",
+      "Bodyweight",
+      "Mat only",
+      "No equipment"
+    ],
+    "cat": "core",
+    "gear": [
+      "mat",
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><polyline points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"/></svg>5 exercises",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>Mat · no equipment",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M9 12 l3 3 l4-5\"/><path d=\"M12 3 a9 9 0 1 1 -9 9\"/></svg>Session footage"
+    ],
+    "search": "solo core plank routine bodyweight tuck v-ups crunches session footage Solo Core &amp; Plank Routine — 5 Bodyweight Moves"
+  },
+  "train-your-hips-hard": {
+    "title": "Train Your Hips Hard — 6-Move Mobility Challenge",
+    "desc": "Quadruped frog, tall kneeling lean &amp; rotation, seated 90-90, half-kneeling lunges, deep squat hold — 1 min each, 3 rounds, 21 days. From @mr.highlevel_.",
+    "tags": [
+      "Hips",
+      "Mobility"
+    ],
+    "cat": "hips mobility",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~6 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>6 moves",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "mr.highlevel hips mobility challenge 21 day frog 90-90 lunge squat Train Your Hips Hard — 6-Move Mobility Challenge"
+  },
+  "trevor-shan-mobility": {
+    "title": "Trevor Shan — Morning Mobility &amp; Thoracic Swing Flow",
+    "desc": "11-exercise full-body morning mobility and rotational swing protocol. From @trevorsinstinct.",
+    "tags": [
+      "Mobility",
+      "Full Body"
+    ],
+    "cat": "mobility",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><polyline points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"/></svg>11 exercises",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "trevor shan mobility morning thoracic swing full body rotation Trevor Shan — Morning Mobility &amp; Thoracic Swing Flow"
+  }
+}
