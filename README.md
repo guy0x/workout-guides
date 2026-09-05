@@ -22,6 +22,6 @@ Self-contained, offline-capable fitness workout guides (dark-themed HTML, GIFs i
 
 ## Index
 
-`index.html` is a self-contained landing page (hero, search, category filter chips, responsive card grid) matching the guides' dark theme. No build step — GitHub Pages serves the repo as-is.
+`index.html` is a self-contained landing page matching the guides' dark theme — hero, search, **Goal filters** (mobility / core / legs & knees / hips / upper body / rehab / mastery / gym) and **Gear filters** (no equipment / mat / resistance band / dumbbells / cable / kettlebell, with live per-chip counts). No build step — GitHub Pages serves the repo as-is.
 
 Built with the Hermes release harness (ATHENA profile). Each guide is a single self-contained HTML file.
