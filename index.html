@@ -1,1 +1,269 @@
-<ul><li><a href="prawn-posture-4-tests/">Prawn Posture — 4 Mobility Tests (@dr.andrew.harkin) — Diagnose Why Sitting Upright Hurts</a></li><li><a href="depth-squat/">Deep Squat — 13 Exercises, No Equipment</a></li><li><a href="trevor-shan-mobility/">Trevor Shan (@trevorsinstinct) — Full-Body Morning Mobility &amp; Thoracic Swing Flow (11 Exercises)</a></li><li><a href="nervous-system-reset/">Nervous System Reset (@shrednoir) — 5-Step Somatic Release, No Equipment, ~60s</a></li><li><a href="5-best-core-workouts/">The 5 Best Core Workouts — Mat Only, Zero Equipment (5 Exercises)</a></li><li><a href="chest-lats-shoulders-30-min/">30-Min Gym Upper Body — Chest · Lats · Shoulders (7 Exercises, Gym)</a></li><li><a href="mastery-01-legs-knees/">Mastery 1 · Legs &amp; Knees — 4 Movements, No Equipment (~20 min)</a></li><li><a href="mastery-02-core-abs/">Mastery 2 · Core &amp; Abs — 4 Movements, Mat Only (~20 min)</a></li><li><a href="mastery-03-obliques-rotation/">Mastery 3 · Obliques &amp; Rotation — 4 Movements, Mat Only (~20 min)</a></li><li><a href="mastery-04-shoulders-spine/">Mastery 4 · Shoulders &amp; Spine — 4 Movements, No Equipment (~20 min)</a></li><li><a href="mastery-05-hips-balance/">Mastery 5 · Hips &amp; Balance — 4 Movements, No Equipment (~20 min)</a></li><li><a href="knee-morning-pt/">Knee Morning PT — Daily ACL Rehab Routine (~15 min, No Gym Equipment)</a></li><li><a href="train-your-hips-hard/">Train Your Hips Hard (@mr.highlevel_) — 6-Move Hip Mobility Challenge (~6 min, No Equipment)</a></li></ul></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Self-contained, offline-capable workout guides: mobility flows, core circuits, gym sessions, and rehab protocols — with in-page GIFs."/>
+<title>Workout Guides — No-equipment, mobility, core &amp; gym training</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: -apple-system, "SF Pro Text", Helvetica, Arial, sans-serif;
+         background: #0b0d11; color: #e8eaf0; line-height: 1.6; }
+  a { color: inherit; }
+
+  /* ---------- Hero ---------- */
+  .hero { background: radial-gradient(1200px 500px at 20% -10%, #2a2440 0%, transparent 60%),
+                   radial-gradient(900px 420px at 90% -20%, #14243a 0%, transparent 55%),
+                   linear-gradient(180deg, #12151c 0%, #0b0d11 100%);
+          border-bottom: 1px solid #1f232c; padding: 64px 20px 48px; text-align: center; }
+  .hero .kicker { display: inline-block; background: #1a1e28; border: 1px solid #2c3140;
+                   color: #b8c0ff; font-size: .78rem; letter-spacing: 1.5px; text-transform: uppercase;
+                   padding: 6px 14px; border-radius: 20px; margin-bottom: 20px; }
+  .hero h1 { font-size: clamp(2.2rem, 6vw, 3.4rem); letter-spacing: -1px; font-weight: 800;
+              background: linear-gradient(90deg,#f2f4ff 30%,#9aa8ff 70%);
+              -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero p.sub { max-width: 620px; margin: 14px auto 0; color: #9aa0ae; font-size: 1.05rem; }
+  .hero .stats { display: flex; justify-content: center; gap: 36px; margin-top: 28px; flex-wrap: wrap; }
+  .stat { text-align: center; }
+  .stat b { display: block; font-size: 1.5rem; color: #f2f4ff; }
+  .stat span { font-size: .78rem; color: #6f7686; text-transform: uppercase; letter-spacing: .8px; }
+
+  /* ---------- Controls ---------- */
+  .controls { position: sticky; top: 0; z-index: 20; background: rgba(11,13,17,.92);
+               backdrop-filter: blur(10px); border-bottom: 1px solid #1f232c; padding: 14px 20px; }
+  .controls-inner { max-width: 1080px; margin: 0 auto; display: flex; gap: 12px;
+                     align-items: center; flex-wrap: wrap; }
+  .search { flex: 1 1 220px; position: relative; }
+  .search input { width: 100%; background: #151821; border: 1px solid #262b36; color: #e8eaf0;
+                   border-radius: 12px; padding: 10px 14px 10px 38px; font-size: .92rem; outline: none; }
+  .search input:focus { border-color: #5f6fff; box-shadow: 0 0 0 3px rgba(95,111,255,.15); }
+  .search svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%);
+                 width: 16px; height: 16px; stroke: #6f7686; fill: none; stroke-width: 2;
+                 stroke-linecap: round; }
+  .chips { display: flex; gap: 8px; flex-wrap: wrap; }
+  .chip { background: #151821; border: 1px solid #262b36; color: #aab0c0; cursor: pointer;
+           font-size: .8rem; padding: 7px 13px; border-radius: 20px; transition: all .15s ease;
+           font-family: inherit; }
+  .chip:hover { border-color: #3a4150; color: #e8eaf0; }
+  .chip.active { background: #5f6fff; border-color: #5f6fff; color: #fff; font-weight: 600; }
+
+  /* ---------- Grid ---------- */
+  .grid { max-width: 1080px; margin: 0 auto; padding: 36px 20px 60px; display: grid;
+           grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 18px; }
+  .card { background: #12151d; border: 1px solid #1f242e; border-radius: 16px; padding: 22px;
+           display: flex; flex-direction: column; gap: 12px; text-decoration: none;
+           transition: transform .18s ease, border-color .18s ease, background .18s ease;
+           position: relative; overflow: hidden; }
+  .card::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 3px;
+                   background: linear-gradient(90deg,#5f6fff,#8a5fff); opacity: 0; transition: opacity .18s ease; }
+  .card:hover { transform: translateY(-3px); border-color: #333a4a; background: #141824; }
+  .card:hover::before { opacity: 1; }
+  .card .tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .tag { font-size: .68rem; text-transform: uppercase; letter-spacing: .6px; font-weight: 700;
+          padding: 3px 9px; border-radius: 8px; background: #1c2230; color: #9fb0e8; }
+  .tag.mastery { background: #2c1f3d; color: #ddb3ff; }
+  .tag.gym { background: #1f2a24; color: #9fe0b8; }
+  .tag.rehab { background: #2e2120; color: #ffb3a8; }
+  .card h2 { font-size: 1.15rem; color: #f2f4ff; letter-spacing: -.2px; font-weight: 700; }
+  .card .desc { font-size: .88rem; color: #9aa0ae; flex: 1; }
+  .card .meta { display: flex; gap: 14px; flex-wrap: wrap; font-size: .78rem; color: #6f7686; }
+  .card .meta span { display: inline-flex; align-items: center; gap: 5px; }
+  .card .meta svg { width: 13px; height: 13px; stroke: #8a93a8; fill: none; stroke-width: 2;
+                     stroke-linecap: round; stroke-linejoin: round; }
+  .card .open { margin-top: 2px; font-size: .82rem; font-weight: 600; color: #8f9dff;
+                 display: inline-flex; align-items: center; gap: 6px; }
+  .card .open svg { width: 14px; height: 14px; stroke: #8f9dff; fill: none; stroke-width: 2;
+                     stroke-linecap: round; stroke-linejoin: round; transition: transform .15s ease; }
+  .card:hover .open svg { transform: translateX(3px); }
+  .empty { grid-column: 1 / -1; text-align: center; color: #6f7686; padding: 60px 0; display: none; }
+
+  footer { text-align: center; color: #565d6c; font-size: .78rem; padding: 24px 12px 40px;
+            border-top: 1px solid #171b23; }
+  footer a { color: #8f9dff; text-decoration: none; }
+
+  @media (max-width: 560px) {
+    .hero { padding: 48px 16px 36px; }
+    .hero .stats { gap: 22px; }
+    .controls { padding: 12px 14px; }
+    .grid { padding: 24px 14px 48px; grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <span class="kicker">ATHENA · Fitness Library</span>
+  <h1>Workout Guides</h1>
+  <p class="sub">Self-contained, offline-capable training guides — mobility flows, core circuits, gym sessions and rehab protocols, all with in-page GIFs. No accounts, no video buffering.</p>
+  <div class="stats">
+    <div class="stat"><b>13</b><span>Guides</span></div>
+    <div class="stat"><b>9</b><span>No-equipment</span></div>
+    <div class="stat"><b>5</b><span>Mastery series</span></div>
+    <div class="stat"><b>0</b><span>Accounts needed</span></div>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="controls-inner">
+    <div class="search">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+      <input type="text" id="q" placeholder="Search guides…" autocomplete="off"/>
+    </div>
+    <div class="chips" id="chips">
+      <button class="chip active" data-cat="all">All</button>
+      <button class="chip" data-cat="mobility">Mobility</button>
+      <button class="chip" data-cat="core">Core</button>
+      <button class="chip" data-cat="legs">Legs &amp; Knees</button>
+      <button class="chip" data-cat="hips">Hips</button>
+      <button class="chip" data-cat="upper">Upper Body</button>
+      <button class="chip" data-cat="rehab">Rehab</button>
+      <button class="chip" data-cat="mastery">Mastery</button>
+    </div>
+  </div>
+</div>
+
+<main class="grid" id="grid">
+
+  <a class="card" href="prawn-posture-4-tests/" data-cat="mobility" data-tags="prawn posture harkin mobility back">
+    <div class="tags"><span class="tag">Mobility</span><span class="tag">Posture</span></div>
+    <h2>Fix Your Prawn Posture — 4 Mobility Tests</h2>
+    <p class="desc">Diagnose why sitting upright hurts: seated good morning, deep squat, cobra, superman — with fixes. From Dr. Andrew Harkin.</p>
+    <div class="meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~10 min</span><span><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>4 tests</span><span><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>No equipment</span></div>
+    <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
+  </a>
+
+  <a class="card" href="depth-squat/" data-cat="legs mobility" data-tags="squat depth legs mobility cali.hoss">
+    <div class="tags"><span class="tag">Legs &amp; Knees</span><span class="tag">Mobility</span></div>
+    <h2>Deep Squat Mobility Workout</h2>
+    <p class="desc">13-station deep squat routine to open hips, ankles and trunk. From @cali.hoss — no equipment needed.</p>
+    <div class="meta"><span><svg viewBox="0 0 24 24"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>13 exercises</span><span><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>No equipment</span></div>
+    <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
+  </a>
+
+  <a class="card" href="trevor-shan-mobility/" data-cat="mobility" data-tags="trevor shan mobility morning thoracic swing full body">
+    <div class="tags"><span class="tag">Mobility</span><span class="tag">Full Body</span></div>
+    <h2>Trevor Shan — Morning Mobility &amp; Thoracic Swing Flow</h2>
+    <p class="desc">11-exercise full-body morning mobility and rotational swing protocol. From @trevorsinstinct.</p>
+    <div class="meta"><span><svg viewBox="0 0 24 24"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>11 exercises</span><span><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>No equipment</span></div>
+    <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
+  </a>
+
+  <a class="card" href="nervous-system-reset/" data-cat="mobility" data-tags="nervous system reset somatic shrednoir stress recovery">
+    <div class="tags"><span class="tag">Mobility</span><span class="tag">Recovery</span></div>
+    <h2>Nervous System Reset — 5-Step Somatic Release</h2>
+    <p class="desc">Free the gut, release glutes, open armpits, expose throat, wake hands &amp; feet. A ~60 second down-regulation routine from @shrednoir.</p>
+    <div class="meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~60s</span><span><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>5 steps</span><span><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>No equipment</span></div>
+    <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
+  </a>
+
+  <a class="card" href="5-best-core-workouts/" data-cat="core" data-tags="core abs plank bird dog dead bug mcgill">
+    <div class="tags"><span class="tag">Core</span><span class="tag">Mat Only</span></div>
+    <h2>The 5 Best Core Workouts</h2>
+    <p class="desc">Evidence-based mat core circuit: forearm plank, side plank, bird dog, dead bug, McGill curl-up. Zero equipment.</p>
+    <div class="meta"><span><svg viewBox="0 0 24 24"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>5 exercises</span><span><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>Mat only</span></div>
+    <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
+  </a>
+
+  <a class="card" href="chest-lats-shoulders-30-min/" data-cat="upper gym" data-tags="gym chest lats shoulders dumbbell upper body 30 min">
+    <div class="tags"><span class="tag gym">Gym</span><span class="tag">Upper Body</span></div>
+    <h2>30-Min Gym Upper Body — Chest · Lats · Shoulders</h2>
+    <p class="desc">7-exercise, 3-block gym session: DB bench press, push-up, cable pulldown, bent-over row, overhead press, lateral raise, biceps curl.</p>
+    <div class="meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~30 min</span><span><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>7 exercises</span><span><svg viewBox="0 0 24 24"><path d="M6 7 h12 M6 17 h12 M9 3 v18 M15 3 v18"/></svg>Gym</span></div>
+    <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
+  </a>
+
+  <a class="card" href="mastery-01-legs-knees/" data-cat="mastery legs" data-tags="mastery legs knees 20 min no equipment">
+    <div class="tags"><span class="tag mastery">Mastery</span><span class="tag">Legs &amp; Knees</span></div>
+    <h2>Mastery 1 · Legs &amp; Knees</h2>
+    <p class="desc">4 movements, no equipment, ~20 min. Foundation of the "Mastery in 20 Movements" series.</p>
+    <div class="meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~20 min</span><span><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>4 movements</span></div>
+    <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
+  </a>
+
+  <a class="card" href="mastery-02-core-abs/" data-cat="mastery core" data-tags="mastery core abs 20 min mat">
+    <div class="tags"><span class="tag mastery">Mastery</span><span class="tag">Core</span></div>
+    <h2>Mastery 2 · Core &amp; Abs</h2>
+    <p class="desc">4 movements, mat only, ~20 min. Mastery in 20 Movements — part two.</p>
+    <div class="meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~20 min</span><span><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>4 movements</span><span><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>Mat only</span></div>
+    <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
+  </a>
+
+  <a class="card" href="mastery-03-obliques-rotation/" data-cat="mastery core" data-tags="mastery obliques rotation core 20 min mat">
+    <div class="tags"><span class="tag mastery">Mastery</span><span class="tag">Core</span></div>
+    <h2>Mastery 3 · Obliques &amp; Rotation</h2>
+    <p class="desc">4 movements, mat only, ~20 min. Mastery in 20 Movements — part three.</p>
+    <div class="meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~20 min</span><span><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>4 movements</span><span><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>Mat only</span></div>
+    <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
+  </a>
+
+  <a class="card" href="mastery-04-shoulders-spine/" data-cat="mastery upper mobility" data-tags="mastery shoulders spine 20 min no equipment">
+    <div class="tags"><span class="tag mastery">Mastery</span><span class="tag">Upper Body</span></div>
+    <h2>Mastery 4 · Shoulders &amp; Spine</h2>
+    <p class="desc">4 movements, no equipment, ~20 min. Mastery in 20 Movements — part four.</p>
+    <div class="meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~20 min</span><span><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>4 movements</span></div>
+    <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
+  </a>
+
+  <a class="card" href="mastery-05-hips-balance/" data-cat="mastery hips" data-tags="mastery hips balance 20 min no equipment">
+    <div class="tags"><span class="tag mastery">Mastery</span><span class="tag">Hips</span></div>
+    <h2>Mastery 5 · Hips &amp; Balance</h2>
+    <p class="desc">4 movements, no equipment, ~20 min. Mastery in 20 Movements — part five.</p>
+    <div class="meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~20 min</span><span><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>4 movements</span></div>
+    <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
+  </a>
+
+  <a class="card" href="knee-morning-pt/" data-cat="rehab legs" data-tags="knee acl rehab morning pt physical therapy">
+    <div class="tags"><span class="tag rehab">Rehab</span><span class="tag">Legs &amp; Knees</span></div>
+    <h2>Knee Morning PT — Daily ACL Rehab Routine</h2>
+    <p class="desc">~15 min daily block: backwards walking, wall-sit ball squeeze, ball-behind-knee extension, VMO band work, floor drills, stair/landing triads.</p>
+    <div class="meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~15 min</span><span><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>Daily</span><span><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>No gym</span></div>
+    <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
+  </a>
+
+  <a class="card" href="train-your-hips-hard/" data-cat="hips mobility" data-tags="mr.highlevel hips mobility challenge 21 day">
+    <div class="tags"><span class="tag">Hips</span><span class="tag">Mobility</span></div>
+    <h2>Train Your Hips Hard — 6-Move Mobility Challenge</h2>
+    <p class="desc">Quadruped frog, tall kneeling lean &amp; rotation, seated 90-90, half-kneeling lunges, deep squat hold — 1 min each, 3 rounds, 21 days. From @mr.highlevel_.</p>
+    <div class="meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~6 min</span><span><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>6 moves</span><span><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>No equipment</span></div>
+    <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
+  </a>
+
+  <div class="empty" id="empty">No guides match that search. Try a different term or reset the filters.</div>
+</main>
+
+<footer>
+  Built &amp; maintained by <a href="https://github.com/guy0x">guy0x</a> · ATHENA fitness library ·
+  <a href="https://github.com/guy0x/workout-guides">Source on GitHub</a>
+</footer>
+
+<script>
+  const q = document.getElementById('q');
+  const chips = document.querySelectorAll('.chip');
+  const cards = Array.from(document.querySelectorAll('.card'));
+  const empty = document.getElementById('empty');
+  let activeCat = 'all';
+
+  function apply() {
+    const text = q.value.trim().toLowerCase();
+    let visible = 0;
+    cards.forEach(card => {
+      const catMatch = activeCat === 'all' || card.dataset.cat.split(' ').includes(activeCat);
+      const textMatch = !text || (card.dataset.tags + ' ' + card.querySelector('h2').textContent + ' ' + card.querySelector('.desc').textContent).toLowerCase().includes(text);
+      const show = catMatch && textMatch;
+      card.style.display = show ? 'flex' : 'none';
+      if (show) visible++;
+    });
+    empty.style.display = visible ? 'none' : 'block';
+  }
+
+  chips.forEach(chip => chip.addEventListener('click', () => {
+    chips.forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+    activeCat = chip.dataset.cat;
+    apply();
+  }));
+  q.addEventListener('input', apply);
+</script>
+</body>
+</html>
