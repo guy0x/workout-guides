@@ -10,5 +10,6 @@ Self-contained, offline-capable fitness workout guides (wikiHow-style HTML, GIFs
 - **The 5 Best Core Workouts** — evidence-based mat-only core routine (forearm plank · side plank · bird dog · dead bug · McGill curl-up), zero equipment → `5-best-core-workouts/`
 - **30-Min Gym Upper Body — Chest · Lats · Shoulders** — 7-exercise 3-block gym session (DB bench press, push-up, cable pulldown, bent-over row, overhead press, lateral raise, biceps curl), ~30 min → `chest-lats-shoulders-30-min/`
 - **Knee Morning PT — Daily ACL Rehab Routine** — ~15 min daily block from Guy's PT protocol (backwards walking, wall-sit ball squeeze, ball-behind-knee extension, elastic band VMO work, floor drills, stair/landing triads 10×3), no gym equipment, pain rules + 0–10 autopilot for the heavier gym block → `knee-morning-pt/`
+- **Train Your Hips Hard — 6-Move Mobility Challenge** — 21-day hip mobility protocol from Mr. High Level (@mr.highlevel_): quadruped frog · tall kneeling lean & rotation · seated 90-90 · half-kneeling lunges (both sides) · deep squat hold. Each 1 min, 3 rounds, all bodyweight → `train-your-hips-hard/`
 
 Built with the Hermes release harness. Each guide is a single self-contained HTML file.
