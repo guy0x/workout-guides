@@ -3,6 +3,9 @@
 Self-contained, offline-capable fitness workout guides (dark-themed HTML, GIFs inlined as base64). Live at **https://guy0x.github.io/workout-guides/**
 
 ## Guides
+- **Ankle-Grip Mobility — 10-Move Progression** — grip the ankles, drive joints through end-range: 10 grounded moves (rocks, roller bridges, L-sit dorsiflexion, cone drills, hero pose), built as one connected cue system. From Luis Garcia (@garcia_effect_official, ATC/LAT · CSCS) → `ankle-grip-mobility-progression/`
+- **Lower Back — 4 Exercises, Not More Stretches** — windshield wipers, ankle-grip glute bridge, wide-stance glute bridge, straight leg raise. Mat-only lower-back strengthening, from @lennycalisthenics → `lower-back-4-exercises/`
+- **Rebuild Mobility From Zero — 4 Exercises** — lunge-to-fold, hip-lift toe taps, prone arch ↔ forearm plank flow, kneeling diagonal stretch. What one coach would do if he lost all mobility, from @leo.moves → `mobility-from-zero-4-exercises/`
 
 - **Prawn Posture — 4 Mobility Tests** — diagnose why sitting upright hurts (seated good morning · deep squat · cobra · superman) with fixes, from Dr Andrew Harkin (@dr.andrew.harkin) → `prawn-posture-4-tests/`
 - **Deep Squat** — 13-station depth squat routine, no equipment (@cali.hoss) → `depth-squat/`

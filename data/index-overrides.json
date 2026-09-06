@@ -17,6 +17,24 @@
     ],
     "search": "core abs plank bird dog dead bug mcgill mat The 5 Best Core Workouts"
   },
+  "ankle-grip-mobility-progression": {
+    "title": "Ankle-Grip Mobility — 10-Move Progression",
+    "desc": "10 mobility moves on one connective cue — grip the ankles and drive joints through end range: rocks, roller bridges, cone clearances, hero pose, bridge finisher. From @garcia_effect_official.",
+    "tags": [
+      "Mobility",
+      "Legs & Knees"
+    ],
+    "cat": "mobility legs",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~10 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>10 moves",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "ankle grip mobility progression garcia effect ankles hips foam roller cones Ankle-Grip Mobility — 10-Move Progression"
+  },
   "chest-lats-shoulders-30-min": {
     "title": "30-Min Gym Upper Body — Chest · Lats · Shoulders",
     "desc": "7-exercise, 3-block gym session: DB bench press, push-up, cable pulldown, bent-over row, overhead press, lateral raise, biceps curl.",
@@ -113,6 +131,24 @@
     ],
     "search": "knee acl rehab morning pt physical therapy elastic band ball vmo Knee Morning PT — Daily ACL Rehab Routine"
   },
+  "lower-back-4-exercises": {
+    "title": "Lower Back — 4 Exercises, Not More Stretches",
+    "desc": "Windshield wipers, ankle-grip glute bridge, wide-stance glute bridge, straight leg raise — bodyweight lower-back strengthening over passive stretching. From @lennycalisthenics.",
+    "tags": [
+      "Mobility",
+      "Lower Back"
+    ],
+    "cat": "mobility legs",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~5 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 exercises",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "lower back lennycalisthenics windshield wipers glute bridge straight leg raise stretches Lower Back — 4 Exercises, Not More Stretches"
+  },
   "mastery-01-legs-knees": {
     "title": "Mastery 1 · Legs &amp; Knees",
     "desc": "4 movements, no equipment, ~20 min. Foundation of the \"Mastery in 20 Movements\" series.",
@@ -204,6 +240,24 @@
       "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
     ],
     "search": "mastery hips balance 20 min no equipment Mastery 5 · Hips &amp; Balance"
+  },
+  "mobility-from-zero-4-exercises": {
+    "title": "Rebuild Mobility From Zero — 4 Exercises",
+    "desc": "Lunge-to-fold, hip-lift toe taps, prone arch ↔ forearm plank flow, kneeling diagonal stretch — the 4 moves to restart full mobility from nothing. From @leo.moves.",
+    "tags": [
+      "Mobility",
+      "Beginner"
+    ],
+    "cat": "mobility",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~6 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 exercises",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "mobility from zero rebuild leo.moves leomoves lunge forward fold toe taps prone arch plank kneeling diagonal Rebuild Mobility From Zero — 4 Exercises"
   },
   "nervous-system-reset": {
     "title": "Nervous System Reset — 5-Step Somatic Release",
