@@ -3,364 +3,347 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="Self-contained, offline-capable workout guides: mobility flows, core circuits, gym sessions, and rehab protocols — with in-page GIFs."/>
-<title>Workout Guides — No-equipment, mobility, core &amp; gym training</title>
+<meta name="description" content="Workout guides: mobility flows, core circuits, gym sessions, rehab protocols — offline-capable, GIF-inline."/>
+<title>Workout Guides — Library</title>
 <style>
+
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
   body { font-family: -apple-system, "SF Pro Text", Helvetica, Arial, sans-serif;
-         background: #0b0d11; color: #e8eaf0; line-height: 1.6; }
-  a { color: inherit; }
+         background: #f4f6f8; color: #1c2128; line-height: 1.55; }
+  a { color: inherit; text-decoration: none; }
 
-  /* ---------- Hero ---------- */
-  .hero { background: radial-gradient(1200px 500px at 20% -10%, #2a2440 0%, transparent 60%),
-                   radial-gradient(900px 420px at 90% -20%, #14243a 0%, transparent 55%),
-                   linear-gradient(180deg, #12151c 0%, #0b0d11 100%);
-          border-bottom: 1px solid #1f232c; padding: 64px 20px 48px; text-align: center; }
-  .hero .kicker { display: inline-block; background: #1a1e28; border: 1px solid #2c3140;
-                   color: #b8c0ff; font-size: .78rem; letter-spacing: 1.5px; text-transform: uppercase;
-                   padding: 6px 14px; border-radius: 20px; margin-bottom: 20px; }
-  .hero h1 { font-size: clamp(2.2rem, 6vw, 3.4rem); letter-spacing: -1px; font-weight: 800;
-              background: linear-gradient(90deg,#f2f4ff 30%,#9aa8ff 70%);
-              -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
-  .hero p.sub { max-width: 640px; margin: 14px auto 0; color: #9aa0ae; font-size: 1.05rem; }
-  .hero .stats { display: flex; justify-content: center; gap: 36px; margin-top: 28px; flex-wrap: wrap; }
-  .stat { text-align: center; }
-  .stat b { display: block; font-size: 1.5rem; color: #f2f4ff; }
-  .stat span { font-size: .78rem; color: #6f7686; text-transform: uppercase; letter-spacing: .8px; }
+  header { background: #ffffff; border-bottom: 1px solid #e3e7ee; padding: 34px 22px 26px; text-align: center; }
+  header .kicker { display: inline-block; background: #eef2f7; color: #4a5b7a; font-size: .72rem;
+                     letter-spacing: 2px; text-transform: uppercase; padding: 5px 14px; border-radius: 20px; }
+  header h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); letter-spacing: -0.5px; font-weight: 800; margin-top: 12px; }
+  header p.sub { color: #5a6472; font-size: .98rem; margin-top: 6px; max-width: 620px; margin-left: auto; margin-right: auto; }
+  header .stats { display: inline-flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
+  header .stat { background: #f4f6f8; border: 1px solid #e3e7ee; border-radius: 999px; padding: 4px 12px;
+                   font-size: .8rem; color: #3b4654; }
+  header .stat b { color: #1c2128; font-weight: 700; }
 
-  /* ---------- Controls ---------- */
-  .controls { position: sticky; top: 0; z-index: 20; background: rgba(11,13,17,.94);
-               backdrop-filter: blur(10px); border-bottom: 1px solid #1f232c; padding: 12px 20px; }
-  .controls-inner { max-width: 1080px; margin: 0 auto; display: flex; flex-direction: column; gap: 10px; }
-  .row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
-  .search { flex: 1 1 200px; position: relative; }
-  .search input { width: 100%; background: #151821; border: 1px solid #262b36; color: #e8eaf0;
-                   border-radius: 12px; padding: 10px 14px 10px 38px; font-size: .92rem; outline: none; }
-  .search input:focus { border-color: #5f6fff; box-shadow: 0 0 0 3px rgba(95,111,255,.15); }
-  .search svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%);
-                 width: 16px; height: 16px; stroke: #6f7686; fill: none; stroke-width: 2;
-                 stroke-linecap: round; }
-  .group-label { font-size: .68rem; text-transform: uppercase; letter-spacing: 1.2px;
-                  color: #565d6c; font-weight: 700; flex: 0 0 auto; }
-  .chips { display: flex; gap: 8px; flex-wrap: wrap; }
-  .chip { background: #151821; border: 1px solid #262b36; color: #aab0c0; cursor: pointer;
-           font-size: .8rem; padding: 7px 13px; border-radius: 20px; transition: all .15s ease;
-           font-family: inherit; }
-  .chip:hover { border-color: #3a4150; color: #e8eaf0; }
-  .chip.active { background: #5f6fff; border-color: #5f6fff; color: #fff; font-weight: 600; }
-  .chip.count { opacity: .85; }
-  .chip.count::after { content: attr(data-count); margin-left: 6px; font-size: .7rem;
-                        background: rgba(255,255,255,.12); padding: 1px 6px; border-radius: 8px;
-                        font-weight: 700; }
-  .chip.active.count::after { background: rgba(255,255,255,.22); }
-  .chip.zero { opacity: .45; }
-  .chip.zero::after { content: "soon"; margin-left: 6px; font-size: .68rem; font-weight: 700;
-                        color: #8a93a8; }
+  .toolbar { position: sticky; top: 0; background: #ffffff; border-bottom: 1px solid #e3e7ee;
+                padding: 12px 22px; display: flex; gap: 10px; align-items: center; z-index: 20; }
+  .search { flex: 1; min-width: 0; border: 1px solid #d6dce6; background: #ffffff; border-radius: 12px;
+              padding: 9px 14px; font-size: .92rem; color: #1c2128; outline: none; }
+  .search:focus { border-color: #3b82f6; box-shadow: 0 0 0 3px rgba(59,130,246,.18); }
+  .fbtn { border: 1px solid #d6dce6; background: #ffffff; border-radius: 12px; padding: 9px 14px;
+            font-size: .88rem; font-weight: 600; color: #3b4654; cursor: pointer; display: inline-flex; gap: 6px; align-items: center; }
+  .fbtn .badge { display: none; background: #ef4444; color: #fff; border-radius: 999px; min-width: 20px;
+                   height: 20px; font-size: .72rem; line-height: 20px; text-align: center; }
+  .fbtn .chev { display: inline-block; width: 0; height: 0; border-left: 5px solid transparent;
+                  border-right: 5px solid transparent; border-top: 6px solid #3b4654; margin-left: 2px; }
+  .fbtn.open .chev { transform: rotate(180deg); }
 
-  /* ---------- Grid ---------- */
-  .grid { max-width: 1080px; margin: 0 auto; padding: 32px 20px 60px; display: grid;
-           grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 18px; }
-  .card { background: #12151d; border: 1px solid #1f242e; border-radius: 16px; padding: 22px;
-           display: flex; flex-direction: column; gap: 12px; text-decoration: none;
-           transition: transform .18s ease, border-color .18s ease, background .18s ease;
-           position: relative; overflow: hidden; }
-  .card::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 3px;
-                   background: linear-gradient(90deg,#5f6fff,#8a5fff); opacity: 0; transition: opacity .18s ease; }
-  .card:hover { transform: translateY(-3px); border-color: #333a4a; background: #141824; }
-  .card:hover::before { opacity: 1; }
-  .card .tags { display: flex; gap: 6px; flex-wrap: wrap; }
-  .tag { font-size: .68rem; text-transform: uppercase; letter-spacing: .6px; font-weight: 700;
-          padding: 3px 9px; border-radius: 8px; background: #1c2230; color: #9fb0e8; }
-  .tag.mastery { background: #2c1f3d; color: #ddb3ff; }
-  .tag.gym { background: #1f2a24; color: #9fe0b8; }
-  .tag.rehab { background: #2e2120; color: #ffb3a8; }
-  .card h2 { font-size: 1.15rem; color: #f2f4ff; letter-spacing: -.2px; font-weight: 700; }
-  .card .desc { font-size: .88rem; color: #9aa0ae; flex: 1; }
-  .card .meta { display: flex; gap: 14px; flex-wrap: wrap; font-size: .78rem; color: #6f7686; }
-  .card .meta span { display: inline-flex; align-items: center; gap: 5px; }
-  .card .meta svg { width: 13px; height: 13px; stroke: #8a93a8; fill: none; stroke-width: 2;
-                     stroke-linecap: round; stroke-linejoin: round; }
-  .card .open { margin-top: 2px; font-size: .82rem; font-weight: 600; color: #8f9dff;
-                 display: inline-flex; align-items: center; gap: 6px; }
-  .card .open svg { width: 14px; height: 14px; stroke: #8f9dff; fill: none; stroke-width: 2;
-                     stroke-linecap: round; stroke-linejoin: round; transition: transform .15s ease; }
-  .card:hover .open svg { transform: translateX(3px); }
-  .empty { grid-column: 1 / -1; text-align: center; color: #6f7686; padding: 60px 0; display: none; }
-  .empty b { color: #9aa0ae; }
+  #filters { background: #f7f9fc; border: 1px solid #e3e7ee; border-radius: 14px; margin: 12px 22px 0;
+               overflow: hidden; max-height: 0; transition: max-height .25s ease; }
+  #filters .inner { padding: 14px 18px; }
+  #filters .row-label { font-size: .78rem; color: #6b7480; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: .5px; }
+  #filters .rows { display: flex; flex-direction: column; gap: 8px; }
+  #filters .clear { border: none; background: none; color: #ef4444; font-size: .78rem; cursor: pointer; text-decoration: underline; }
+  .chip { display: inline-flex; align-items: center; gap: 5px; border: 1px solid #d6dce6; background: #ffffff;
+            border-radius: 999px; padding: 5px 12px; font-size: .82rem; color: #3b4654; cursor: pointer; }
+  .chip b { background: #eef2f7; color: #5a6472; border-radius: 999px; font-size: .7rem; padding: 1px 7px; }
+  .chip.on { background: #e8f1fd; border-color: #3b82f6; color: #1d4ed8; font-weight: 600; }
+  .chip.on b { background: #3b82f6; color: #fff; }
+  .chiprow { display: flex; flex-wrap: wrap; gap: 6px; }
 
-  footer { text-align: center; color: #565d6c; font-size: .78rem; padding: 24px 12px 40px;
-            border-top: 1px solid #171b23; }
-  footer a { color: #8f9dff; text-decoration: none; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 22px;
+            padding: 22px; }
+  .card { background: #ffffff; border: 1px solid #e3e7ee; border-radius: 18px; overflow: hidden;
+            display: flex; flex-direction: column; transition: transform .15s ease, box-shadow .15s ease; }
+  .card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(28,33,40,.12); border-color: #cdd6e2; }
+  .card .thumb { position: relative; aspect-ratio: 16/9; background: #e8ecf2; }
+  .card .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .card .thumb .num { position: absolute; top: 8px; left: 10px; background: rgba(20,24,30,.72); color: #fff;
+                        font-size: .72rem; font-weight: 700; padding: 2px 8px; border-radius: 8px; }
+  .card .thumb .cat { position: absolute; bottom: 8px; right: 10px; background: var(--accent); color: #fff;
+                        font-size: .68rem; font-weight: 700; padding: 3px 9px; border-radius: 8px; }
+  .card .thumb-ph { aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; background: var(--accent); }
+  .card .thumb-ph span { color: #fff; font-size: 2rem; font-weight: 800; }
+  .card .tags { display: flex; flex-wrap: wrap; gap: 5px; padding: 10px 14px 2px; }
+  .card .tag { background: #eef2f7; color: #4a5b7a; border-radius: 8px; font-size: .66rem; padding: 2px 8px; }
+  .card h2 { font-size: 1.05rem; font-weight: 700; letter-spacing: -0.2px; padding: 4px 14px 0; }
+  .card .desc { font-size: .86rem; color: #5a6472; padding: 6px 14px 0; display: -webkit-box;
+                  -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .card .meta { display: flex; flex-wrap: wrap; gap: 6px; padding: 8px 14px 0; }
+  .card .met { display: inline-flex; align-items: center; gap: 4px; background: #f4f6f8; border: 1px solid #e3e7ee;
+                 border-radius: 999px; padding: 3px 9px; font-size: .72rem; color: #45505e; }
+  .card .met svg { width: 13px; height: 13px; stroke: currentColor; fill: none; }
+  .open { margin-top: auto; align-self: flex-end; padding: 8px 14px 10px; font-size: .82rem; font-weight: 600; color: #2563eb;
+            border-top: 1px solid #eef2f7; display: flex; align-items: center; gap: 6px; }
+  .open svg { width: 15px; height: 15px; stroke: currentColor; fill: none; }
 
-  @media (max-width: 560px) {
-    .hero { padding: 48px 16px 36px; }
-    .hero .stats { gap: 22px; }
-    .controls { padding: 12px 14px; }
-    .grid { padding: 24px 14px 48px; grid-template-columns: 1fr; }
-  }
+  #empty { display: none; text-align: center; padding: 60px 20px; color: #6b7480; }
+  #empty b { color: #1c2128; }
+  #empty button { border: 1px solid #d6dce6; background: #fff; border-radius: 10px; padding: 8px 16px;
+                    margin-top: 12px; cursor: pointer; color: #45505e; }
+
+  footer { text-align: center; color: #9aa3b0; font-size: .78rem; padding: 22px 20px; }
+  @media (max-width: 520px) { .grid { grid-template-columns: 1fr; } header { padding: 24px 14px; }
+                                .toolbar { padding: 10px 14px; flex-wrap: wrap; } }
 </style>
 </head>
 <body>
 
-<header class="hero">
-  <span class="kicker">ATHENA · Fitness Library</span>
+<header>
+  <span class="kicker">Move Better · Recover Faster · Train Smarter</span>
   <h1>Workout Guides</h1>
-  <p class="sub">Self-contained, offline-capable training guides — mobility flows, core circuits, gym sessions and rehab protocols, all with in-page GIFs. Filter by goal or by what you have on hand. No accounts, no video buffering.</p>
-  <div class="stats">
-    <div class="stat"><b id="stat-guides">20</b><span>Guides</span></div>
-    <div class="stat"><b>15</b><span>No-equipment</span></div>
-    <div class="stat"><b>5</b><span>Mastery series</span></div>
-    <div class="stat"><b>0</b><span>Accounts needed</span></div>
-  </div>
+  <p class="sub">Self-contained training guides — every move with an inline GIF demo. Pick a focus or just start scrolling.</p>
+  <span class="stats">
+    <span class="stat"><b>20</b> guides</span>
+    <span class="stat"><b>15</b> no-equipment</span>
+    <span class="stat"><b>20</b> thumbnails</span>
+  </span>
 </header>
 
-<div class="controls">
-  <div class="controls-inner">
+<div class="toolbar">
+  <input class="search" id="q" type="text" placeholder="Search — e.g. mobility, hips, kettlebell…" autocomplete="off">
+  <button class="fbtn" id="ftoggle">
+    <span>Filters</span><span class="badge" id="fbadge">0</span><span class="chev"></span>
+  </button>
+</div>
 
-    <div class="row">
-      <div class="search">
-        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
-        <input type="text" id="q" placeholder="Search guides…" autocomplete="off"/>
-      </div>
+<div id="filters" style="max-height:0">
+  <div class="inner">
+  <div class="rows">
+    <div>
+      <span class="row-label">Focus</span>
+      <div class="chiprow" id="goals"><button class="chip goal" data-g="mobility">Mobility <b>12</b></button><button class="chip goal" data-g="core">Core <b>5</b></button><button class="chip goal" data-g="legs & knees">Legs & Knees <b>5</b></button><button class="chip goal" data-g="hips">Hips <b>3</b></button><button class="chip goal" data-g="upper body">Upper Body <b>2</b></button><button class="chip goal" data-g="gym">Gym <b>1</b></button><button class="chip goal" data-g="rehab">Rehab <b>1</b></button><button class="chip goal" data-g="mastery">Mastery <b>5</b></button></div>
     </div>
-
-    <div class="row">
-      <span class="group-label">Goal</span>
-      <div class="chips" id="chips-cat">
-        <button class="chip active" data-cat="all">All</button>
-        <button class="chip" data-cat="mobility">Mobility</button>
-        <button class="chip" data-cat="core">Core</button>
-        <button class="chip" data-cat="legs">Legs &amp; Knees</button>
-        <button class="chip" data-cat="hips">Hips</button>
-        <button class="chip" data-cat="upper">Upper Body</button>
-        <button class="chip" data-cat="rehab">Rehab</button>
-        <button class="chip" data-cat="mastery">Mastery</button>
-        <button class="chip" data-cat="gym">Gym</button>
-      </div>
+    <div>
+      <span class="row-label">Gear</span>
+      <div class="chiprow" id="gear"><button class="chip gear" data-g="none">No equipment <b>15</b></button><button class="chip gear" data-g="mat">Mat <b>4</b></button><button class="chip gear" data-g="band">Band <b>1</b></button><button class="chip gear" data-g="kettlebell">Kettlebell <b>1</b></button><button class="chip gear" data-g="dumbbell">Dumbbells <b>1</b></button><button class="chip gear" data-g="cable">Cable <b>1</b></button><button class="chip gear" data-g="bench">Bench <b>1</b></button><button class="chip gear" data-g="box">Box <b>1</b></button></div>
     </div>
-
-    <div class="row">
-      <span class="group-label">Gear</span>
-      <div class="chips" id="chips-gear">
-        <button class="chip active" data-gear="any">Any</button>
-        <button class="chip" data-gear="none">No equipment</button>
-        <button class="chip" data-gear="mat">Mat only</button>
-        <button class="chip" data-gear="band">Resistance band</button>
-        <button class="chip" data-gear="dumbbell">Dumbbells</button>
-        <button class="chip" data-gear="cable">Cable machine</button>
-        <button class="chip" data-gear="kettlebell">Kettlebell</button>
-      </div>
-    </div>
-
+    <div style="text-align:right"><button class="clear" id="clear">Clear all filters</button></div>
+  </div>
   </div>
 </div>
 
 <main class="grid" id="grid">
-  <a class="card" href="5-best-core-workouts/" data-cat="core" data-gear="mat" data-tags="core abs plank bird dog dead bug mcgill mat The 5 Best Core Workouts The 5 Best Core Workouts">
-    <div class="tags"><span class="tag">Core</span><span class="tag">Mat Only</span><span class="tag">Mat only</span></div>
+  <a class="card" href="5-best-core-workouts/" data-cat="core" data-gear="mat" data-tags="core abs plank bird dog dead bug mcgill mat The 5 Best Core Workouts The 5 Best Core Workouts The 5 Best Core Workouts">
+    <div class="thumb" style="--accent:#8b5cf6"><img src="thumbs/5-best-core-workouts.jpg" alt="The 5 Best Core Workouts" loading="lazy"><span class="num">01</span><span class="cat">Core</span></div>
+    <div class="tags"><span class="tag">Core</span><span class="tag">Mat Only</span></div>
     <h2>The 5 Best Core Workouts</h2>
     <p class="desc">Evidence-based mat core circuit: forearm plank, side plank, bird dog, dead bug, McGill curl-up. Just a mat.</p>
-    <div class="meta"><span><svg viewBox="0 0 24 24"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>5 exercises</span><span><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>Mat only</span></div>
+    <div class="meta"><span class="met"><svg viewBox="0 0 24 24"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>5 exercises</span><span class="met"><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>Mat only</span></div>
     <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
   </a>
-  <a class="card" href="ankle-grip-mobility-progression/" data-cat="mobility legs" data-gear="none" data-tags="ankle grip mobility progression garcia effect ankles hips foam roller cones Ankle-Grip Mobility — 10-Move Progression Ankle-Grip Mobility — 10-Move Progression">
+  <a class="card" href="ankle-grip-mobility-progression/" data-cat="mobility legs" data-gear="none" data-tags="ankle grip mobility progression garcia effect ankles hips foam roller cones Ankle-Grip Mobility — 10-Move Progression Ankle-Grip Mobility — 10-Move Progression Ankle-Grip Mobility — 10-Move Progression">
+    <div class="thumb" style="--accent:#3b82f6"><img src="thumbs/ankle-grip-mobility-progression.jpg" alt="Ankle-Grip Mobility — 10-Move Progression" loading="lazy"><span class="num">02</span><span class="cat">Mobility</span></div>
     <div class="tags"><span class="tag">Mobility</span><span class="tag">Legs & Knees</span></div>
     <h2>Ankle-Grip Mobility — 10-Move Progression</h2>
     <p class="desc">10 mobility moves on one connective cue — grip the ankles and drive joints through end range: rocks, roller bridges, cone clearances, hero pose, bridge finisher. From @garcia_effect_official.</p>
-    <div class="meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~10 min</span><span><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>10 moves</span><span><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>No equipment</span></div>
+    <div class="meta"><span class="met"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~10 min</span><span class="met"><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>10 moves</span><span class="met"><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>No equipment</span></div>
     <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
   </a>
-  <a class="card" href="chest-lats-shoulders-30-min/" data-cat="upper gym" data-gear="dumbbell cable" data-tags="gym chest lats shoulders dumbbell upper body 30 min cable bench 30-Min Gym Upper Body — Chest · Lats · Shoulders 30-Min Gym Upper Body — Chest · Lats · Shoulders">
+  <a class="card" href="chest-lats-shoulders-30-min/" data-cat="upper gym" data-gear="dumbbell cable" data-tags="gym chest lats shoulders dumbbell upper body 30 min cable bench 30-Min Gym Upper Body — Chest · Lats · Shoulders 30-Min Gym Upper Body — Chest · Lats · Shoulders 30-Min Gym Upper Body — Chest · Lats · Shoulders">
+    <div class="thumb" style="--accent:#f59e0b"><img src="thumbs/chest-lats-shoulders-30-min.jpg" alt="30-Min Gym Upper Body — Chest · Lats · Shoulders" loading="lazy"><span class="num">03</span><span class="cat">Upper Body</span></div>
     <div class="tags"><span class="tag">Gym</span><span class="tag">Upper Body</span><span class="tag">Dumbbells</span><span class="tag">Cable</span></div>
     <h2>30-Min Gym Upper Body — Chest · Lats · Shoulders</h2>
     <p class="desc">7-exercise, 3-block gym session: DB bench press, push-up, cable pulldown, bent-over row, overhead press, lateral raise, biceps curl.</p>
-    <div class="meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~30 min</span><span><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>7 exercises</span><span><svg viewBox="0 0 24 24"><path d="M6 7 h12 M6 17 h12 M9 3 v18 M15 3 v18"/></svg>Dumbbells + cable</span></div>
+    <div class="meta"><span class="met"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~30 min</span><span class="met"><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>7 exercises</span><span class="met"><svg viewBox="0 0 24 24"><path d="M6 7 h12 M6 17 h12 M9 3 v18 M15 3 v18"/></svg>Dumbbells + cable</span></div>
     <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
   </a>
-  <a class="card" href="depth-squat/" data-cat="legs mobility" data-gear="none" data-tags="squat depth legs mobility cali.hoss ankle hips Deep Squat Mobility Workout Deep Squat Mobility Workout">
+  <a class="card" href="depth-squat/" data-cat="legs mobility" data-gear="none" data-tags="squat depth legs mobility cali.hoss ankle hips Deep Squat Mobility Workout Deep Squat Mobility Workout Deep Squat Mobility Workout">
+    <div class="thumb" style="--accent:#10b981"><img src="thumbs/depth-squat.jpg" alt="Deep Squat Mobility Workout" loading="lazy"><span class="num">04</span><span class="cat">Legs & Knees</span></div>
     <div class="tags"><span class="tag">Legs &amp; Knees</span><span class="tag">Mobility</span></div>
     <h2>Deep Squat Mobility Workout</h2>
     <p class="desc">13-station deep squat routine to open hips, ankles and trunk. From @cali.hoss — no equipment needed.</p>
-    <div class="meta"><span><svg viewBox="0 0 24 24"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>13 exercises</span><span><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>No equipment</span></div>
+    <div class="meta"><span class="met"><svg viewBox="0 0 24 24"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>13 exercises</span><span class="met"><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>No equipment</span></div>
     <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
   </a>
-  <a class="card" href="desk-worker-counter-exercises/" data-cat="mobility core" data-gear="none" data-tags="desk worker posture hip flexor tva lower trap external rotation skylerfelt sitting counter exercise 4 Counter-Exercises for Desk Workers 4 Counter-Exercises for Desk Workers">
+  <a class="card" href="desk-worker-counter-exercises/" data-cat="mobility core" data-gear="none" data-tags="desk worker posture hip flexor tva lower trap external rotation skylerfelt sitting counter exercise 4 Counter-Exercises for Desk Workers 4 Counter-Exercises for Desk Workers 4 Counter-Exercises for Desk Workers">
+    <div class="thumb" style="--accent:#3b82f6"><img src="thumbs/desk-worker-counter-exercises.jpg" alt="4 Counter-Exercises for Desk Workers" loading="lazy"><span class="num">05</span><span class="cat">Mobility</span></div>
     <div class="tags"><span class="tag">Mobility</span><span class="tag">Posture</span></div>
     <h2>4 Counter-Exercises for Desk Workers</h2>
     <p class="desc">Hip flexor stretch, TVA brace, lower trap Y-raise, shoulder external rotation — each with beginner→advanced progressions. From @skylerfelt.</p>
-    <div class="meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~5 min</span><span><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>4 exercises</span><span><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>No equipment</span></div>
+    <div class="meta"><span class="met"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~5 min</span><span class="met"><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>4 exercises</span><span class="met"><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>No equipment</span></div>
     <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
   </a>
-  <a class="card" href="elbows-on-box-stretch/" data-cat="mobility" data-gear="none bench box" data-tags="elbows box thoracic spine lats mid-back stretch mobility posture bench Elbows-on-Box Stretch: Thoracic vs Lat Elbows-on-Box Stretch: Thoracic vs Lat">
+  <a class="card" href="elbows-on-box-stretch/" data-cat="mobility" data-gear="none bench box" data-tags="elbows box thoracic spine lats mid-back stretch mobility posture bench Elbows-on-Box Stretch: Thoracic vs Lat Elbows-on-Box Stretch: Thoracic vs Lat Elbows-on-Box Stretch: Thoracic vs Lat">
+    <div class="thumb" style="--accent:#3b82f6"><img src="thumbs/elbows-on-box-stretch.jpg" alt="Elbows-on-Box Stretch: Thoracic vs Lat" loading="lazy"><span class="num">06</span><span class="cat">Mobility</span></div>
     <div class="tags"><span class="tag">Mobility</span><span class="tag">Posture</span><span class="tag">No equipment</span></div>
     <h2>Elbows-on-Box Stretch: Thoracic vs Lat</h2>
     <p class="desc">One setup, two targets — drop the chest for the thoracic mid-back, or elbows in a V + round the back to hit tight lats. 5 deep breaths each.</p>
-    <div class="meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~2 min</span><span><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>2 ways</span><span><svg viewBox="0 0 24 24"><path d="M6 7 h12 M6 17 h12 M9 3 v18 M15 3 v18"/></svg>Box/bench</span></div>
+    <div class="meta"><span class="met"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~2 min</span><span class="met"><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>2 ways</span><span class="met"><svg viewBox="0 0 24 24"><path d="M6 7 h12 M6 17 h12 M9 3 v18 M15 3 v18"/></svg>Box/bench</span></div>
     <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
   </a>
-  <a class="card" href="knee-morning-pt/" data-cat="rehab legs" data-gear="band" data-tags="knee acl rehab morning pt physical therapy elastic band ball vmo Knee Morning PT — Daily ACL Rehab Routine Knee Morning PT — Daily ACL Rehab Routine">
+  <a class="card" href="knee-morning-pt/" data-cat="rehab legs" data-gear="band" data-tags="knee acl rehab morning pt physical therapy elastic band ball vmo Knee Morning PT — Daily ACL Rehab Routine Knee Morning PT — Daily ACL Rehab Routine Knee Morning PT — Daily ACL Rehab Routine">
+    <div class="thumb" style="--accent:#14b8a6"><img src="thumbs/knee-morning-pt.jpg" alt="Knee Morning PT — Daily ACL Rehab Routine" loading="lazy"><span class="num">07</span><span class="cat">Rehab</span></div>
     <div class="tags"><span class="tag">Rehab</span><span class="tag">Legs &amp; Knees</span><span class="tag">Band</span></div>
     <h2>Knee Morning PT — Daily ACL Rehab Routine</h2>
     <p class="desc">~15 min daily block: backwards walking, wall-sit ball squeeze, ball-behind-knee extension, VMO band work, floor drills, stair/landing triads.</p>
-    <div class="meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~15 min</span><span><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>Daily</span><span><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>Band + ball</span></div>
+    <div class="meta"><span class="met"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~15 min</span><span class="met"><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>Daily</span><span class="met"><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>Band + ball</span></div>
     <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
   </a>
-  <a class="card" href="lower-back-4-exercises/" data-cat="mobility legs" data-gear="none" data-tags="lower back lennycalisthenics windshield wipers glute bridge straight leg raise stretches Lower Back — 4 Exercises, Not More Stretches Lower Back — 4 Exercises, Not More Stretches">
+  <a class="card" href="lower-back-4-exercises/" data-cat="mobility legs" data-gear="none" data-tags="lower back lennycalisthenics windshield wipers glute bridge straight leg raise stretches Lower Back — 4 Exercises, Not More Stretches Lower Back — 4 Exercises, Not More Stretches Lower Back — 4 Exercises, Not More Stretches">
+    <div class="thumb" style="--accent:#3b82f6"><img src="thumbs/lower-back-4-exercises.jpg" alt="Lower Back — 4 Exercises, Not More Stretches" loading="lazy"><span class="num">08</span><span class="cat">Mobility</span></div>
     <div class="tags"><span class="tag">Mobility</span><span class="tag">Lower Back</span></div>
     <h2>Lower Back — 4 Exercises, Not More Stretches</h2>
     <p class="desc">Windshield wipers, ankle-grip glute bridge, wide-stance glute bridge, straight leg raise — bodyweight lower-back strengthening over passive stretching. From @lennycalisthenics.</p>
-    <div class="meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~5 min</span><span><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>4 exercises</span><span><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>No equipment</span></div>
+    <div class="meta"><span class="met"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~5 min</span><span class="met"><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>4 exercises</span><span class="met"><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>No equipment</span></div>
     <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
   </a>
-  <a class="card" href="mastery-01-legs-knees/" data-cat="mastery legs" data-gear="none" data-tags="mastery legs knees 20 min no equipment Mastery 1 · Legs &amp; Knees Mastery 1 · Legs &amp; Knees">
+  <a class="card" href="mastery-01-legs-knees/" data-cat="mastery legs" data-gear="none" data-tags="mastery legs knees 20 min no equipment Mastery 1 · Legs &amp; Knees Mastery 1 · Legs &amp; Knees Mastery 1 · Legs &amp; Knees">
+    <div class="thumb" style="--accent:#6366f1"><img src="thumbs/mastery-01-legs-knees.jpg" alt="Mastery 1 · Legs &amp; Knees" loading="lazy"><span class="num">09</span><span class="cat">Mastery</span></div>
     <div class="tags"><span class="tag">Mastery</span><span class="tag">Legs &amp; Knees</span></div>
     <h2>Mastery 1 · Legs &amp; Knees</h2>
     <p class="desc">4 movements, no equipment, ~20 min. Foundation of the "Mastery in 20 Movements" series.</p>
-    <div class="meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~20 min</span><span><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>4 movements</span><span><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>No equipment</span></div>
+    <div class="meta"><span class="met"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~20 min</span><span class="met"><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>4 movements</span><span class="met"><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>No equipment</span></div>
     <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
   </a>
-  <a class="card" href="mastery-02-core-abs/" data-cat="mastery core" data-gear="mat" data-tags="mastery core abs 20 min mat Mastery 2 · Core &amp; Abs Mastery 2 · Core &amp; Abs">
+  <a class="card" href="mastery-02-core-abs/" data-cat="mastery core" data-gear="mat" data-tags="mastery core abs 20 min mat Mastery 2 · Core &amp; Abs Mastery 2 · Core &amp; Abs Mastery 2 · Core &amp; Abs">
+    <div class="thumb" style="--accent:#6366f1"><img src="thumbs/mastery-02-core-abs.jpg" alt="Mastery 2 · Core &amp; Abs" loading="lazy"><span class="num">10</span><span class="cat">Mastery</span></div>
     <div class="tags"><span class="tag">Mastery</span><span class="tag">Core</span><span class="tag">Mat only</span></div>
     <h2>Mastery 2 · Core &amp; Abs</h2>
     <p class="desc">4 movements, mat only, ~20 min. Mastery in 20 Movements — part two.</p>
-    <div class="meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~20 min</span><span><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>4 movements</span><span><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>Mat only</span></div>
+    <div class="meta"><span class="met"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~20 min</span><span class="met"><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>4 movements</span><span class="met"><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>Mat only</span></div>
     <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
   </a>
-  <a class="card" href="mastery-03-obliques-rotation/" data-cat="mastery core" data-gear="mat" data-tags="mastery obliques rotation core 20 min mat Mastery 3 · Obliques &amp; Rotation Mastery 3 · Obliques &amp; Rotation">
+  <a class="card" href="mastery-03-obliques-rotation/" data-cat="mastery core" data-gear="mat" data-tags="mastery obliques rotation core 20 min mat Mastery 3 · Obliques &amp; Rotation Mastery 3 · Obliques &amp; Rotation Mastery 3 · Obliques &amp; Rotation">
+    <div class="thumb" style="--accent:#6366f1"><img src="thumbs/mastery-03-obliques-rotation.jpg" alt="Mastery 3 · Obliques &amp; Rotation" loading="lazy"><span class="num">11</span><span class="cat">Mastery</span></div>
     <div class="tags"><span class="tag">Mastery</span><span class="tag">Core</span><span class="tag">Mat only</span></div>
     <h2>Mastery 3 · Obliques &amp; Rotation</h2>
     <p class="desc">4 movements, mat only, ~20 min. Mastery in 20 Movements — part three.</p>
-    <div class="meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~20 min</span><span><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>4 movements</span><span><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>Mat only</span></div>
+    <div class="meta"><span class="met"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~20 min</span><span class="met"><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>4 movements</span><span class="met"><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>Mat only</span></div>
     <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
   </a>
-  <a class="card" href="mastery-04-shoulders-spine/" data-cat="mastery upper mobility" data-gear="none" data-tags="mastery shoulders spine 20 min no equipment Mastery 4 · Shoulders &amp; Spine Mastery 4 · Shoulders &amp; Spine">
+  <a class="card" href="mastery-04-shoulders-spine/" data-cat="mastery upper mobility" data-gear="none" data-tags="mastery shoulders spine 20 min no equipment Mastery 4 · Shoulders &amp; Spine Mastery 4 · Shoulders &amp; Spine Mastery 4 · Shoulders &amp; Spine">
+    <div class="thumb" style="--accent:#6366f1"><img src="thumbs/mastery-04-shoulders-spine.jpg" alt="Mastery 4 · Shoulders &amp; Spine" loading="lazy"><span class="num">12</span><span class="cat">Mastery</span></div>
     <div class="tags"><span class="tag">Mastery</span><span class="tag">Upper Body</span></div>
     <h2>Mastery 4 · Shoulders &amp; Spine</h2>
     <p class="desc">4 movements, no equipment, ~20 min. Mastery in 20 Movements — part four.</p>
-    <div class="meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~20 min</span><span><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>4 movements</span><span><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>No equipment</span></div>
+    <div class="meta"><span class="met"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~20 min</span><span class="met"><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>4 movements</span><span class="met"><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>No equipment</span></div>
     <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
   </a>
-  <a class="card" href="mastery-05-hips-balance/" data-cat="mastery hips" data-gear="none" data-tags="mastery hips balance 20 min no equipment Mastery 5 · Hips &amp; Balance Mastery 5 · Hips &amp; Balance">
+  <a class="card" href="mastery-05-hips-balance/" data-cat="mastery hips" data-gear="none" data-tags="mastery hips balance 20 min no equipment Mastery 5 · Hips &amp; Balance Mastery 5 · Hips &amp; Balance Mastery 5 · Hips &amp; Balance">
+    <div class="thumb" style="--accent:#6366f1"><img src="thumbs/mastery-05-hips-balance.jpg" alt="Mastery 5 · Hips &amp; Balance" loading="lazy"><span class="num">13</span><span class="cat">Mastery</span></div>
     <div class="tags"><span class="tag">Mastery</span><span class="tag">Hips</span></div>
     <h2>Mastery 5 · Hips &amp; Balance</h2>
     <p class="desc">4 movements, no equipment, ~20 min. Mastery in 20 Movements — part five.</p>
-    <div class="meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~20 min</span><span><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>4 movements</span><span><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>No equipment</span></div>
+    <div class="meta"><span class="met"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~20 min</span><span class="met"><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>4 movements</span><span class="met"><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>No equipment</span></div>
     <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
   </a>
-  <a class="card" href="mobility-from-zero-4-exercises/" data-cat="mobility" data-gear="none" data-tags="mobility from zero rebuild leo.moves leomoves lunge forward fold toe taps prone arch plank kneeling diagonal Rebuild Mobility From Zero — 4 Exercises Rebuild Mobility From Zero — 4 Exercises">
+  <a class="card" href="mobility-from-zero-4-exercises/" data-cat="mobility" data-gear="none" data-tags="mobility from zero rebuild leo.moves leomoves lunge forward fold toe taps prone arch plank kneeling diagonal Rebuild Mobility From Zero — 4 Exercises Rebuild Mobility From Zero — 4 Exercises Rebuild Mobility From Zero — 4 Exercises">
+    <div class="thumb" style="--accent:#3b82f6"><img src="thumbs/mobility-from-zero-4-exercises.jpg" alt="Rebuild Mobility From Zero — 4 Exercises" loading="lazy"><span class="num">14</span><span class="cat">Mobility</span></div>
     <div class="tags"><span class="tag">Mobility</span><span class="tag">Beginner</span></div>
     <h2>Rebuild Mobility From Zero — 4 Exercises</h2>
     <p class="desc">Lunge-to-fold, hip-lift toe taps, prone arch ↔ forearm plank flow, kneeling diagonal stretch — the 4 moves to restart full mobility from nothing. From @leo.moves.</p>
-    <div class="meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~6 min</span><span><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>4 exercises</span><span><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>No equipment</span></div>
+    <div class="meta"><span class="met"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~6 min</span><span class="met"><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>4 exercises</span><span class="met"><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>No equipment</span></div>
     <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
   </a>
   <a class="card" href="morning-mobility-reset/" data-cat="mobility hips" data-gear="none kettlebell" data-tags="morning mobility reset decompress spine hips dead hang deep squat couch stretch 90/90 antwan rarcus anterior pelvic tilt markus kneissl golf hip cars builtfitgolf brett sherman big toe garcia effect kettlebell halos taigen hegberg Morning Mobility Reset — 14 Moves Morning Mobility Reset — 14 Moves Morning Mobility Reset — 14 Moves">
+    <div class="thumb" style="--accent:#3b82f6"><img src="thumbs/morning-mobility-reset.jpg" alt="Morning Mobility Reset — 14 Moves" loading="lazy"><span class="num">15</span><span class="cat">Mobility</span></div>
     <div class="tags"><span class="tag">Mobility</span><span class="tag">Lower Back</span><span class="tag">Hips</span></div>
     <h2>Morning Mobility Reset — 14 Moves</h2>
     <p class="desc">One morning flow from 5 coaches: dead hang, deep squat, couch stretch, 90/90 switches, APT reset (reverse lean · half-camel · tabletop lift · psoas rock · hamstring fold), golf hip CARs (standing · quadruped · seated), big-toe drive, kettlebell halos. ~12 min.</p>
-    <div class="meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~12 min</span><span><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>14 moves</span><span><svg viewBox="0 0 24 24"><path d="M6 7 h12 M6 17 h12 M9 3 v18 M15 3 v18"/></svg>Mat + optional KB</span></div>
+    <div class="meta"><span class="met"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~12 min</span><span class="met"><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>14 moves</span><span class="met"><svg viewBox="0 0 24 24"><path d="M6 7 h12 M6 17 h12 M9 3 v18 M15 3 v18"/></svg>Mat + optional KB</span></div>
     <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
   </a>
-  <a class="card" href="nervous-system-reset/" data-cat="mobility" data-gear="none" data-tags="nervous system reset somatic shrednoir stress recovery down regulation Nervous System Reset — 5-Step Somatic Release Nervous System Reset — 5-Step Somatic Release">
+  <a class="card" href="nervous-system-reset/" data-cat="mobility" data-gear="none" data-tags="nervous system reset somatic shrednoir stress recovery down regulation Nervous System Reset — 5-Step Somatic Release Nervous System Reset — 5-Step Somatic Release Nervous System Reset — 5-Step Somatic Release">
+    <div class="thumb" style="--accent:#3b82f6"><img src="thumbs/nervous-system-reset.jpg" alt="Nervous System Reset — 5-Step Somatic Release" loading="lazy"><span class="num">16</span><span class="cat">Mobility</span></div>
     <div class="tags"><span class="tag">Mobility</span><span class="tag">Recovery</span></div>
     <h2>Nervous System Reset — 5-Step Somatic Release</h2>
     <p class="desc">Free the gut, release glutes, open armpits, expose throat, wake hands &amp; feet. A ~60 second down-regulation routine from @shrednoir.</p>
-    <div class="meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~60s</span><span><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>5 steps</span><span><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>No equipment</span></div>
+    <div class="meta"><span class="met"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~60s</span><span class="met"><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>5 steps</span><span class="met"><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>No equipment</span></div>
     <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
   </a>
-  <a class="card" href="prawn-posture-4-tests/" data-cat="mobility" data-gear="none" data-tags="prawn posture harkin mobility back sitting Fix Your Prawn Posture — 4 Mobility Tests Fix Your Prawn Posture — 4 Mobility Tests">
+  <a class="card" href="prawn-posture-4-tests/" data-cat="mobility" data-gear="none" data-tags="prawn posture harkin mobility back sitting Fix Your Prawn Posture — 4 Mobility Tests Fix Your Prawn Posture — 4 Mobility Tests Fix Your Prawn Posture — 4 Mobility Tests">
+    <div class="thumb" style="--accent:#3b82f6"><img src="thumbs/prawn-posture-4-tests.jpg" alt="Fix Your Prawn Posture — 4 Mobility Tests" loading="lazy"><span class="num">17</span><span class="cat">Mobility</span></div>
     <div class="tags"><span class="tag">Mobility</span><span class="tag">Posture</span></div>
     <h2>Fix Your Prawn Posture — 4 Mobility Tests</h2>
     <p class="desc">Diagnose why sitting upright hurts: seated good morning, deep squat, cobra, superman — with fixes. From Dr. Andrew Harkin.</p>
-    <div class="meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~10 min</span><span><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>4 tests</span><span><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>No equipment</span></div>
+    <div class="meta"><span class="met"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~10 min</span><span class="met"><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>4 tests</span><span class="met"><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>No equipment</span></div>
     <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
   </a>
-  <a class="card" href="solo-core-plank-routine/" data-cat="core" data-gear="mat none" data-tags="solo core plank routine bodyweight tuck v-ups crunches session footage Solo Core &amp; Plank Routine — 5 Bodyweight Moves Solo Core &amp; Plank Routine — 5 Bodyweight Moves">
+  <a class="card" href="solo-core-plank-routine/" data-cat="core" data-gear="mat none" data-tags="solo core plank routine bodyweight tuck v-ups crunches session footage Solo Core &amp; Plank Routine — 5 Bodyweight Moves Solo Core &amp; Plank Routine — 5 Bodyweight Moves Solo Core &amp; Plank Routine — 5 Bodyweight Moves">
+    <div class="thumb" style="--accent:#8b5cf6"><img src="thumbs/solo-core-plank-routine.jpg" alt="Solo Core &amp; Plank Routine — 5 Bodyweight Moves" loading="lazy"><span class="num">18</span><span class="cat">Core</span></div>
     <div class="tags"><span class="tag">Core</span><span class="tag">Bodyweight</span><span class="tag">Mat only</span><span class="tag">No equipment</span></div>
     <h2>Solo Core &amp; Plank Routine — 5 Bodyweight Moves</h2>
     <p class="desc">5 bodyweight moves on a mat — hold the tuck and planks for time, keep V-ups and crunches slow and controlled. From Guy's own session footage.</p>
-    <div class="meta"><span><svg viewBox="0 0 24 24"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>5 exercises</span><span><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>Mat · no equipment</span><span><svg viewBox="0 0 24 24"><path d="M9 12 l3 3 l4-5"/><path d="M12 3 a9 9 0 1 1 -9 9"/></svg>Session footage</span></div>
+    <div class="meta"><span class="met"><svg viewBox="0 0 24 24"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>5 exercises</span><span class="met"><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>Mat · no equipment</span><span class="met"><svg viewBox="0 0 24 24"><path d="M9 12 l3 3 l4-5"/><path d="M12 3 a9 9 0 1 1 -9 9"/></svg>Session footage</span></div>
     <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
   </a>
-  <a class="card" href="train-your-hips-hard/" data-cat="hips mobility" data-gear="none" data-tags="mr.highlevel hips mobility challenge 21 day frog 90-90 lunge squat Train Your Hips Hard — 6-Move Mobility Challenge Train Your Hips Hard — 6-Move Mobility Challenge">
+  <a class="card" href="train-your-hips-hard/" data-cat="hips mobility" data-gear="none" data-tags="mr.highlevel hips mobility challenge 21 day frog 90-90 lunge squat Train Your Hips Hard — 6-Move Mobility Challenge Train Your Hips Hard — 6-Move Mobility Challenge Train Your Hips Hard — 6-Move Mobility Challenge">
+    <div class="thumb" style="--accent:#ec4899"><img src="thumbs/train-your-hips-hard.jpg" alt="Train Your Hips Hard — 6-Move Mobility Challenge" loading="lazy"><span class="num">19</span><span class="cat">Hips</span></div>
     <div class="tags"><span class="tag">Hips</span><span class="tag">Mobility</span></div>
     <h2>Train Your Hips Hard — 6-Move Mobility Challenge</h2>
     <p class="desc">Quadruped frog, tall kneeling lean &amp; rotation, seated 90-90, half-kneeling lunges, deep squat hold — 1 min each, 3 rounds, 21 days. From @mr.highlevel_.</p>
-    <div class="meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~6 min</span><span><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>6 moves</span><span><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>No equipment</span></div>
+    <div class="meta"><span class="met"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>~6 min</span><span class="met"><svg viewBox="0 0 24 24"><path d="M13 2 L3 14 h7 l-1 8 10-12 h-7z"/></svg>6 moves</span><span class="met"><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>No equipment</span></div>
     <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
   </a>
-  <a class="card" href="trevor-shan-mobility/" data-cat="mobility" data-gear="none" data-tags="trevor shan mobility morning thoracic swing full body rotation Trevor Shan — Morning Mobility &amp; Thoracic Swing Flow Trevor Shan — Morning Mobility &amp; Thoracic Swing Flow">
+  <a class="card" href="trevor-shan-mobility/" data-cat="mobility" data-gear="none" data-tags="trevor shan mobility morning thoracic swing full body rotation Trevor Shan — Morning Mobility &amp; Thoracic Swing Flow Trevor Shan — Morning Mobility &amp; Thoracic Swing Flow Trevor Shan — Morning Mobility &amp; Thoracic Swing Flow">
+    <div class="thumb" style="--accent:#3b82f6"><img src="thumbs/trevor-shan-mobility.jpg" alt="Trevor Shan — Morning Mobility &amp; Thoracic Swing Flow" loading="lazy"><span class="num">20</span><span class="cat">Mobility</span></div>
     <div class="tags"><span class="tag">Mobility</span><span class="tag">Full Body</span></div>
     <h2>Trevor Shan — Morning Mobility &amp; Thoracic Swing Flow</h2>
     <p class="desc">11-exercise full-body morning mobility and rotational swing protocol. From @trevorsinstinct.</p>
-    <div class="meta"><span><svg viewBox="0 0 24 24"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>11 exercises</span><span><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>No equipment</span></div>
+    <div class="meta"><span class="met"><svg viewBox="0 0 24 24"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>11 exercises</span><span class="met"><svg viewBox="0 0 24 24"><path d="M2 12 a10 10 0 0 1 20 0Z"/><path d="M2 12 a10 10 0 0 0 20 0"/><circle cx="12" cy="12" r="2"/></svg>No equipment</span></div>
     <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
   </a>
-
-<div class="empty" id="empty">No guides match that search. Try a different term or reset the filters.</div>
 </main>
+<div class="empty" id="empty">
+  <b>No guides match.</b>
+  <div>Try a different search or clear the filters.</div>
+  <button onclick="clearAll()">Clear filters</button>
+</div>
 
-<footer>
-  Built &amp; maintained by <a href="https://github.com/guy0x">guy0x</a> · ATHENA fitness library ·
-  <a href="https://github.com/guy0x/workout-guides">Source on GitHub</a>
-</footer>
+<footer>Workout guides library · compiled by ATHENA · each guide is a single offline HTML file</footer>
 
 <script>
-  const q = document.getElementById('q');
-  const catChips = Array.from(document.querySelectorAll('#chips-cat .chip'));
-  const gearChips = Array.from(document.querySelectorAll('#chips-gear .chip'));
-  const cards = Array.from(document.querySelectorAll('.card'));
-  const empty = document.getElementById('empty');
-  const gearLabel = { none: 'No-equipment', mat: 'Mat-only', band: 'Resistance-band', dumbbell: 'Dumbbell', cable: 'Cable-machine', kettlebell: 'Kettlebell' };
-  let activeCat = 'all';
-  let activeGear = 'any';
 
-  // Per-chip counts for gear row (kept honest — "soon" for empty ones)
-  gearChips.forEach(chip => {
-    const g = chip.dataset.gear;
-    const n = g === 'any' ? cards.length : cards.filter(c => c.dataset.gear.split(' ').includes(g)).length;
-    if (n > 0) { chip.classList.add('count'); chip.dataset.count = n; }
-    else if (g !== 'any') chip.classList.add('zero');
-  });
+  const q = document.getElementById('q');
+  const ft = document.getElementById('ftoggle');
+  const fl = document.getElementById('filters');
+  const badge = document.getElementById('fbadge');
+  const grid = document.getElementById('grid');
+  const empty = document.getElementById('empty');
+  const cards = [...grid.querySelectorAll('.card')];
+  let goals = new Set(), gears = new Set();
 
   function apply() {
-    const text = q.value.trim().toLowerCase();
-    let visible = 0;
-    cards.forEach(card => {
-      const catMatch = activeCat === 'all' || card.dataset.cat.split(' ').includes(activeCat);
-      const gearMatch = activeGear === 'any' || card.dataset.gear.split(' ').includes(activeGear);
-      const textMatch = !text || (card.dataset.tags + ' ' + card.querySelector('h2').textContent + ' ' + card.querySelector('.desc').textContent).toLowerCase().includes(text);
-      const show = catMatch && gearMatch && textMatch;
-      card.style.display = show ? 'flex' : 'none';
-      if (show) visible++;
-    });
-    if (visible) {
-      empty.style.display = 'none';
-    } else {
-      const gearActive = activeGear !== 'any';
-      const gearName = gearLabel[activeGear] || '';
-      empty.innerHTML = gearActive && !cards.some(c => c.dataset.gear.split(' ').includes(activeGear))
-        ? '<b>No ' + gearName.toLowerCase() + ' guides yet.</b><br/>The library is built reel-by-reel — this filter will light up as soon as a guide lands.'
-        : 'No guides match that search. Try a different term or reset the filters.';
-      empty.style.display = 'block';
+    const term = q.value.trim().toLowerCase();
+    let shown = 0;
+    for (const c of cards) {
+      const t = c.dataset.tags.toLowerCase();
+      const cat = c.dataset.cat.split(' ');
+      const gear = c.dataset.gear.split(' ');
+      const okTerm = !term || t.includes(term);
+      const okGoal = goals.size === 0 || [...goals].every(g => cat.some(w => w === g));
+      const okGear = gears.size === 0 || [...gears].every(g => gear.includes(g));
+      const ok = okTerm && okGoal && okGear;
+      c.style.display = ok ? '' : 'none';
+      if (ok) shown++;
     }
+    const n = goals.size + gears.size;
+    badge.style.display = n ? '' : 'none';
+    badge.textContent = n;
+    empty.style.display = shown ? 'none' : '';
+    grid.style.display = shown ? '' : 'none';
   }
 
-  catChips.forEach(chip => chip.addEventListener('click', () => {
-    if (chip.classList.contains('active')) return;
-    catChips.forEach(c => c.classList.remove('active'));
-    chip.classList.add('active');
-    activeCat = chip.dataset.cat;
+  function toggleFilter(type, val, btn) {
+    const set = type === 'g' ? goals : gears;
+    if (set.has(val)) { set.delete(val); btn.classList.remove('on'); }
+    else { set.add(val); btn.classList.add('on'); }
     apply();
-  }));
-  gearChips.forEach(chip => chip.addEventListener('click', () => {
-    if (chip.classList.contains('active')) return;
-    gearChips.forEach(c => c.classList.remove('active'));
-    chip.classList.add('active');
-    activeGear = chip.dataset.gear;
+  }
+
+  function clearAll() {
+    q.value = ''; goals = new Set(); gears = new Set();
+    document.querySelectorAll('.chip').forEach(c => c.classList.remove('on'));
     apply();
-  }));
+  }
+
+  document.querySelectorAll('.chip.goal').forEach(b => b.addEventListener('click', () => toggleFilter('g', b.dataset.g, b)));
+  document.querySelectorAll('.chip.gear').forEach(b => b.addEventListener('click', () => toggleFilter('e', b.dataset.g, b)));
+  document.getElementById('clear').addEventListener('click', clearAll);
+  ft.addEventListener('click', () => {
+    const open = fl.style.maxHeight !== '0px';
+    fl.style.maxHeight = open ? '0px' : fl.scrollHeight + 'px';
+    ft.classList.toggle('open');
+  });
   q.addEventListener('input', apply);
 </script>
 </body>
