@@ -372,5 +372,26 @@
       "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
     ],
     "search": "trevor shan mobility morning thoracic swing full body rotation Trevor Shan — Morning Mobility &amp; Thoracic Swing Flow"
+  },
+  "core-circuit-tucks-climbers-stretch": {
+    "title": "Core Circuit — Tucks · Climbers · Stretch",
+    "desc": "3 bodyweight moves on a mat — seated knee tucks for lower abs, mountain climbers for dynamic core + hip flexors, standing neck/chest stretch to close. From Guy's session footage.",
+    "tags": [
+      "Core",
+      "Bodyweight",
+      "Mat only",
+      "No equipment"
+    ],
+    "cat": "core",
+    "gear": [
+      "mat",
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><polyline points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"/></svg>3 exercises",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>Mat · no equipment",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M9 12 l3 3 l4-5\"/><path d=\"M12 3 a9 9 0 1 1 -9 9\"/></svg>Session footage"
+    ],
+    "search": "core circuit tucks climbers stretch bodyweight seated knee tuck mountain climber neck chest stretch session footage Core Circuit — Tucks Climbers Stretch"
   }
 }
