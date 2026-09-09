@@ -393,5 +393,42 @@
       "<svg viewBox=\"0 0 24 24\"><path d=\"M9 12 l3 3 l4-5\"/><path d=\"M12 3 a9 9 0 1 1 -9 9\"/></svg>Session footage"
     ],
     "search": "core circuit tucks climbers stretch bodyweight seated knee tuck mountain climber neck chest stretch session footage Core Circuit — Tucks Climbers Stretch"
+  },
+  "carpal-tunnel-prevention-wrist-stretches": {
+    "title": "Carpal Tunnel Prevention — 4 Wrist & Nerve Stretches",
+    "desc": "Anti-carpal-tunnel routine from a working nail tech (@mai.nailsdone): wrist extension, wrist-flexion 'Egyptians', nerve-flossing arm twist, finger hooks. 10 slow reps each, ~3 min — salon- and desk-friendly.",
+    "tags": [
+      "Mobility",
+      "Rehab",
+      "No equipment"
+    ],
+    "cat": "rehab mobility",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><polyline points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"/></svg>4 moves",
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~3 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "carpal tunnel wrist pain nerve flossing wrist flexion extension finger hooks nail tech desk ergonomics mai nailsdone stretches"
+  },
+  "core-circuit-boat-hollow-crunch-plank": {
+    "title": "Core Circuit — Boat · Hollow · Crunch · Reverse Crunch · Plank",
+    "desc": "33-second bodyweight core circuit from session footage: tucked-boat to hollow flow, crunches, reverse crunches, forearm plank — kneel, reset, repeat for rounds. Mat optional.",
+    "tags": [
+      "Core",
+      "Bodyweight"
+    ],
+    "cat": "core",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><polyline points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"/></svg>4 moves",
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~30s / round",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "core abs boat hollow body crunch reverse crunch forearm plank bodyweight circuit session footage"
   }
 }

@@ -25,6 +25,8 @@ Self-contained, offline-capable fitness workout guides (dark-themed HTML, GIFs i
 - **Solo Core & Plank Routine** — 5 bodyweight moves from session footage: tuck hold · V-ups (jackknife) · crunches · forearm plank · plank knee tucks. Strict core control, no equipment → `solo-core-plank-routine/`
 - **4 Counter-Exercises for Desk Workers** — hip flexor stretch, TVA brace, lower trap Y-raise, shoulder external rotation, each with beginner→advanced progressions. From Skyler Felt (@skylerfelt) → `desk-worker-counter-exercises/`
 - **Elbows-on-Box Stretch: Thoracic vs Lat** — one setup, two targets: drop the chest for the mid-back, or elbows in V + round the back to hit tight lats. 5 deep breaths each → `elbows-on-box-stretch/`
+- **Carpal Tunnel Prevention — 4 Wrist & Nerve Stretches** — anti-carpal-tunnel routine from a working nail tech (@mai.nailsdone): wrist extension, wrist-flexion 'Egyptians', nerve-flossing arm twist, finger hooks. 10 slow reps each, ~3 min, no equipment → `carpal-tunnel-prevention-wrist-stretches/`
+- **Core Circuit — Boat · Hollow · Crunch · Reverse Crunch · Plank** — 33-second bodyweight core circuit from session footage: tucked-boat to hollow flow, crunches, reverse crunches, forearm plank. Kneel, reset, repeat for rounds → `core-circuit-boat-hollow-crunch-plank/`
 
 ## Index
 
