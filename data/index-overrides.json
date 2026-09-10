@@ -430,5 +430,26 @@
       "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
     ],
     "search": "core abs boat hollow body crunch reverse crunch forearm plank bodyweight circuit session footage"
+  },
+  "extreme-isometric-glute-minimus": {
+    "title": "Extreme Isometric Glute Minimus Re-Pattern",
+    "desc": "J. Schroder-style long-duration isometric lunge holds (60-90s per side) to stop TFL/quad/hip-flexor compensation and re-pattern a dysfunctional glute minimus. Nervous-system work, not strength work. From Guy's saved reel.",
+    "tags": [
+      "Hips",
+      "Mobility",
+      "Rehab",
+      "Isometrics",
+      "No equipment"
+    ],
+    "cat": "hips rehab mobility",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>2 holds",
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>60–90s / side",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "extreme isometric glute minimus hip stability lunge hold isometric TFL quad tendon hip flexor anterior chain J Schroder nervous system re-patterning no equipment"
   }
 }
