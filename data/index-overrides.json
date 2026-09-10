@@ -451,5 +451,25 @@
       "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
     ],
     "search": "extreme isometric glute minimus hip stability lunge hold isometric TFL quad tendon hip flexor anterior chain J Schroder nervous system re-patterning no equipment"
+  },
+  "field-mobility-down-dog-pigeon": {
+    "title": "Field Mobility — Down-Dog Pike & Pigeon Pose",
+    "desc": "A Yomiuri Giants player's pre-work field routine: downward-dog pike for the posterior chain (hamstrings, calves, shoulders), pigeon pose for glutes and hip flexors. No equipment, 2-3 min. From @kenzo_kenko1.",
+    "tags": [
+      "Mobility",
+      "Hips",
+      "Lower Back",
+      "No equipment"
+    ],
+    "cat": "mobility hips",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>2 stretches",
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>2–3 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "field mobility down dog pike pigeon pose hamstrings calves glutes hip flexors Yomiuri Giants baseball kenzo warm up posterior chain no equipment"
   }
 }
