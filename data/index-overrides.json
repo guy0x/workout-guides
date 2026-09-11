@@ -1,535 +1,704 @@
 {
- "5-best-core-workouts": {
-  "title": "The 5 Best Core Workouts",
-  "desc": "Evidence-based mat core circuit: forearm plank, side plank, bird dog, dead bug, McGill curl-up. Just a mat.",
-  "tags": [
-   "Core",
-   "Mat Only",
-   "Mat only"
-  ],
-  "cat": "core",
-  "gear": [
-   "mat"
-  ],
-  "meta": [
-   "<svg viewBox=\"0 0 24 24\"><polyline points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"/></svg>5 exercises",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>Mat only"
-  ],
-  "search": "core abs plank bird dog dead bug mcgill mat The 5 Best Core Workouts"
- },
- "ankle-grip-mobility-progression": {
-  "title": "Ankle-Grip Mobility — 10-Move Progression",
-  "desc": "10 mobility moves on one connective cue — grip the ankles and drive joints through end range: rocks, roller bridges, cone clearances, hero pose, bridge finisher. From @garcia_effect_official.",
-  "tags": [
-   "Mobility",
-   "Legs & Knees"
-  ],
-  "cat": "mobility legs",
-  "gear": [
-   "none"
-  ],
-  "meta": [
-   "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~10 min",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>10 moves",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
-  ],
-  "search": "ankle grip mobility progression garcia effect ankles hips foam roller cones Ankle-Grip Mobility — 10-Move Progression"
- },
- "chest-lats-shoulders-30-min": {
-  "title": "30-Min Gym Upper Body — Chest · Lats · Shoulders",
-  "desc": "7-exercise, 3-block gym session: DB bench press, push-up, cable pulldown, bent-over row, overhead press, lateral raise, biceps curl.",
-  "tags": [
-   "Gym",
-   "Upper Body",
-   "Dumbbells",
-   "Cable"
-  ],
-  "cat": "upper gym",
-  "gear": [
-   "dumbbell",
-   "cable"
-  ],
-  "meta": [
-   "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~30 min",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>7 exercises",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M6 7 h12 M6 17 h12 M9 3 v18 M15 3 v18\"/></svg>Dumbbells + cable"
-  ],
-  "search": "gym chest lats shoulders dumbbell upper body 30 min cable bench 30-Min Gym Upper Body — Chest · Lats · Shoulders"
- },
- "depth-squat": {
-  "title": "Deep Squat Mobility Workout",
-  "desc": "13-station deep squat routine to open hips, ankles and trunk. From @cali.hoss — no equipment needed.",
-  "tags": [
-   "Legs &amp; Knees",
-   "Mobility"
-  ],
-  "cat": "legs mobility",
-  "gear": [
-   "none"
-  ],
-  "meta": [
-   "<svg viewBox=\"0 0 24 24\"><polyline points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"/></svg>13 exercises",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
-  ],
-  "search": "squat depth legs mobility cali.hoss ankle hips Deep Squat Mobility Workout"
- },
- "desk-worker-counter-exercises": {
-  "title": "4 Counter-Exercises for Desk Workers",
-  "desc": "Hip flexor stretch, TVA brace, lower trap Y-raise, shoulder external rotation — each with beginner→advanced progressions. From @skylerfelt.",
-  "tags": [
-   "Mobility",
-   "Posture"
-  ],
-  "cat": "mobility core",
-  "gear": [
-   "none"
-  ],
-  "meta": [
-   "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~5 min",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 exercises",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
-  ],
-  "search": "desk worker posture hip flexor tva lower trap external rotation skylerfelt sitting counter exercise 4 Counter-Exercises for Desk Workers"
- },
- "elbows-on-box-stretch": {
-  "title": "Elbows-on-Box Stretch: Thoracic vs Lat",
-  "desc": "One setup, two targets — drop the chest for the thoracic mid-back, or elbows in a V + round the back to hit tight lats. 5 deep breaths each.",
-  "tags": [
-   "Mobility",
-   "Posture",
-   "No equipment"
-  ],
-  "cat": "mobility",
-  "gear": [
-   "none",
-   "bench",
-   "box"
-  ],
-  "meta": [
-   "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~2 min",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>2 ways",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M6 7 h12 M6 17 h12 M9 3 v18 M15 3 v18\"/></svg>Box/bench"
-  ],
-  "search": "elbows box thoracic spine lats mid-back stretch mobility posture bench Elbows-on-Box Stretch: Thoracic vs Lat"
- },
- "knee-morning-pt": {
-  "title": "Knee Morning PT — Daily ACL Rehab Routine",
-  "desc": "~15 min daily block: backwards walking, wall-sit ball squeeze, ball-behind-knee extension, VMO band work, floor drills, stair/landing triads.",
-  "tags": [
-   "Rehab",
-   "Legs &amp; Knees",
-   "Band"
-  ],
-  "cat": "rehab legs",
-  "gear": [
-   "band"
-  ],
-  "meta": [
-   "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~15 min",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>Daily",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>Band + ball"
-  ],
-  "search": "knee acl rehab morning pt physical therapy elastic band ball vmo Knee Morning PT — Daily ACL Rehab Routine"
- },
- "lower-back-4-exercises": {
-  "title": "Lower Back — 4 Exercises, Not More Stretches",
-  "desc": "Windshield wipers, ankle-grip glute bridge, wide-stance glute bridge, straight leg raise — bodyweight lower-back strengthening over passive stretching. From @lennycalisthenics.",
-  "tags": [
-   "Mobility",
-   "Lower Back"
-  ],
-  "cat": "mobility legs",
-  "gear": [
-   "none"
-  ],
-  "meta": [
-   "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~5 min",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 exercises",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
-  ],
-  "search": "lower back lennycalisthenics windshield wipers glute bridge straight leg raise stretches Lower Back — 4 Exercises, Not More Stretches"
- },
- "mastery-01-legs-knees": {
-  "title": "Mastery 1 · Legs &amp; Knees",
-  "desc": "4 movements, no equipment, ~20 min. Foundation of the \"Mastery in 20 Movements\" series.",
-  "tags": [
-   "Mastery",
-   "Legs &amp; Knees"
-  ],
-  "cat": "mastery legs",
-  "gear": [
-   "none"
-  ],
-  "meta": [
-   "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~20 min",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 movements",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
-  ],
-  "search": "mastery legs knees 20 min no equipment Mastery 1 · Legs &amp; Knees"
- },
- "mastery-02-core-abs": {
-  "title": "Mastery 2 · Core &amp; Abs",
-  "desc": "4 movements, mat only, ~20 min. Mastery in 20 Movements — part two.",
-  "tags": [
-   "Mastery",
-   "Core",
-   "Mat only"
-  ],
-  "cat": "mastery core",
-  "gear": [
-   "mat"
-  ],
-  "meta": [
-   "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~20 min",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 movements",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>Mat only"
-  ],
-  "search": "mastery core abs 20 min mat Mastery 2 · Core &amp; Abs"
- },
- "mastery-03-obliques-rotation": {
-  "title": "Mastery 3 · Obliques &amp; Rotation",
-  "desc": "4 movements, mat only, ~20 min. Mastery in 20 Movements — part three.",
-  "tags": [
-   "Mastery",
-   "Core",
-   "Mat only"
-  ],
-  "cat": "mastery core",
-  "gear": [
-   "mat"
-  ],
-  "meta": [
-   "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~20 min",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 movements",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>Mat only"
-  ],
-  "search": "mastery obliques rotation core 20 min mat Mastery 3 · Obliques &amp; Rotation"
- },
- "mastery-04-shoulders-spine": {
-  "title": "Mastery 4 · Shoulders &amp; Spine",
-  "desc": "4 movements, no equipment, ~20 min. Mastery in 20 Movements — part four.",
-  "tags": [
-   "Mastery",
-   "Upper Body"
-  ],
-  "cat": "mastery upper mobility",
-  "gear": [
-   "none"
-  ],
-  "meta": [
-   "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~20 min",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 movements",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
-  ],
-  "search": "mastery shoulders spine 20 min no equipment Mastery 4 · Shoulders &amp; Spine"
- },
- "mastery-05-hips-balance": {
-  "title": "Mastery 5 · Hips &amp; Balance",
-  "desc": "4 movements, no equipment, ~20 min. Mastery in 20 Movements — part five.",
-  "tags": [
-   "Mastery",
-   "Hips"
-  ],
-  "cat": "mastery hips",
-  "gear": [
-   "none"
-  ],
-  "meta": [
-   "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~20 min",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 movements",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
-  ],
-  "search": "mastery hips balance 20 min no equipment Mastery 5 · Hips &amp; Balance"
- },
- "mobility-from-zero-4-exercises": {
-  "title": "Rebuild Mobility From Zero — 4 Exercises",
-  "desc": "Lunge-to-fold, hip-lift toe taps, prone arch ↔ forearm plank flow, kneeling diagonal stretch — the 4 moves to restart full mobility from nothing. From @leo.moves.",
-  "tags": [
-   "Mobility",
-   "Beginner"
-  ],
-  "cat": "mobility",
-  "gear": [
-   "none"
-  ],
-  "meta": [
-   "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~6 min",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 exercises",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
-  ],
-  "search": "mobility from zero rebuild leo.moves leomoves lunge forward fold toe taps prone arch plank kneeling diagonal Rebuild Mobility From Zero — 4 Exercises"
- },
- "morning-mobility-reset": {
-  "title": "Morning Mobility Reset — 14 Moves",
-  "desc": "One morning flow from 5 coaches: dead hang, deep squat, couch stretch, 90/90 switches, APT reset (reverse lean · half-camel · tabletop lift · psoas rock · hamstring fold), golf hip CARs (standing · quadruped · seated), big-toe drive, kettlebell halos. ~12 min.",
-  "tags": [
-   "Mobility",
-   "Lower Back",
-   "Hips",
-   "No equipment",
-   "Kettlebell"
-  ],
-  "cat": "mobility hips",
-  "gear": [
-   "none",
-   "kettlebell"
-  ],
-  "meta": [
-   "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~12 min",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>14 moves",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M6 7 h12 M6 17 h12 M9 3 v18 M15 3 v18\"/></svg>Mat + optional KB"
-  ],
-  "search": "morning mobility reset decompress spine hips dead hang deep squat couch stretch 90/90 antwan rarcus anterior pelvic tilt markus kneissl golf hip cars builtfitgolf brett sherman big toe garcia effect kettlebell halos taigen hegberg Morning Mobility Reset — 14 Moves"
- },
- "nervous-system-reset": {
-  "title": "Nervous System Reset — 5-Step Somatic Release",
-  "desc": "Free the gut, release glutes, open armpits, expose throat, wake hands &amp; feet. A ~60 second down-regulation routine from @shrednoir.",
-  "tags": [
-   "Mobility",
-   "Recovery"
-  ],
-  "cat": "mobility",
-  "gear": [
-   "none"
-  ],
-  "meta": [
-   "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~60s",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>5 steps",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
-  ],
-  "search": "nervous system reset somatic shrednoir stress recovery down regulation Nervous System Reset — 5-Step Somatic Release"
- },
- "prawn-posture-4-tests": {
-  "title": "Fix Your Prawn Posture — 4 Mobility Tests",
-  "desc": "Diagnose why sitting upright hurts: seated good morning, deep squat, cobra, superman — with fixes. From Dr. Andrew Harkin.",
-  "tags": [
-   "Mobility",
-   "Posture"
-  ],
-  "cat": "mobility",
-  "gear": [
-   "none"
-  ],
-  "meta": [
-   "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~10 min",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 tests",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
-  ],
-  "search": "prawn posture harkin mobility back sitting Fix Your Prawn Posture — 4 Mobility Tests"
- },
- "solo-core-plank-routine": {
-  "title": "Solo Core &amp; Plank Routine — 5 Bodyweight Moves",
-  "desc": "5 bodyweight moves on a mat — hold the tuck and planks for time, keep V-ups and crunches slow and controlled. From Guy's own session footage.",
-  "tags": [
-   "Core",
-   "Bodyweight",
-   "Mat only",
-   "No equipment"
-  ],
-  "cat": "core",
-  "gear": [
-   "mat",
-   "none"
-  ],
-  "meta": [
-   "<svg viewBox=\"0 0 24 24\"><polyline points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"/></svg>5 exercises",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>Mat · no equipment",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M9 12 l3 3 l4-5\"/><path d=\"M12 3 a9 9 0 1 1 -9 9\"/></svg>Session footage"
-  ],
-  "search": "solo core plank routine bodyweight tuck v-ups crunches session footage Solo Core &amp; Plank Routine — 5 Bodyweight Moves"
- },
- "train-your-hips-hard": {
-  "title": "Train Your Hips Hard — 6-Move Mobility Challenge",
-  "desc": "Quadruped frog, tall kneeling lean &amp; rotation, seated 90-90, half-kneeling lunges, deep squat hold — 1 min each, 3 rounds, 21 days. From @mr.highlevel_.",
-  "tags": [
-   "Hips",
-   "Mobility"
-  ],
-  "cat": "hips mobility",
-  "gear": [
-   "none"
-  ],
-  "meta": [
-   "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~6 min",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>6 moves",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
-  ],
-  "search": "mr.highlevel hips mobility challenge 21 day frog 90-90 lunge squat Train Your Hips Hard — 6-Move Mobility Challenge"
- },
- "trevor-shan-mobility": {
-  "title": "Trevor Shan — Morning Mobility &amp; Thoracic Swing Flow",
-  "desc": "11-exercise full-body morning mobility and rotational swing protocol. From @trevorsinstinct.",
-  "tags": [
-   "Mobility",
-   "Full Body"
-  ],
-  "cat": "mobility",
-  "gear": [
-   "none"
-  ],
-  "meta": [
-   "<svg viewBox=\"0 0 24 24\"><polyline points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"/></svg>11 exercises",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
-  ],
-  "search": "trevor shan mobility morning thoracic swing full body rotation Trevor Shan — Morning Mobility &amp; Thoracic Swing Flow"
- },
- "core-circuit-tucks-climbers-stretch": {
-  "title": "Core Circuit — Tucks · Climbers · Stretch",
-  "desc": "3 bodyweight moves on a mat — seated knee tucks for lower abs, mountain climbers for dynamic core + hip flexors, standing neck/chest stretch to close. From Guy's session footage.",
-  "tags": [
-   "Core",
-   "Bodyweight",
-   "Mat only",
-   "No equipment"
-  ],
-  "cat": "core",
-  "gear": [
-   "mat",
-   "none"
-  ],
-  "meta": [
-   "<svg viewBox=\"0 0 24 24\"><polyline points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"/></svg>3 exercises",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>Mat · no equipment",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M9 12 l3 3 l4-5\"/><path d=\"M12 3 a9 9 0 1 1 -9 9\"/></svg>Session footage"
-  ],
-  "search": "core circuit tucks climbers stretch bodyweight seated knee tuck mountain climber neck chest stretch session footage Core Circuit — Tucks Climbers Stretch"
- },
- "carpal-tunnel-prevention-wrist-stretches": {
-  "title": "Carpal Tunnel Prevention — 4 Wrist & Nerve Stretches",
-  "desc": "Anti-carpal-tunnel routine from a working nail tech (@mai.nailsdone): wrist extension, wrist-flexion 'Egyptians', nerve-flossing arm twist, finger hooks. 10 slow reps each, ~3 min — salon- and desk-friendly.",
-  "tags": [
-   "Mobility",
-   "Rehab",
-   "No equipment"
-  ],
-  "cat": "rehab mobility",
-  "gear": [
-   "none"
-  ],
-  "meta": [
-   "<svg viewBox=\"0 0 24 24\"><polyline points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"/></svg>4 moves",
-   "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~3 min",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
-  ],
-  "search": "carpal tunnel wrist pain nerve flossing wrist flexion extension finger hooks nail tech desk ergonomics mai nailsdone stretches"
- },
- "core-circuit-boat-hollow-crunch-plank": {
-  "title": "Core Circuit — Boat · Hollow · Crunch · Reverse Crunch · Plank",
-  "desc": "33-second bodyweight core circuit from session footage: tucked-boat to hollow flow, crunches, reverse crunches, forearm plank — kneel, reset, repeat for rounds. Mat optional.",
-  "tags": [
-   "Core",
-   "Bodyweight"
-  ],
-  "cat": "core",
-  "gear": [
-   "none"
-  ],
-  "meta": [
-   "<svg viewBox=\"0 0 24 24\"><polyline points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"/></svg>4 moves",
-   "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~30s / round",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
-  ],
-  "search": "core abs boat hollow body crunch reverse crunch forearm plank bodyweight circuit session footage"
- },
- "extreme-isometric-glute-minimus": {
-  "title": "Extreme Isometric Glute Minimus Re-Pattern",
-  "desc": "J. Schroder-style long-duration isometric lunge holds (60-90s per side) to stop TFL/quad/hip-flexor compensation and re-pattern a dysfunctional glute minimus. Nervous-system work, not strength work. From Guy's saved reel.",
-  "tags": [
-   "Hips",
-   "Mobility",
-   "Rehab",
-   "Isometrics",
-   "No equipment"
-  ],
-  "cat": "hips rehab mobility",
-  "gear": [
-   "none"
-  ],
-  "meta": [
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>2 holds",
-   "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>60–90s / side",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
-  ],
-  "search": "extreme isometric glute minimus hip stability lunge hold isometric TFL quad tendon hip flexor anterior chain J Schroder nervous system re-patterning no equipment"
- },
- "field-mobility-down-dog-pigeon": {
-  "title": "Field Mobility — Down-Dog Pike & Pigeon Pose",
-  "desc": "A Yomiuri Giants player's pre-work field routine: downward-dog pike for the posterior chain (hamstrings, calves, shoulders), pigeon pose for glutes and hip flexors. No equipment, 2-3 min. From @kenzo_kenko1.",
-  "tags": [
-   "Mobility",
-   "Hips",
-   "Lower Back",
-   "No equipment"
-  ],
-  "cat": "mobility hips",
-  "gear": [
-   "none"
-  ],
-  "meta": [
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>2 stretches",
-   "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>2–3 min",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
-  ],
-  "search": "field mobility down dog pike pigeon pose hamstrings calves glutes hip flexors Yomiuri Giants baseball kenzo warm up posterior chain no equipment"
- },
- "daily-leg-strength-balance-routine": {
-  "title": "Daily Leg Strength & Balance — No Equipment",
-  "desc": "Dr. Jonathan Schutza's (PT) daily no-equipment leg routine: 20 wall deep squats, 30 wall calf raises, 20 chair-assisted single-leg lateral hops per leg, 20 heel-elevated split squats per side. Strength + balance + coordination, ~5 min, wall and chair only.",
-  "tags": [
-   "Legs",
-   "Balance",
-   "Strength",
-   "No equipment"
-  ],
-  "cat": "legs mobility",
-  "gear": [
-   "wall",
-   "chair"
-  ],
-  "meta": [
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 moves",
-   "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~5 min",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>Wall + chair",
-   "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>Daily"
-  ],
-  "search": "legs strength balance coordination squats calf raises hops split squats schutza wall chair"
- },
- "quadratus-lumborum-release-rebuild": {
-  "title": "Quadratus Lumborum — Release & Rebuild",
-  "desc": "8 moves for one-sided low back pain: release the QL (table side-bend dip, seated straddle side bend, windshield wipers, cross-leg side drop), then build anti-side-bend strength (side plank, bird dog, glute-medius table lift, towel knee-lift). From @theanatomyoftherapy.",
-  "tags": [
-   "Rehab",
-   "Lower Back",
-   "Core"
-  ],
-  "cat": "rehab core",
-  "gear": [
-   "none"
-  ],
-  "meta": [
-   "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~15 min",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>8 moves",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
-  ],
-  "search": "quadratus lumborum ql lower back one-sided low back pain side bend table dip straddle windshield wipers side plank bird dog glute medius towel knee lift anatomyoftherapy rehab Quadratus Lumborum — Release & Rebuild"
- },
- "flat-feet-overpronation-banded-calf-raise": {
-  "title": "Flat Feet & Over-Pronation — Banded Offset Calf Raise",
-  "desc": "One band, one drill: wrap the heel, anchor under the far foot, then offset calf raise against the pull to train hindfoot inversion/supination. Plus the first-metatarsal and toe-splay cues that make it work. From @eb__dpt.",
-  "tags": [
-   "Rehab",
-   "Feet & Ankles",
-   "Band"
-  ],
-  "cat": "rehab legs",
-  "gear": [
-   "band"
-  ],
-  "meta": [
-   "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~10 min",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>7 cards",
-   "<svg viewBox=\"0 0 24 24\"><path d=\"M6 7 h12 M6 17 h12 M9 3 v18 M15 3 v18\"/></svg>Resistance band"
-  ],
-  "search": "flat feet overpronation over-pronation pronation arch collapse fallen arch banded calf raise hindfoot inversion supination first metatarsal toe splay big toe abduction barefoot ankle eb__dpt rehab Flat Feet & Over-Pronation — Banded Offset Calf Raise"
- }
+  "5-best-core-workouts": {
+    "title": "The 5 Best Core Workouts",
+    "desc": "Evidence-based mat core circuit: forearm plank, side plank, bird dog, dead bug, McGill curl-up. Just a mat.",
+    "tags": [
+      "Core",
+      "Mat Only",
+      "Mat only"
+    ],
+    "cat": "core",
+    "gear": [
+      "mat"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><polyline points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"/></svg>5 exercises",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>Mat only"
+    ],
+    "search": "core abs plank bird dog dead bug mcgill mat The 5 Best Core Workouts"
+  },
+  "ankle-grip-mobility-progression": {
+    "title": "Ankle-Grip Mobility — 10-Move Progression",
+    "desc": "10 mobility moves on one connective cue — grip the ankles and drive joints through end range: rocks, roller bridges, cone clearances, hero pose, bridge finisher. From @garcia_effect_official.",
+    "tags": [
+      "Mobility",
+      "Legs & Knees"
+    ],
+    "cat": "mobility legs",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~10 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>10 moves",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "ankle grip mobility progression garcia effect ankles hips foam roller cones Ankle-Grip Mobility — 10-Move Progression"
+  },
+  "chest-lats-shoulders-30-min": {
+    "title": "30-Min Gym Upper Body — Chest · Lats · Shoulders",
+    "desc": "7-exercise, 3-block gym session: DB bench press, push-up, cable pulldown, bent-over row, overhead press, lateral raise, biceps curl.",
+    "tags": [
+      "Gym",
+      "Upper Body",
+      "Dumbbells",
+      "Cable"
+    ],
+    "cat": "upper gym",
+    "gear": [
+      "dumbbell",
+      "cable"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~30 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>7 exercises",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M6 7 h12 M6 17 h12 M9 3 v18 M15 3 v18\"/></svg>Dumbbells + cable"
+    ],
+    "search": "gym chest lats shoulders dumbbell upper body 30 min cable bench 30-Min Gym Upper Body — Chest · Lats · Shoulders"
+  },
+  "depth-squat": {
+    "title": "Deep Squat Mobility Workout",
+    "desc": "13-station deep squat routine to open hips, ankles and trunk. From @cali.hoss — no equipment needed.",
+    "tags": [
+      "Legs &amp; Knees",
+      "Mobility"
+    ],
+    "cat": "legs mobility",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><polyline points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"/></svg>13 exercises",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "squat depth legs mobility cali.hoss ankle hips Deep Squat Mobility Workout"
+  },
+  "desk-worker-counter-exercises": {
+    "title": "4 Counter-Exercises for Desk Workers",
+    "desc": "Hip flexor stretch, TVA brace, lower trap Y-raise, shoulder external rotation — each with beginner→advanced progressions. From @skylerfelt.",
+    "tags": [
+      "Mobility",
+      "Posture"
+    ],
+    "cat": "mobility core",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~5 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 exercises",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "desk worker posture hip flexor tva lower trap external rotation skylerfelt sitting counter exercise 4 Counter-Exercises for Desk Workers"
+  },
+  "elbows-on-box-stretch": {
+    "title": "Elbows-on-Box Stretch: Thoracic vs Lat",
+    "desc": "One setup, two targets — drop the chest for the thoracic mid-back, or elbows in a V + round the back to hit tight lats. 5 deep breaths each.",
+    "tags": [
+      "Mobility",
+      "Posture",
+      "No equipment"
+    ],
+    "cat": "mobility",
+    "gear": [
+      "none",
+      "bench",
+      "box"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~2 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>2 ways",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M6 7 h12 M6 17 h12 M9 3 v18 M15 3 v18\"/></svg>Box/bench"
+    ],
+    "search": "elbows box thoracic spine lats mid-back stretch mobility posture bench Elbows-on-Box Stretch: Thoracic vs Lat"
+  },
+  "knee-morning-pt": {
+    "title": "Knee Morning PT — Daily ACL Rehab Routine",
+    "desc": "~15 min daily block: backwards walking, wall-sit ball squeeze, ball-behind-knee extension, VMO band work, floor drills, stair/landing triads.",
+    "tags": [
+      "Rehab",
+      "Legs &amp; Knees",
+      "Band"
+    ],
+    "cat": "rehab legs",
+    "gear": [
+      "band"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~15 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>Daily",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>Band + ball"
+    ],
+    "search": "knee acl rehab morning pt physical therapy elastic band ball vmo Knee Morning PT — Daily ACL Rehab Routine"
+  },
+  "lower-back-4-exercises": {
+    "title": "Lower Back — 4 Exercises, Not More Stretches",
+    "desc": "Windshield wipers, ankle-grip glute bridge, wide-stance glute bridge, straight leg raise — bodyweight lower-back strengthening over passive stretching. From @lennycalisthenics.",
+    "tags": [
+      "Mobility",
+      "Lower Back"
+    ],
+    "cat": "mobility legs",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~5 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 exercises",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "lower back lennycalisthenics windshield wipers glute bridge straight leg raise stretches Lower Back — 4 Exercises, Not More Stretches"
+  },
+  "mastery-01-legs-knees": {
+    "title": "Mastery 1 · Legs &amp; Knees",
+    "desc": "4 movements, no equipment, ~20 min. Foundation of the \"Mastery in 20 Movements\" series.",
+    "tags": [
+      "Mastery",
+      "Legs &amp; Knees"
+    ],
+    "cat": "mastery legs",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~20 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 movements",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "mastery legs knees 20 min no equipment Mastery 1 · Legs &amp; Knees"
+  },
+  "mastery-02-core-abs": {
+    "title": "Mastery 2 · Core &amp; Abs",
+    "desc": "4 movements, mat only, ~20 min. Mastery in 20 Movements — part two.",
+    "tags": [
+      "Mastery",
+      "Core",
+      "Mat only"
+    ],
+    "cat": "mastery core",
+    "gear": [
+      "mat"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~20 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 movements",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>Mat only"
+    ],
+    "search": "mastery core abs 20 min mat Mastery 2 · Core &amp; Abs"
+  },
+  "mastery-03-obliques-rotation": {
+    "title": "Mastery 3 · Obliques &amp; Rotation",
+    "desc": "4 movements, mat only, ~20 min. Mastery in 20 Movements — part three.",
+    "tags": [
+      "Mastery",
+      "Core",
+      "Mat only"
+    ],
+    "cat": "mastery core",
+    "gear": [
+      "mat"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~20 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 movements",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>Mat only"
+    ],
+    "search": "mastery obliques rotation core 20 min mat Mastery 3 · Obliques &amp; Rotation"
+  },
+  "mastery-04-shoulders-spine": {
+    "title": "Mastery 4 · Shoulders &amp; Spine",
+    "desc": "4 movements, no equipment, ~20 min. Mastery in 20 Movements — part four.",
+    "tags": [
+      "Mastery",
+      "Upper Body"
+    ],
+    "cat": "mastery upper mobility",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~20 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 movements",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "mastery shoulders spine 20 min no equipment Mastery 4 · Shoulders &amp; Spine"
+  },
+  "mastery-05-hips-balance": {
+    "title": "Mastery 5 · Hips &amp; Balance",
+    "desc": "4 movements, no equipment, ~20 min. Mastery in 20 Movements — part five.",
+    "tags": [
+      "Mastery",
+      "Hips"
+    ],
+    "cat": "mastery hips",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~20 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 movements",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "mastery hips balance 20 min no equipment Mastery 5 · Hips &amp; Balance"
+  },
+  "mobility-from-zero-4-exercises": {
+    "title": "Rebuild Mobility From Zero — 4 Exercises",
+    "desc": "Lunge-to-fold, hip-lift toe taps, prone arch ↔ forearm plank flow, kneeling diagonal stretch — the 4 moves to restart full mobility from nothing. From @leo.moves.",
+    "tags": [
+      "Mobility",
+      "Beginner"
+    ],
+    "cat": "mobility",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~6 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 exercises",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "mobility from zero rebuild leo.moves leomoves lunge forward fold toe taps prone arch plank kneeling diagonal Rebuild Mobility From Zero — 4 Exercises"
+  },
+  "morning-mobility-reset": {
+    "title": "Morning Mobility Reset — 14 Moves",
+    "desc": "One morning flow from 5 coaches: dead hang, deep squat, couch stretch, 90/90 switches, APT reset (reverse lean · half-camel · tabletop lift · psoas rock · hamstring fold), golf hip CARs (standing · quadruped · seated), big-toe drive, kettlebell halos. ~12 min.",
+    "tags": [
+      "Mobility",
+      "Lower Back",
+      "Hips",
+      "No equipment",
+      "Kettlebell"
+    ],
+    "cat": "mobility hips",
+    "gear": [
+      "none",
+      "kettlebell"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~12 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>14 moves",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M6 7 h12 M6 17 h12 M9 3 v18 M15 3 v18\"/></svg>Mat + optional KB"
+    ],
+    "search": "morning mobility reset decompress spine hips dead hang deep squat couch stretch 90/90 antwan rarcus anterior pelvic tilt markus kneissl golf hip cars builtfitgolf brett sherman big toe garcia effect kettlebell halos taigen hegberg Morning Mobility Reset — 14 Moves"
+  },
+  "nervous-system-reset": {
+    "title": "Nervous System Reset — 5-Step Somatic Release",
+    "desc": "Free the gut, release glutes, open armpits, expose throat, wake hands &amp; feet. A ~60 second down-regulation routine from @shrednoir.",
+    "tags": [
+      "Mobility",
+      "Recovery"
+    ],
+    "cat": "mobility",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~60s",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>5 steps",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "nervous system reset somatic shrednoir stress recovery down regulation Nervous System Reset — 5-Step Somatic Release"
+  },
+  "prawn-posture-4-tests": {
+    "title": "Fix Your Prawn Posture — 4 Mobility Tests",
+    "desc": "Diagnose why sitting upright hurts: seated good morning, deep squat, cobra, superman — with fixes. From Dr. Andrew Harkin.",
+    "tags": [
+      "Mobility",
+      "Posture"
+    ],
+    "cat": "mobility",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~10 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 tests",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "prawn posture harkin mobility back sitting Fix Your Prawn Posture — 4 Mobility Tests"
+  },
+  "solo-core-plank-routine": {
+    "title": "Solo Core &amp; Plank Routine — 5 Bodyweight Moves",
+    "desc": "5 bodyweight moves on a mat — hold the tuck and planks for time, keep V-ups and crunches slow and controlled. From Guy's own session footage.",
+    "tags": [
+      "Core",
+      "Bodyweight",
+      "Mat only",
+      "No equipment"
+    ],
+    "cat": "core",
+    "gear": [
+      "mat",
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><polyline points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"/></svg>5 exercises",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>Mat · no equipment",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M9 12 l3 3 l4-5\"/><path d=\"M12 3 a9 9 0 1 1 -9 9\"/></svg>Session footage"
+    ],
+    "search": "solo core plank routine bodyweight tuck v-ups crunches session footage Solo Core &amp; Plank Routine — 5 Bodyweight Moves"
+  },
+  "train-your-hips-hard": {
+    "title": "Train Your Hips Hard — 6-Move Mobility Challenge",
+    "desc": "Quadruped frog, tall kneeling lean &amp; rotation, seated 90-90, half-kneeling lunges, deep squat hold — 1 min each, 3 rounds, 21 days. From @mr.highlevel_.",
+    "tags": [
+      "Hips",
+      "Mobility"
+    ],
+    "cat": "hips mobility",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~6 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>6 moves",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "mr.highlevel hips mobility challenge 21 day frog 90-90 lunge squat Train Your Hips Hard — 6-Move Mobility Challenge"
+  },
+  "trevor-shan-mobility": {
+    "title": "Trevor Shan — Morning Mobility &amp; Thoracic Swing Flow",
+    "desc": "11-exercise full-body morning mobility and rotational swing protocol. From @trevorsinstinct.",
+    "tags": [
+      "Mobility",
+      "Full Body"
+    ],
+    "cat": "mobility",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><polyline points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"/></svg>11 exercises",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "trevor shan mobility morning thoracic swing full body rotation Trevor Shan — Morning Mobility &amp; Thoracic Swing Flow"
+  },
+  "core-circuit-tucks-climbers-stretch": {
+    "title": "Core Circuit — Tucks · Climbers · Stretch",
+    "desc": "3 bodyweight moves on a mat — seated knee tucks for lower abs, mountain climbers for dynamic core + hip flexors, standing neck/chest stretch to close. From Guy's session footage.",
+    "tags": [
+      "Core",
+      "Bodyweight",
+      "Mat only",
+      "No equipment"
+    ],
+    "cat": "core",
+    "gear": [
+      "mat",
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><polyline points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"/></svg>3 exercises",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>Mat · no equipment",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M9 12 l3 3 l4-5\"/><path d=\"M12 3 a9 9 0 1 1 -9 9\"/></svg>Session footage"
+    ],
+    "search": "core circuit tucks climbers stretch bodyweight seated knee tuck mountain climber neck chest stretch session footage Core Circuit — Tucks Climbers Stretch"
+  },
+  "carpal-tunnel-prevention-wrist-stretches": {
+    "title": "Carpal Tunnel Prevention — 4 Wrist & Nerve Stretches",
+    "desc": "Anti-carpal-tunnel routine from a working nail tech (@mai.nailsdone): wrist extension, wrist-flexion 'Egyptians', nerve-flossing arm twist, finger hooks. 10 slow reps each, ~3 min — salon- and desk-friendly.",
+    "tags": [
+      "Mobility",
+      "Rehab",
+      "No equipment"
+    ],
+    "cat": "rehab mobility",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><polyline points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"/></svg>4 moves",
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~3 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "carpal tunnel wrist pain nerve flossing wrist flexion extension finger hooks nail tech desk ergonomics mai nailsdone stretches"
+  },
+  "core-circuit-boat-hollow-crunch-plank": {
+    "title": "Core Circuit — Boat · Hollow · Crunch · Reverse Crunch · Plank",
+    "desc": "33-second bodyweight core circuit from session footage: tucked-boat to hollow flow, crunches, reverse crunches, forearm plank — kneel, reset, repeat for rounds. Mat optional.",
+    "tags": [
+      "Core",
+      "Bodyweight"
+    ],
+    "cat": "core",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><polyline points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"/></svg>4 moves",
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~30s / round",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "core abs boat hollow body crunch reverse crunch forearm plank bodyweight circuit session footage"
+  },
+  "extreme-isometric-glute-minimus": {
+    "title": "Extreme Isometric Glute Minimus Re-Pattern",
+    "desc": "J. Schroder-style long-duration isometric lunge holds (60-90s per side) to stop TFL/quad/hip-flexor compensation and re-pattern a dysfunctional glute minimus. Nervous-system work, not strength work. From Guy's saved reel.",
+    "tags": [
+      "Hips",
+      "Mobility",
+      "Rehab",
+      "Isometrics",
+      "No equipment"
+    ],
+    "cat": "hips rehab mobility",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>2 holds",
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>60–90s / side",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "extreme isometric glute minimus hip stability lunge hold isometric TFL quad tendon hip flexor anterior chain J Schroder nervous system re-patterning no equipment"
+  },
+  "field-mobility-down-dog-pigeon": {
+    "title": "Field Mobility — Down-Dog Pike & Pigeon Pose",
+    "desc": "A Yomiuri Giants player's pre-work field routine: downward-dog pike for the posterior chain (hamstrings, calves, shoulders), pigeon pose for glutes and hip flexors. No equipment, 2-3 min. From @kenzo_kenko1.",
+    "tags": [
+      "Mobility",
+      "Hips",
+      "Lower Back",
+      "No equipment"
+    ],
+    "cat": "mobility hips",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>2 stretches",
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>2–3 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "field mobility down dog pike pigeon pose hamstrings calves glutes hip flexors Yomiuri Giants baseball kenzo warm up posterior chain no equipment"
+  },
+  "daily-leg-strength-balance-routine": {
+    "title": "Daily Leg Strength & Balance — No Equipment",
+    "desc": "Dr. Jonathan Schutza's (PT) daily no-equipment leg routine: 20 wall deep squats, 30 wall calf raises, 20 chair-assisted single-leg lateral hops per leg, 20 heel-elevated split squats per side. Strength + balance + coordination, ~5 min, wall and chair only.",
+    "tags": [
+      "Legs",
+      "Balance",
+      "Strength",
+      "No equipment"
+    ],
+    "cat": "legs mobility",
+    "gear": [
+      "wall",
+      "chair"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 moves",
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~5 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>Wall + chair",
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>Daily"
+    ],
+    "search": "legs strength balance coordination squats calf raises hops split squats schutza wall chair"
+  },
+  "quadratus-lumborum-release-rebuild": {
+    "title": "Quadratus Lumborum — Release & Rebuild",
+    "desc": "8 moves for one-sided low back pain: release the QL (table side-bend dip, seated straddle side bend, windshield wipers, cross-leg side drop), then build anti-side-bend strength (side plank, bird dog, glute-medius table lift, towel knee-lift). From @theanatomyoftherapy.",
+    "tags": [
+      "Rehab",
+      "Lower Back",
+      "Core"
+    ],
+    "cat": "rehab core",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~15 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>8 moves",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "search": "quadratus lumborum ql lower back one-sided low back pain side bend table dip straddle windshield wipers side plank bird dog glute medius towel knee lift anatomyoftherapy rehab Quadratus Lumborum — Release & Rebuild"
+  },
+  "flat-feet-overpronation-banded-calf-raise": {
+    "title": "Flat Feet & Over-Pronation — Banded Offset Calf Raise",
+    "desc": "One band, one drill: wrap the heel, anchor under the far foot, then offset calf raise against the pull to train hindfoot inversion/supination. Plus the first-metatarsal and toe-splay cues that make it work. From @eb__dpt.",
+    "tags": [
+      "Rehab",
+      "Feet & Ankles",
+      "Band"
+    ],
+    "cat": "rehab legs",
+    "gear": [
+      "band"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~10 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>7 cards",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M6 7 h12 M6 17 h12 M9 3 v18 M15 3 v18\"/></svg>Resistance band"
+    ],
+    "search": "flat feet overpronation over-pronation pronation arch collapse fallen arch banded calf raise hindfoot inversion supination first metatarsal toe splay big toe abduction barefoot ankle eb__dpt rehab Flat Feet & Over-Pronation — Banded Offset Calf Raise"
+  },
+  "squat-university-foot-shape-arch-strength": {
+    "title": "Foot Shape & Arch Strength — 4 Exercises",
+    "cat": "rehab legs",
+    "gear": [
+      "none"
+    ],
+    "tags": [
+      "Rehab",
+      "Feet & Ankles"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~8 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 exercises",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "desc": "Squat University's foot-shape assessment and arch-strength drills: short foot, toe splay, arch doming and calf work to fix flat/collapsed feet at the source.",
+    "search": "squat university foot shape arch strength flat feet pronation short foot toe splay aaron horsching"
+  },
+  "korea-wrestlers-kettlebell-training": {
+    "title": "Korea Wrestlers Kettlebell Training — 4 Exercises",
+    "cat": "gym legs",
+    "gear": [
+      "kettlebell"
+    ],
+    "tags": [
+      "Gym",
+      "Legs",
+      "Kettlebell"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~20 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 exercises",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>Kettlebell"
+    ],
+    "desc": "Traditional Korean wrestling kettlebell conditioning: swings, cleans, front rack squats and presses — full-body power built on heavy KB fundamentals.",
+    "search": "korea wrestlers kettlebell training swings cleans squats presses ssireum conditioning"
+  },
+  "3-day-summer-prep-dumbbell-blast": {
+    "title": "3-Day Summer Prep Dumbbell Blast",
+    "cat": "gym upper",
+    "gear": [
+      "dumbbells"
+    ],
+    "tags": [
+      "Gym",
+      "Upper Body",
+      "Dumbbells"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>3-day split",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>2 exercises/day",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>Dumbbells"
+    ],
+    "desc": "Large Dumbbells' 3-day dumbbell split for summer prep — focused push and pull pairings per day, minimal equipment, maximum density.",
+    "search": "large dumbbells 3 day summer prep dumbbell blast split push pull"
+  },
+  "ryo-oya-floor-calisthenics-push-hollow-hold": {
+    "title": "Floor Calisthenics — Push & Hollow Hold",
+    "cat": "core",
+    "gear": [
+      "mat"
+    ],
+    "tags": [
+      "Core",
+      "Bodyweight",
+      "Mat"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~10 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>2 exercises",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>Mat only"
+    ],
+    "desc": "Ryo Oya's floor calisthenics pair: strict pushing variations with hollow-body hold work — calisthenics strength with trunk tension.",
+    "search": "ryo oya floor calisthenics push hollow hold bodyweight japan"
+  },
+  "mace-odyssey-clubbell-kettlebell-power": {
+    "title": "Clubbell & Kettlebell 30-Min Power",
+    "cat": "gym",
+    "gear": [
+      "kettlebell"
+    ],
+    "tags": [
+      "Gym",
+      "Kettlebell",
+      "Full Body"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~30 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 exercises",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>Kettlebell + clubbell"
+    ],
+    "desc": "Mace Odyssey's 30-minute clubbell and kettlebell power circuit — rotational strength, swings and press patterns for full-body conditioning.",
+    "search": "mace odyssey clubbell kettlebell 30 min power rotational strength circuit"
+  },
+  "vivona-flow-russian-calisthenics-mobility-core": {
+    "title": "Russian Calisthenics — Floor Mobility & Core",
+    "cat": "mobility core",
+    "gear": [
+      "mat"
+    ],
+    "tags": [
+      "Mobility",
+      "Core",
+      "Mat"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~12 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>3 exercises",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>Mat only"
+    ],
+    "desc": "Vivona Flow's Russian-style floor work: mobility transitions woven with core tension drills — control through full range, not just holds.",
+    "search": "vivona flow russian calisthenics floor mobility core transitions"
+  },
+  "single-kettlebell-room-shred": {
+    "title": "Single Kettlebell Room Shred",
+    "cat": "gym core",
+    "gear": [
+      "kettlebell"
+    ],
+    "tags": [
+      "Gym",
+      "Kettlebell",
+      "Full Body"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~15 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>3 exercises",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>1 kettlebell"
+    ],
+    "desc": "WhatKaidoes' single-kettlebell room shred — three KB movements, minimal space, high density. Hotel-room or home friendly conditioning.",
+    "search": "whatkaidoes single kettlebell room shred conditioning home hotel"
+  },
+  "hip-strength-for-runners": {
+    "title": "Hip Strength for Runners",
+    "cat": "rehab hips",
+    "gear": [
+      "none"
+    ],
+    "tags": [
+      "Rehab",
+      "Hips",
+      "Running"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~8 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>2 exercises",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "desc": "Zhamedi Performance's runner-focused hip strength pair — glute med and deep hip work to keep knees tracking and strides stable.",
+    "search": "zhamedi performance hip strength runners glute medius running knees"
+  },
+  "hackenschmidt-bulletproof-knee": {
+    "title": "Hackenschmidt Bulletproof Knee",
+    "cat": "rehab legs",
+    "gear": [
+      "none"
+    ],
+    "tags": [
+      "Rehab",
+      "Legs & Knees"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~10 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>3 exercises",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+    ],
+    "desc": "Running Ability's George Hackenschmidt-inspired knee bulletproofing: legacy strength drills for tendon resilience and stable knees.",
+    "search": "running ability hackenschmidt bulletproof knee tendon strength legs"
+  }
 }
