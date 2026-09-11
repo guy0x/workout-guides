@@ -700,5 +700,24 @@
     ],
     "desc": "Running Ability's George Hackenschmidt-inspired knee bulletproofing: legacy strength drills for tendon resilience and stable knees.",
     "search": "running ability hackenschmidt bulletproof knee tendon strength legs"
+  },
+  "calisthenics-core-foundations": {
+    "title": "Calisthenics Core Foundations",
+    "desc": "The basics that actually build a core: dead hang, hanging knee raise, ledge body lever, floor L-sit leg raise — then the front lever they lead to. From @antoine.calisthenics.",
+    "tags": [
+      "Core",
+      "Calisthenics",
+      "No equipment"
+    ],
+    "cat": "core",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>5 cards",
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~8 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>Bar + ledge"
+    ],
+    "search": "calisthenics core foundations basics dead hang active hang hanging knee raise leg raise front lever tuck body lever dragon flag ledge hollow L-sit V-sit floor abs antoine marneffe bulletproof core Calisthenics Core Foundations"
   }
 }
