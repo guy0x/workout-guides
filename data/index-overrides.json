@@ -719,5 +719,24 @@
       "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>Bar + ledge"
     ],
     "search": "calisthenics core foundations basics dead hang active hang hanging knee raise leg raise front lever tuck body lever dragon flag ledge hollow L-sit V-sit floor abs antoine marneffe bulletproof core Calisthenics Core Foundations"
+  },
+  "band-full-body-home": {
+    "title": "Band Full-Body — Home Session (No Gym)",
+    "desc": "No-gym fallback session with bands and a bosu: band goblet squat, bent-over row, swing, rotational high pull, thruster, bosu plank rollout — plus band-anchoring safety.",
+    "tags": [
+      "Full Body",
+      "Home",
+      "Band"
+    ],
+    "cat": "gym",
+    "gear": [
+      "band"
+    ],
+    "meta": [
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>6 moves",
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~20 min",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M6 7 h12 M6 17 h12 M9 3 v18 M15 3 v18\"/></svg>Band + bosu"
+    ],
+    "search": "band full body home no gym session fallback goblet squat row swing rotational high pull thruster bosu plank rollout anchoring resistance band bosu ball day 5 Band Full-Body — Home Session (No Gym)"
   }
 }
