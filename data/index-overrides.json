@@ -597,7 +597,8 @@
     "tags": [
       "Core",
       "Bodyweight",
-      "Mat"
+      "Mat",
+      "Mat only"
     ],
     "meta": [
       "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~10 min",
@@ -635,7 +636,8 @@
     "tags": [
       "Mobility",
       "Core",
-      "Mat"
+      "Mat",
+      "Mat only"
     ],
     "meta": [
       "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~12 min",
