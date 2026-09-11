@@ -493,5 +493,24 @@
    "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>Daily"
   ],
   "search": "legs strength balance coordination squats calf raises hops split squats schutza wall chair"
+ },
+ "quadratus-lumborum-release-rebuild": {
+  "title": "Quadratus Lumborum — Release & Rebuild",
+  "desc": "8 moves for one-sided low back pain: release the QL (table side-bend dip, seated straddle side bend, windshield wipers, cross-leg side drop), then build anti-side-bend strength (side plank, bird dog, glute-medius table lift, towel knee-lift). From @theanatomyoftherapy.",
+  "tags": [
+   "Rehab",
+   "Lower Back",
+   "Core"
+  ],
+  "cat": "rehab core",
+  "gear": [
+   "none"
+  ],
+  "meta": [
+   "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~15 min",
+   "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>8 moves",
+   "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+  ],
+  "search": "quadratus lumborum ql lower back one-sided low back pain side bend table dip straddle windshield wipers side plank bird dog glute medius towel knee lift anatomyoftherapy rehab Quadratus Lumborum — Release & Rebuild"
  }
 }
