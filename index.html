@@ -473,7 +473,10 @@
       const cat = c.dataset.cat.split(' ');
       const gear = c.dataset.gear.split(' ');
       const okTerm = !term || t.includes(term);
-      const okGoal = goals.size === 0 || [...goals].every(g => cat.some(w => w === g));
+      const tok = s => (s || '').toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
+      const okGoal = goals.size === 0 || [...goals].every(g => {
+        const parts = tok(g);
+        return parts.length && parts.every(p => cat.includes(p)); });
       const okGear = gears.size === 0 || [...gears].every(g => gear.includes(g));
       const ok = okTerm && okGoal && okGear;
       c.style.display = ok ? '' : 'none';
