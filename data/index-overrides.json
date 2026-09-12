@@ -101,7 +101,6 @@
     ],
     "cat": "mobility",
     "gear": [
-      "none",
       "bench",
       "box"
     ],
@@ -484,7 +483,8 @@
     "cat": "legs mobility",
     "gear": [
       "wall",
-      "chair"
+      "chair",
+      "none"
     ],
     "meta": [
       "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>4 moves",
@@ -728,11 +728,13 @@
     "tags": [
       "Full Body",
       "Home",
-      "Band"
+      "Band",
+      "Bosu"
     ],
     "cat": "gym",
     "gear": [
-      "band"
+      "band",
+      "bosu"
     ],
     "meta": [
       "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>6 moves",
