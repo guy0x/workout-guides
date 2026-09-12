@@ -33,6 +33,8 @@ Self-contained, offline-capable fitness workout guides (dark-themed HTML, GIFs i
 
 - **Knee Pain Part 3 — Effective Strength Training** — the strength block of the knee-pain series from a coach who tore ACL + MCL + meniscus: squat pattern (tempo goblet squat, regression) · knee extension (reverse sled, ATG split squat with 90° pause, Poliquin step-up) · posterior chain (deadlift, back extension, hamstring curl) · bonus Bulgarian split squat + calf raises. From Michael Feltman (@moverightwithmike) → `knee-pain-part-3-strength-training/`
 
+- **Pre-Gym Mobility Warm-Up — 3 Moves** — one move per area, before you touch a weight: bar hang + twist (spine/grip) · seated cross-arm side bend (mid-back) · supine ankle-grip knee drop (lower back/hips). ~5 min, needs a pull-up bar, a box and a mat. From Michael Soares (@coachmichael) → `pre-gym-mobility-warmup/`
+
 ## Index
 
 `index.html` is a self-contained landing page matching the guides' dark theme — hero, search, **Goal filters** (mobility / core / legs & knees / hips / upper body / rehab / mastery / gym) and **Gear filters** (no equipment / mat / resistance band / dumbbells / cable / kettlebell, with live per-chip counts). No build step — GitHub Pages serves the repo as-is.
