@@ -67,10 +67,12 @@
   .card h2 { font-size: 1.05rem; font-weight: 700; letter-spacing: -0.2px; padding: 4px 14px 0; }
   .card .desc { font-size: .86rem; color: #5a6472; padding: 6px 14px 0; display: -webkit-box;
                   -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
-  .card .meta { display: flex; flex-wrap: wrap; gap: 6px; padding: 8px 14px 0; }
-  .card .met { display: inline-flex; align-items: center; gap: 4px; background: #f4f6f8; border: 1px solid #e3e7ee;
-                 border-radius: 999px; padding: 3px 9px; font-size: .72rem; color: #45505e; }
-  .card .met svg { width: 13px; height: 13px; stroke: currentColor; fill: none; }
+  .card .meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; padding: 8px 14px 0; }
+  .card .meta > span { display: inline-flex; align-items: center; gap: 4px; background: #f4f6f8;
+                 border: 1px solid #e3e7ee; border-radius: 999px; padding: 2px 8px;
+                 font-size: .68rem; line-height: 1.4; color: #45505e; white-space: nowrap; }
+  .card .meta > span svg { width: 12px; height: 12px; flex: 0 0 auto; stroke: currentColor;
+                 fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
   .open { margin-top: auto; align-self: flex-end; padding: 8px 14px 10px; font-size: .82rem; font-weight: 600; color: #2563eb;
             border-top: 1px solid #eef2f7; display: flex; align-items: center; gap: 6px; }
   .open svg { width: 15px; height: 15px; stroke: currentColor; fill: none; }
