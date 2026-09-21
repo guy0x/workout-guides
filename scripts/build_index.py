@@ -241,6 +241,7 @@ __CSS__</style>
     <span class="stat"><b>__N_NOEQ__</b> no-equipment</span>
     <span class="stat"><b>__N_DEMO__</b> thumbnails</span>
   </span>
+  <div style="margin-top:14px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap"><a href="cards.html" style="display:inline-block;background:#10b981;color:#fff;font-weight:700;padding:7px 18px;border-radius:20px;font-size:.9rem">Browse Exercise Cards →</a><a href="mixes.html" style="display:inline-block;background:#2563eb;color:#fff;font-weight:700;padding:7px 18px;border-radius:20px;font-size:.9rem">Curated Mixes →</a></div>
 </header>
 
 <div class="toolbar">
