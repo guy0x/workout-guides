@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="ATHENA's rotating weekly program — 3-day split themed posture, physique and gait, built from the workout-guides card library. Changes every ISO week."/>
+<title>This Week's Program — Workout Guides</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, "SF Pro Text", Helvetica, Arial, sans-serif;
+         background: #f4f6f8; color: #1c2128; line-height: 1.55; }
+  a { color: inherit; text-decoration: none; }
+  header { background: #ffffff; border-bottom: 1px solid #e3e7ee; padding: 32px 22px 26px; text-align: center; }
+  header .kicker { display: inline-block; background: #eef2f7; color: #4a5b7a; font-size: .72rem;
+                     letter-spacing: 2px; text-transform: uppercase; padding: 5px 14px; border-radius: 20px; }
+  header h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); letter-spacing: -0.5px; font-weight: 800; margin-top: 12px; }
+  header p.sub { color: #5a6472; font-size: .98rem; margin-top: 6px; max-width: 640px; margin-left: auto; margin-right: auto; }
+  header .meta { margin-top: 14px; background: #f4f6f8; border: 1px solid #e3e7ee; display: inline-block;
+                   border-radius: 999px; padding: 6px 16px; font-size: .84rem; color: #3b4654; font-weight: 600; }
+  header .nav { margin-top: 14px; }
+  header .nav a { display: inline-block; background: #eef2f7; color: #2563eb; border-radius: 20px;
+                    padding: 6px 16px; font-size: .85rem; font-weight: 600; margin: 0 4px; }
+  header .nav a.home { background: #10b981; color: #fff; }
+  header .nav a.on { background: #2563eb; color: #fff; }
+  .container { max-width: 760px; margin: 0 auto; padding: 20px 16px 40px; }
+  .day { background: #ffffff; border: 1px solid #e3e7ee; border-radius: 20px; padding: 20px 22px; margin-bottom: 22px; }
+  .day-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .day-label { font-size: 1.15rem; font-weight: 800; letter-spacing: -0.2px; color: #2563eb; }
+  .day-label b { color: #1c2128; }
+  .n { font-size: .76rem; color: #6b7480; background: #f4f6f8; border-radius: 999px; padding: 3px 10px; font-weight: 600; }
+  .blurb { color: #5a6472; font-size: .88rem; margin: 8px 0 14px; }
+  .steps { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+  .step { display: flex; gap: 12px; align-items: flex-start; background: #f8fafc; border: 1px solid #edf0f5;
+            border-radius: 14px; padding: 10px 14px; }
+  .step .num { flex: 0 0 28px; height: 28px; background: #2563eb; color: #fff; border-radius: 12px;
+                 display: inline-flex; align-items: center; justify-content: center; font-size: .82rem; font-weight: 700; }
+  .step .s-body { flex: 1; min-width: 0; }
+  .step .s-title { font-size: .95rem; font-weight: 700; }
+  .step .tag { display: inline-block; margin-left: 6px; background: #eef2f7; color: #4a5b7a; font-size: .68rem;
+                 padding: 1px 8px; border-radius: 10px; text-transform: uppercase; letter-spacing: .5px; vertical-align: 2px; }
+  .step .dose { display: inline-block; font-size: .8rem; color: #d97706; font-weight: 600; margin-top: 2px; }
+  .step .src { display: inline-block; margin-left: 10px; font-size: .76rem; color: #2563eb; font-weight: 600; }
+  .step .src:hover { text-decoration: underline; }
+  footer { text-align: center; color: #9aa3b0; font-size: .78rem; padding: 10px 20px 26px; }
+  footer a { color: #2563eb; }
+  @media (max-width: 520px) { .container { padding: 14px 10px 30px; } .day { padding: 16px; } }
+</style>
+</head>
+<body>
+<header>
+  <span class="kicker">Move Better · Recover Faster · Train Smarter</span>
+  <h1>This Week's Program</h1>
+  <p class="sub">A rotating 3-day weekly split — posture, physique, gait — built from the exercise-card library. Same rhythm every week (repeat the moves to mastery, ~18 movements), different mix each ISO week. Deterministic rotation: the page changes every Monday when the ISO week number rolls over.</p>
+  <div class="meta">ISO week 39 of 2026 · rotation rolls over Monday · repeat the same 18 movements through the week toward mastery</div>
+  <div class="nav">
+    <a class="home" href="index.html">← Guides</a>
+    <a href="cards.html">Cards</a>
+    <a href="mixes.html">Mixes</a>
+    <a class="on" href="program.html">Program</a>
+  </div>
+</header>
+<div class="container">
+  <section class="day">
+  <div class="day-head">
+    <span class="day-label">Day 1 · <b>Posture</b></span>
+    <span class="n">6 moves · 6 guides</span>
+  </div>
+  <p class="blurb">Desk-proof your spine: TVA breathing, thoracic flow, neck and pelvis resets. Stand taller by Friday.</p>
+  <ol class="steps"><li class="step"><span class="num">1</span><div class="s-body"><div class="s-title">6. Spinal Body Waves <span class="tag">Spine</span></div><span class="dose">8 slow waves</span><a class="src" href="trevor-shan-mobility/">From: Trevor Shan - Full-Body Morning Mobility and Thoracic Swing Flow</a></div></li>
+<li class="step"><span class="num">2</span><div class="s-body"><div class="s-title">Back Extensions <span class="tag">Posterior chain</span></div><span class="dose">3 × 15</span><a class="src" href="anonymous_apt-anterior-pelvic-tilt-fix_DdJsHjhN748/">From: APT (Anterior Pelvic Tilt) Fix — @anonymous</a></div></li>
+<li class="step"><span class="num">3</span><div class="s-body"><div class="s-title">Bar Hang + Twist <span class="tag">Spine</span></div><span class="dose">30–60 s</span><a class="src" href="pre-gym-mobility-warmup/">From: Pre-Gym Mobility Warm-Up — 3 Moves (Spine · Mid-Back · Lower Back)</a></div></li>
+<li class="step"><span class="num">4</span><div class="s-body"><div class="s-title">Make a fist with your thumb up <span class="tag">Neck</span></div><span class="dose">Hold 5 breaths / side</span><a class="src" href="neck-trapezius-tension-release-trick/">From: Neck/Trapezius Tension Release Trick</a></div></li>
+<li class="step"><span class="num">5</span><div class="s-body"><div class="s-title">Lower Trap Raise (Prone Y) <span class="tag">Lower traps</span></div><span class="dose">3 × 12</span><a class="src" href="desk-worker-counter-exercises/">From: 4 Counter-Exercises for Desk Workers — @skylerfelt</a></div></li>
+<li class="step"><span class="num">6</span><div class="s-body"><div class="s-title">Dead Bug — Right Arm + Left Leg <span class="tag">Core</span></div><span class="dose">3 × 10 / side</span><a class="src" href="tva-dead-bug-tighter-waist/">From: TVA Dead Bug — Train Your Natural Corset</a></div></li></ol>
+</section>
+<section class="day">
+  <div class="day-head">
+    <span class="day-label">Day 2 · <b>Physique</b></span>
+    <span class="n">6 moves · 6 guides</span>
+  </div>
+  <p class="blurb">Strength and shape: presses, pulls, carries and core — kettlebell, dumbbell or bodyweight, all mapped to the library.</p>
+  <ol class="steps"><li class="step"><span class="num">1</span><div class="s-body"><div class="s-title">Dumbbell Lateral Raise <span class="tag">Delts</span></div><span class="dose">2 × 12–15</span><a class="src" href="chest-lats-shoulders-30-min/">From: 30-Min Gym Upper Body — Chest · Lats · Shoulders</a></div></li>
+<li class="step"><span class="num">2</span><div class="s-body"><div class="s-title">Tuck Planche Isometric Hold <span class="tag">Hold</span></div><span class="dose">3 × 10–15 s</span><a class="src" href="ryo-oya-floor-calisthenics-push-hollow-hold/">From: Floor Calisthenics Push & Hollow Hold — @ryo__oya</a></div></li>
+<li class="step"><span class="num">3</span><div class="s-body"><div class="s-title">Clubbell Shield Cast <span class="tag">Shoulder</span></div><span class="dose">8 / side</span><a class="src" href="mace-odyssey-clubbell-kettlebell-power/">From: Clubbell & Kettlebell 30-Min Functional Power — @maceodyssey</a></div></li>
+<li class="step"><span class="num">4</span><div class="s-body"><div class="s-title">Brace Through Extension <span class="tag">Abs</span></div><span class="dose">3 × 6–8</span><a class="src" href="yoga-block-ab-kickouts/">From: Yoga-Block Ab Kickouts — Home Six-Pack Move</a></div></li>
+<li class="step"><span class="num">5</span><div class="s-body"><div class="s-title">Kneeling Cable Oblique Pull <span class="tag">Obliques</span></div><span class="dose">2–3 sets / side</span><a class="src" href="interior-oblique-sling-kinetic-chain/">From: Interior Oblique Sling — Kinetic Chain in 2-3 Sets</a></div></li>
+<li class="step"><span class="num">6</span><div class="s-body"><div class="s-title">Kettlebell Gorilla Row <span class="tag">Row</span></div><span class="dose">8 / side</span><a class="src" href="korea-wrestlers-kettlebell-training/">From: Korea Wrestlers Kettlebell Training — @wrestling_physi</a></div></li></ol>
+</section>
+<section class="day">
+  <div class="day-head">
+    <span class="day-label">Day 3 · <b>Gait</b></span>
+    <span class="n">6 moves · 6 guides</span>
+  </div>
+  <p class="blurb">How you walk: feet, ankles, hips and knees — toe tucks, cossacks, CARs and gait drills that carry into every stride.</p>
+  <ol class="steps"><li class="step"><span class="num">1</span><div class="s-body"><div class="s-title">5 Wiggles — Explore the Position <span class="tag">Variations</span></div><span class="dose">Pick 1–3 per session</span><a class="src" href="cossack-squat-weighted-gait-mobility/">From: Cossack Squats — GOAT Leg Strength & Mobility (Weighted)</a></div></li>
+<li class="step"><span class="num">2</span><div class="s-body"><div class="s-title">Short Foot Arch Lift <span class="tag">Arch</span></div><span class="dose">10 / foot</span><a class="src" href="squat-university-foot-shape-arch-strength/">From: Foot Shape & Arch Strength — @squat_university</a></div></li>
+<li class="step"><span class="num">3</span><div class="s-body"><div class="s-title">90/90 Hip Switches <span class="tag">Hips</span></div><span class="dose">10 slow reps</span><a class="src" href="morning-mobility-reset/">From: Morning Mobility Reset — 14 Moves · 5 Coaches</a></div></li>
+<li class="step"><span class="num">4</span><div class="s-body"><div class="s-title">Quadruped Frog <span class="tag">Adductors</span></div><span class="dose">8–10</span><a class="src" href="train-your-hips-hard/">From: Train Your Hips Hard: 6-Move Mobility Challenge — @mr.highlevel_</a></div></li>
+<li class="step"><span class="num">5</span><div class="s-body"><div class="s-title">Gait Check — Heel Turns In vs Away <span class="tag">Assessment</span></div><span class="dose">Watch your own walking</span><a class="src" href="walking-gait-toe-tucks/">From: Walking Gait & Toe Tucks — Foot/Ankle Realignment</a></div></li>
+<li class="step"><span class="num">6</span><div class="s-body"><div class="s-title">Wall Sit with Ball Between Knees <span class="tag">Isometric</span></div><span class="dose">30 s × 3</span><a class="src" href="knee-morning-pt/">From: Knee Morning PT — ACL Rehab Daily Routine</a></div></li></ol>
+</section>
+</div>
+<footer>Compiled by ATHENA · every move links back to its source guide · <a href="cards.html">browse all cards</a></footer>
+</body>
+</html>
