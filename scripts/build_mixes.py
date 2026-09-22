@@ -72,6 +72,8 @@ def build_mix(mix, db):
     steps = mix["steps"]
     cards_html = []
     nav = '<a class="home" href="../index.html">← Guides</a><a href="../cards.html">Cards</a>'
+    # Card-directory cross-link (preserved by regeneration — see G1 gate, 2026-09-22)
+    card_dir_link = '<a href="../cards.html" class="card-dir-link" style="background:#10b981;color:#fff;font-weight:700">← Cards</a>'
     for i, step in enumerate(steps, 1):
         src = step["source"]
         card_name = step["card"]
@@ -123,11 +125,12 @@ def build_mix(mix, db):
   <div class="meta">ATHENA curated mix · {len(steps)} steps · source guides linked</div>
   <div class="nav">{nav}</div>
 </header>
+{card_dir_link}
 <div class="container">
   <div class="intent">💡 <b>Why this mix:</b> {intent}</div>
   {chr(10).join(cards_html)}
 </div>
-<footer><a href="../cards.html">Browse all exercise cards</a> · compiled by ATHENA</footer>
+<footer><a href="../cards.html">Browse all exercise cards</a> · compiled by ATHENA<span class="card-dir-link"><a href="../cards.html" style="color:#34d399;text-decoration:underline">← Card directory</a></span></footer>
 </body>
 </html>"""
     out = REPO / slug
@@ -178,7 +181,7 @@ def main():
 <header>
   <h1>Curated Mixes</h1>
   <p>Ready-to-run circuits assembled from exercise cards across the library.</p>
-  <a class="back" href="index.html">← Workout Guides</a>
+  <a class="back" href="index.html">← Workout Guides</a> <a class="back" href="program.html" style="margin-left:10px">This Week's Program →</a>
 </header>
 <main class="grid">
   {chr(10).join(cards)}
