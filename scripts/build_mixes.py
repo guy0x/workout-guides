@@ -13,6 +13,8 @@ from pathlib import Path
 
 REPO = Path("/Users/guy/tmp_work/workout-guides")
 SPECS = Path("/Users/guy/.hermes/profiles/librarian/scripts/guide_pipeline/specs")
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import context as guy_ctx  # type: ignore  # noqa: E402
 
 # Load all specs once: slug -> {cards: {card_name: card}}
 def load_specs():
@@ -54,6 +56,11 @@ CSS = """
   .cues { margin:0 0 0 18px; color:#aab0c0; font-size:.9rem; }
   .cues li { margin-bottom:4px; }
   .src { display:inline-block; margin-top:10px; background:#223; border:1px solid #3a3f4d; padding:4px 10px; border-radius:20px; font-size:.8rem; color:#b8c0ff; word-break:break-all; }
+  .badges { display:flex; flex-wrap:wrap; gap:5px; margin-bottom:8px; }
+  .badges span { display:inline-block; font-size:.66rem; font-weight:700; padding:2px 8px; border-radius:10px; letter-spacing:.3px; }
+  .b-knee { background:#153a30; color:#5eead4; border:1px solid #134e4a; }
+  .b-safe { background:#16263b; color:#93c5fd; border:1px solid #1e3a5f; }
+  .b-gym  { background:#3b1626; color:#fda4af; border:1px solid #5f1e3a; }
   footer { text-align:center; color:#6b707d; font-size:.78rem; padding:20px 12px; }
   footer a { color:#34d399; text-decoration:underline; }
 """
@@ -77,11 +84,24 @@ def build_mix(mix, db):
         cues = "".join(f"<li>{x}</li>" for x in (card.get("cues") or step.get("cues", [])))
         tag = f'<span class="section-tag">{step.get("tag", "")}</span>' if step.get("tag") else ""
         dose = f'<div class="dose">{card.get("dose") or step.get("dose", "")}</div>'
+        # --- personal-context annotations (guy_ctx: knee-safe / office-safe / needs gym) ---
+        gear = spec.get("gear", []) if spec else []
+        blob = " ".join([card.get("name", ""), card.get("tag", ""), card.get("desc", ""),
+                         " ".join(card.get("cues", [])), " ".join(gear)]).lower()
+        badges = []
+        if guy_ctx.is_knee_sensitive(blob) or src in guy_ctx.knee_safe_guides():
+            badges.append('<span class="b-knee">knee-aware</span>')
+        if guy_ctx.office_safe(gear):
+            badges.append('<span class="b-safe">office-safe</span>')
+        elif guy_ctx.needs_gym(gear):
+            badges.append('<span class="b-gym">needs gym</span>')
+        badge_html = f'<div class="badges">{"".join(badges)}</div>' if badges else ""
         link = f'<a class="src" href="../{src}/">From: {spec["title"] if spec else src}</a>' if spec else ""
         cards_html.append(
             f'<div class="card">\n  <div class="card-num">{i}</div>\n'
             f'  <div class="card-body">\n'
             f'    <div class="card-title-row"><h2>{card["name"]}</h2>{tag}</div>\n'
+            f'    {badge_html}\n'
             f'    {dose}\n'
             f'    <p class="desc">{card.get("desc") or step.get("text", "")}</p>\n'
             + (f'    <ol class="cues">{cues}</ol>\n' if cues else "")

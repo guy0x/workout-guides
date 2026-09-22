@@ -12,10 +12,13 @@ Each card links to its parent guide page. Run after any guide is added/published
 """
 import json
 import re
+import sys
 from pathlib import Path
 
 REPO = Path("/Users/guy/tmp_work/workout-guides")
 SPECS = Path("/Users/guy/.hermes/profiles/librarian/scripts/guide_pipeline/specs")
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import context as guy_ctx  # type: ignore  # noqa: E402
 
 CAT_COLORS = {
     "mobility": "#3b82f6", "core": "#8b5cf6", "legs": "#10b981", "hips": "#ec4899",
@@ -148,6 +151,12 @@ CSS = """
   .card .top { display: flex; align-items: center; gap: 8px; padding: 10px 14px 0; flex-wrap: wrap; }
   .card .bodies { display: flex; flex-wrap: wrap; gap: 5px; padding: 10px 14px 2px; }
   .card .bodychip { background: #dcfce7; color: #166534; border-radius: 8px; font-size: .66rem; padding: 2px 8px; font-weight: 600; }
+  .card .ctxflags { display: flex; flex-wrap: wrap; gap: 5px; padding: 4px 14px 0; }
+  .card .ctxflags span { display: inline-block; font-size: .64rem; font-weight: 700; padding: 2px 8px; border-radius: 8px; letter-spacing: .3px; }
+  .ctx-for-guy { background: #fef3c7; color: #92400e; border: 1px solid #f59e0b; }
+  .ctx-knee { background: #ccfbf1; color: #115e59; border: 1px solid #2dd4bf; }
+  .ctx-office-safe { background: #dbeafe; color: #1e40af; border: 1px solid #60a5fa; }
+  .ctx-needs-gym { background: #fee2e2; color: #991b1b; border: 1px solid #f87171; }
   .card h3 { font-size: 1rem; font-weight: 700; letter-spacing: -0.2px; padding: 4px 14px 0; }
   .card .guide { font-size: .72rem; color: #6b7280; padding: 2px 14px 0; }
   .card .meta { display: flex; flex-wrap: wrap; gap: 6px; padding: 8px 14px 0; }
@@ -306,6 +315,24 @@ def render_card(c, i):
     cat_tags = "".join(f'<span class="met">{CAT_LABEL.get(x, x.title())}</span>' for x in c["cats"])
     gear_tags = "".join(f'<span class="met">{GEAR_LABEL.get(x, x)}</span>' for x in c["gear"])
     body_chips = "".join(f'<span class="bodychip">{BODY_LABEL[x]}</span>' for x in c["bodies"])
+    # personal-context flags (guy_ctx)
+    ifg = guy_ctx.for_guy(c["slug"])
+    blob = " ".join([c["card_name"], c["tag"], " ".join(c["cues"]), " ".join(c["cats"]), gear]).lower()
+    knee = guy_ctx.is_knee_sensitive(blob) or c["slug"] in guy_ctx.knee_safe_guides()
+    if guy_ctx.office_safe(c["gear"]):
+        loc = "office-safe"
+    elif guy_ctx.needs_gym(c["gear"]):
+        loc = "needs-gym"
+    else:
+        loc = ""
+    parts = []
+    if ifg:
+        parts.append('<span class="ctx-for-guy">★ For Guy</span>')
+    if knee:
+        parts.append('<span class="ctx-knee">knee-aware</span>')
+    if loc:
+        parts.append(f'<span class="ctx-{loc}">{loc.replace("-", " ").title()}</span>')
+    ctx_html = f'<div class="ctxflags">{"".join(parts)}</div>' if parts else ""
     tag = f'<span class="met">{c["tag"]}</span>' if c["tag"] else ""
     dose = f'<div class="dose">⚡ {c["dose"]}</div>' if c["dose"] else ""
     cues_preview = " ".join(c["cues"][:2])
@@ -316,6 +343,7 @@ def render_card(c, i):
       <div class="top"><span class="met" style="background:#eef2f7;color:#4a5b7a">#{i:03d}</span><span class="cat" style="--accent:{color};position:static;margin-left:auto">{label}</span></div>
       <h3>{c["card_name"]}</h3>
       <div class="guide">in <b>{c["guide_title"]}</b></div>
+      {ctx_html}
       <div class="bodies">{body_chips}</div>
       <div class="meta">{cat_tags}{gear_tags}{tag}</div>
       {dose}
