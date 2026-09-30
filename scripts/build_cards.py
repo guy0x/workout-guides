@@ -67,6 +67,53 @@ def detect_body_parts(card, guide_cats, gear_text):
     return hits
 
 
+# --- display-title helpers (2026-10-01 QA) ---
+# Strong narration signals only — avoid flagging legit titles that merely contain
+# a common word ("Right Leg Forward", "Regressions — Meet Yourself Where You Are").
+_NARR_RE = re.compile(
+    r"\b(i'm|i'll|i've|you're|you'll|you've|we're|we'll|let's|gonna|wanna|gotta)\b"
+    r"|\b(here's|this is|there's|do it|like this|go like)\b", re.I)
+
+
+def _looks_spoken(name):
+    """True if a card name is a whole reel-transcript sentence, not an exercise label."""
+    x = (name or "").strip().strip("\"\u201c\u201d\u2018\u2019")
+    w = x.split()
+    if len(w) < 7:
+        return False
+    if _NARR_RE.search(x):
+        return True
+    if re.search(r"[,;!?]", x) and len(w) >= 9:
+        return True
+    pronouns = sum(1 for t in w if t.lower() in {"i", "you", "we", "they", "my", "your", "it"})
+    if pronouns >= 4 and len(w) >= 9:
+        return True
+    return False
+
+
+def _display_name(card_name, guide_title, tag, dose):
+    """Return the card title shown on the directory, with light auto-contextualization.
+
+    - Junk spoken-narration names get a '(re-label pending)' marker so they stay
+      visible (per Guy) but read as known-bad while the re-label pass is pending.
+    - Terse (<=3 word) titles get dose (sets/reps) appended, falling back to a short
+      tag. The guide title is NOT appended: the card already renders "in <guide>".
+    """
+    name = (card_name or "").strip()
+    if not name:
+        return "—"
+    if _looks_spoken(name):
+        return f"{name}… (re-label pending)"
+    if len(name.split()) <= 3:
+        d = (dose or "").strip()
+        if d:
+            return f"{name} — {d}"
+        t = (tag or "").strip()
+        if t and len(t.split()) <= 4:
+            return f"{name} — {t}"
+    return name
+
+
 def load_cards():
     """Return list of dicts: {slug, guide_title, card_name, tag, dose, ncues, cats, gear, bodies}."""
     rows = []
@@ -85,6 +132,8 @@ def load_cards():
         gear_text = " ".join(gear)
         guide_title = d.get("title", slug)
         for c in d.get("cards", []):
+            if c.get("hidden"):  # in-review / non-exercise cards excluded from directory
+                continue
             bodies = detect_body_parts(c, cats, gear_text)
             rows.append({
                 "slug": slug,
@@ -336,12 +385,13 @@ def render_card(c, i):
     tag = f'<span class="met">{c["tag"]}</span>' if c["tag"] else ""
     dose = f'<div class="dose">⚡ {c["dose"]}</div>' if c["dose"] else ""
     cues_preview = " ".join(c["cues"][:2])
+    display = _display_name(c["card_name"], c["guide_title"], c["tag"], c["dose"])
     search_blob = " ".join([c["card_name"], c["tag"], c["dose"], c["guide_title"],
                             " ".join(c["cats"]), " ".join(c["gear"]), " ".join(c["cues"])]).lower()
     return f'''  <a class="card" href="{c["slug"]}/" data-cat="{" ".join(c["cats"])}" data-body="{bodies}" data-gear="{gear}" data-tags="{search_blob}" data-idx="{i}">
     <div style="position:relative">
       <div class="top"><span class="met" style="background:#eef2f7;color:#4a5b7a">#{i:03d}</span><span class="cat" style="--accent:{color};position:static;margin-left:auto">{label}</span></div>
-      <h3>{c["card_name"]}</h3>
+      <h3>{display}</h3>
       <div class="guide">in <b>{c["guide_title"]}</b></div>
       {ctx_html}
       <div class="bodies">{body_chips}</div>
