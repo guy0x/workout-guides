@@ -74,12 +74,22 @@ _NARR_RE = re.compile(
     r"\b(i'm|i'll|i've|you're|you'll|you've|we're|we'll|let's|gonna|wanna|gotta)\b"
     r"|\b(here's|this is|there's|do it|like this|go like)\b", re.I)
 
+# Structural title markers: em-dash, en-dash, middot, bullet, colon, numbered
+# prefixes, or rep-count patterns ("3×20", "5 Reps Per"). A name carrying these
+# is an exercise label even if it also contains pronouns.
+_TITLE_MARK_RE = re.compile(
+    r"[\u2014\u2013\u00b7\u2022]|:\s|\(\d|^\d+[\.\)]|\d+\s*[x\u00d7]",
+    re.I)
+
 
 def _looks_spoken(name):
     """True if a card name is a whole reel-transcript sentence, not an exercise label."""
     x = (name or "").strip().strip("\"\u201c\u201d\u2018\u2019")
     w = x.split()
     if len(w) < 7:
+        return False
+    # Titled labels (em-dash/colon/reps/×) are never spoken narration
+    if _TITLE_MARK_RE.search(x):
         return False
     if _NARR_RE.search(x):
         return True

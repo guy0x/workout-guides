@@ -3,8 +3,16 @@
 
 Reads data/index-overrides.json (card metadata) + thumbs/<slug>.jpg (thumbnails).
 Writes index.html. Idempotent — run this whenever a guide is added.
+
+2026-10-01 reconcile (t_a2daebae QA):
+- Guard: only emit slugs that have a built guide dir (kills 8 phantom OV entries
+  that would 404 on regenerated index).
+- Restore the "This Week's Program" header button (was dropped from template).
+- Keep committed `.meta > span` styling (do NOT rename to `.met` — that would
+  regress the published index look).
 """
 import json
+import html as _html
 from pathlib import Path
 
 REPO = Path("/Users/guy/tmp_work/workout-guides")
@@ -31,18 +39,19 @@ def render_card(slug, cfg, idx):
         if t.lower() not in seen:
             seen.add(t.lower()); uniq.append(t)
     tags = "".join(f'<span class="tag">{t}</span>' for t in uniq)
-    metas = "".join(f'<span class="met">{m}</span>' for m in cfg["meta"])
+    metas = "".join(f"<span>{m}</span>" for m in cfg["meta"])
     gear = " ".join(cfg["gear"])
     title = cfg["title"]
+    title_esc = _html.escape(title)
     thumb = THUMBS / f"{slug}.jpg"
-    img = f'<img src="thumbs/{slug}.jpg" alt="{title}" loading="lazy">' if thumb.exists() else ""
+    img = f'<img src="thumbs/{slug}.jpg" alt="{title_esc}" loading="lazy">' if thumb.exists() else ""
     if not img:
-        img = f'<div class="thumb-ph"><span>{title[:2]}</span></div>'
-    data_tags = f'{cfg["search"]} {title} {title}'
+        img = f'<div class="thumb-ph"><span>{_html.escape(title[:2])}</span></div>'
+    data_tags = f'{cfg["search"]} {title}'
     return f'''  <a class="card" href="{slug}/" data-cat="{cfg["cat"]}" data-gear="{gear}" data-tags="{data_tags}">
     <div class="thumb" style="--accent:{color}">{img}<span class="num">{idx:02d}</span><span class="cat">{label}</span></div>
     <div class="tags">{tags}</div>
-    <h2>{title}</h2>
+    <h2>{title_esc}</h2>
     <p class="desc">{cfg["desc"]}</p>
     <div class="meta">{metas}</div>
     <span class="open">Open guide <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
@@ -50,7 +59,8 @@ def render_card(slug, cfg, idx):
 '''
 
 
-slugs = sorted(OV)
+# Guard: only slugs with an actually-built guide dir (phantom OV entries excluded)
+slugs = sorted(s for s in OV if (REPO / s / "index.html").exists())
 cards = "".join(render_card(s, OV[s], i + 1) for i, s in enumerate(slugs))
 
 from collections import Counter
@@ -62,23 +72,26 @@ for s in slugs:
     for g in OV[s]["gear"]:
         gear_counts[g] += 1
 
-GOAL_ORDER = ["Mobility", "Core", "Legs & Knees", "Hips", "Upper Body", "Gym", "Rehab", "Mastery"]
+GOAL_ORDER = ["mobility", "core", "legs", "hips", "upper", "gym", "rehab", "mastery"]
 
 
 def goal_chips():
     return "".join(
-        f'<button class="chip goal" data-g="{g.lower()}">{g} <b>{goal_counts[g]}</b></button>'
-        for g in GOAL_ORDER if g in goal_counts)
+        f'<button class="chip goal" data-g="{g}">{_html.escape(CAT_LABEL[g])} <b>{goal_counts[CAT_LABEL[g]]}</b></button>'
+        for g in GOAL_ORDER if goal_counts.get(CAT_LABEL[g]))
 
 
 GEAR_LABEL = {"none": "No equipment", "mat": "Mat", "band": "Band", "kettlebell": "Kettlebell",
-              "dumbbell": "Dumbbells", "cable": "Cable", "bench": "Bench", "box": "Box"}
-GEAR_ORDER = ["none", "mat", "band", "kettlebell", "dumbbell", "cable", "bench", "box"]
+              "dumbbell": "Dumbbells", "cable": "Cable", "bench": "Bench", "box": "Box",
+              "wall": "Wall", "chair": "Chair", "bosu": "Bosu", "bar": "Bar",
+              "plate": "Plate", "machine": "Machine", "barbell": "Barbell"}
+GEAR_ORDER = ["none", "mat", "band", "kettlebell", "dumbbell", "cable", "bench", "box",
+              "wall", "chair", "bosu", "bar", "plate", "machine", "barbell"]
 
 
 def gear_chips():
     return "".join(
-        f'<button class="chip gear" data-g="{g}">{GEAR_LABEL[g]} <b>{gear_counts[g]}</b></button>'
+        f'<button class="chip gear" data-g="{g}">{_html.escape(GEAR_LABEL[g])} <b>{gear_counts[g]}</b></button>'
         for g in GEAR_ORDER if g in gear_counts)
 
 
@@ -148,9 +161,11 @@ CSS = """
   .card .desc { font-size: .86rem; color: #5a6472; padding: 6px 14px 0; display: -webkit-box;
                   -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
   .card .meta { display: flex; flex-wrap: wrap; gap: 6px; padding: 8px 14px 0; }
-  .card .met { display: inline-flex; align-items: center; gap: 4px; background: #f4f6f8; border: 1px solid #e3e7ee;
-                 border-radius: 999px; padding: 3px 9px; font-size: .72rem; color: #45505e; }
-  .card .met svg { width: 13px; height: 13px; stroke: currentColor; fill: none; }
+  .card .meta > span { display: inline-flex; align-items: center; gap: 4px; background: #f4f6f8;
+                 border: 1px solid #e3e7ee; border-radius: 999px; padding: 2px 8px;
+                 font-size: .68rem; line-height: 1.4; color: #45505e; white-space: nowrap; }
+  .card .meta > span svg { width: 12px; height: 12px; flex: 0 0 auto; stroke: currentColor;
+                 fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
   .open { margin-top: auto; align-self: flex-end; padding: 8px 14px 10px; font-size: .82rem; font-weight: 600; color: #2563eb;
             border-top: 1px solid #eef2f7; display: flex; align-items: center; gap: 6px; }
   .open svg { width: 15px; height: 15px; stroke: currentColor; fill: none; }
@@ -183,7 +198,10 @@ JS = """
       const cat = c.dataset.cat.split(' ');
       const gear = c.dataset.gear.split(' ');
       const okTerm = !term || t.includes(term);
-      const okGoal = goals.size === 0 || [...goals].every(g => cat.some(w => w === g));
+      const okGoal = goals.size === 0 || [...goals].every(g => {
+        const tok = g.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
+        return tok.length && tok.every(p => cat.includes(p));
+      });
       const okGear = gears.size === 0 || [...gears].every(g => gear.includes(g));
       const ok = okTerm && okGoal && okGear;
       c.style.display = ok ? '' : 'none';
@@ -241,7 +259,7 @@ __CSS__</style>
     <span class="stat"><b>__N_NOEQ__</b> no-equipment</span>
     <span class="stat"><b>__N_DEMO__</b> thumbnails</span>
   </span>
-  <div style="margin-top:14px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap"><a href="cards.html" style="display:inline-block;background:#10b981;color:#fff;font-weight:700;padding:7px 18px;border-radius:20px;font-size:.9rem">Browse Exercise Cards →</a><a href="mixes.html" style="display:inline-block;background:#2563eb;color:#fff;font-weight:700;padding:7px 18px;border-radius:20px;font-size:.9rem">Curated Mixes →</a></div>
+  <div style="margin-top:14px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap"><a href="cards.html" style="display:inline-block;background:#10b981;color:#fff;font-weight:700;padding:7px 18px;border-radius:20px;font-size:.9rem">Browse Exercise Cards →</a><a href="program.html" style="display:inline-block;background:#8b5cf6;color:#fff;font-weight:700;padding:7px 18px;border-radius:20px;font-size:.9rem">This Week's Program →</a><a href="mixes.html" style="display:inline-block;background:#2563eb;color:#fff;font-weight:700;padding:7px 18px;border-radius:20px;font-size:.9rem">Curated Mixes →</a></div>
 </header>
 
 <div class="toolbar">
