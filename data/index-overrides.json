@@ -3166,5 +3166,23 @@
       "5 exercises"
     ],
     "search": "short clinic-style vietnamese reel showing @drson1991 @drson1991 c40vf6lsm5j short clinic style vietnamese reel showing problem/setup — 0–11s: prone extension setup — 12–14s: lateral reach — 15–23s: static hold — 24–26s: completion — 26–27.4s:"
+  },
+  "silent-educational-reel-using-anatomical": {
+    "title": "Silent educational reel using anatomical",
+    "desc": "A silent educational reel using anatomical overlays and directional arrows to illustrate lower-body mobility, knee/ankle mechanics, and squat/lunge patterns. The source has no audio stream and no readable instructional text; the extraction is based on direct-frame visual analysis.",
+    "tags": [
+      "Mobility",
+      "Mat only"
+    ],
+    "cat": "mobility",
+    "gear": [
+      "none",
+      "mat"
+    ],
+    "meta": [
+      "~None min",
+      "6 exercises"
+    ],
+    "search": "silent educational reel using anatomical @whealth @whealth c-aitokrimd silent educational reel using anatomical quadriceps foam rolling — 0–5s: kneeling / ankle mobility prep — 6–11s: elevated-heel squat variation — 12–18s: partner-assisted rear-foot-elevated split squat — 19–29s: kneeling squat / hip-extension variation — 30–45s: standing squat reassessment — 46–51s:"
   }
 }
