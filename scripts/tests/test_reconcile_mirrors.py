@@ -24,13 +24,13 @@ def make_world(tmp_path):
     icloud = tmp_path / "icloud"
     for slug in ("guide-ok", "guide-miss", "guide-drift"):
         d = repo / slug
-        d.mkdir(parents=True)
+        d.mkdir(parents=True, exist_ok=True)
         (d / "index.html").write_text(f"<html>{slug}</html>")
         (d / "gif-01.gif").write_bytes(b"GIF")
-    (icloud / "Author_guide-ok_Reel1").mkdir(parents=True)
+    (icloud / "Author_guide-ok_Reel1").mkdir(parents=True, exist_ok=True)
     (icloud / "Author_guide-ok_Reel1" / "index.html").write_text("<html>guide-ok</html>")
     (icloud / "Author_guide-ok_Reel1" / "gif-01.gif").write_bytes(b"GIF")
-    (icloud / "Author_guide-drift_Reel3").mkdir(parents=True)
+    (icloud / "Author_guide-drift_Reel3").mkdir(parents=True, exist_ok=True)
     (icloud / "Author_guide-drift_Reel3" / "index.html").write_text("<html>OLD</html>")
     # extra legacy file in the drift mirror must NEVER be deleted by apply
     (icloud / "Author_guide-drift_Reel3" / "old-asset.txt").write_text("keep me")
@@ -66,10 +66,10 @@ def test_classifies_unchanged_missing_drifted(tmp_path):
 def test_dry_run_writes_nothing_to_icloud(tmp_path):
     proc, report, repo, icloud = run(tmp_path)  # default is dry-run
     before = tree(icloud)
-    assert before == tree(icloud)
-    # also explicit --dry-run
+    assert proc.returncode == 0
     proc2, *_ = run(tmp_path, "--dry-run")
-    assert proc2.returncode == 0
+    assert proc2.returncode == 0, proc2.stderr
+    assert before == tree(icloud)  # neither run touched iCloud
 
 
 def test_apply_single_id_copies_and_never_deletes(tmp_path):
