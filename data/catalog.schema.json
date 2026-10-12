@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "catalog.schema.json",
+  "title": "Workout Guides canonical catalog (data/guides.json)",
+  "description": "Navigation manifest. Stable IDs: guide.id is the guide slug; card.id is <guide-id>#<two-digit position>. Unknown metadata stays null/unknown - builders never invent safety or medical claims. Extra fields allowed; this is the minimum shape.",
+  "type": "object",
+  "required": ["schema_version", "generated_at", "guides"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "generated_at": {"type": "string", "format": "date-time",
+      "description": "Deterministic: UTC midnight of the newest input file's date, so unchanged inputs rebuild byte-for-byte."},
+    "guides": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "public_path", "status", "cards"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$",
+            "description": "The guide slug. Immutable."},
+          "title": {"type": "string"},
+          "author": {"type": ["string", "null"]},
+          "source_reel_id": {"type": ["string", "null"]},
+          "source_url": {"type": ["string", "null"], "format": "uri"},
+          "public_path": {"type": ["string", "null"],
+            "description": "Hub directory, e.g. 'guide-slug/'. Published guides must resolve to <repo>/<id>/index.html."},
+          "icloud_path": {"type": ["string", "null"],
+            "description": "iCloud mirror folder name with trailing slash, or null when no mirror folder exists."},
+          "status": {"enum": ["draft", "published", "deployment_pending", "blocked"],
+            "description": "draft = local HTML/GIFs incomplete; published = local complete AND Pages 200; deployment_pending = local complete, Pages not yet 200."},
+          "goals": {"type": "array", "items": {"type": "string"}},
+          "body_parts": {"type": "array", "items": {"type": "string"}},
+          "equipment": {"type": "array", "items": {"type": "string"}},
+          "locations": {"type": "array", "items": {"enum": ["home", "office", "gym", "outdoors", "unknown"]}},
+          "duration_min": {"type": ["number", "null"], "minimum": 0},
+          "intensity": {"enum": ["recovery", "easy", "moderate", "hard", "unknown"]},
+          "best_for": {"type": "array",
+            "items": {"enum": ["morning", "desk-break", "pre-gym", "post-workout", "evening", "recovery", "unknown"]}},
+          "avoid_if": {"type": "array", "items": {"type": "string"},
+            "description": "Plain-language movement cautions only. Never a medical diagnosis."},
+          "cards": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "position", "name", "url"],
+              "properties": {
+                "id": {"type": "string", "pattern": "^.+#\\d{2}$"},
+                "position": {"type": "integer", "minimum": 1},
+                "name": {"type": ["string", "null"]},
+                "dose": {"type": ["string", "null"]},
+                "tag": {"type": ["string", "null"]},
+                "clip": {"type": ["object", "null"],
+                  "properties": {"start": {"type": "number"}, "duration": {"type": "number"}}},
+                "url": {"type": "string", "description": "guide-slug/#exN anchor link"},
+                "hidden": {"type": "boolean",
+                  "description": "Optional curation flag from the spec: excluded from the exercise-card directory."}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
