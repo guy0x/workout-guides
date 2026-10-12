@@ -40,3 +40,37 @@ Self-contained, offline-capable fitness workout guides (dark-themed HTML, GIFs i
 `index.html` is a self-contained landing page matching the guides' dark theme — hero, search, **Goal filters** (mobility / core / legs & knees / hips / upper body / rehab / mastery / gym) and **Gear filters** (no equipment / mat / resistance band / dumbbells / cable / kettlebell, with live per-chip counts). No build step — GitHub Pages serves the repo as-is.
 
 Built with the Hermes release harness (ATHENA profile). Each guide is a single self-contained HTML file.
+
+## Storage contract
+
+| Layer | Role |
+|---|---|
+| `data/guides.json` | **Canonical navigation manifest.** Stable IDs: guide id = slug, card id = `<guide-id>#NN`. Every navigation surface is generated from it. Schema: `data/catalog.schema.json`. |
+| Guide specs (`~/.hermes/profiles/librarian/scripts/guide_pipeline/specs/*.json`) | Authored content / build inputs (prose, cards, clips). |
+| Hub repo (this repo) | Publication build — guide HTML + generated pages (`index.html`, `cards.html`, `program.html`, `mixes.html`, `today.html`). |
+| iCloud `Workout Guides/` | Offline delivery mirror. Additive repair only — never bulk-copied, never deleted (see `scripts/reconcile_mirrors.py`, report: `data/mirror-report.json`). |
+| iCloud `Wellness/Workouts/Media/` | Reusable movement media (GIF library). |
+| `~/Documents/Reels/` | Raw source/provenance assets. |
+| Notion | Backup/index only — **never** navigation truth. |
+
+## Navigation build & verification
+
+```bash
+# Regenerate everything locally (no push):
+python3 scripts/build_navigation.py --date $(date +%F) --no-push
+
+# Zero-write health check — catalog + navigation surfaces:
+python3 scripts/build_navigation.py --check-only
+
+# Layered publication check (local files -> GitHub contents -> iCloud -> Pages):
+python3 scripts/verify_publication.py --catalog data/guides.json --report data/publication-report.json
+```
+
+- `today.html` — deterministic daily sessions (4 presets), device-local checkmarks
+  (`localStorage wg.done.<date>.<card-id>`), no external JS.
+- `program.html` always renders the CURRENT ISO week (deterministic seed rotation).
+- Publication statuses are layered: `verified` (local + GitHub + Pages 200),
+  `deployment_pending` (GitHub 200, Pages not yet), `failed`. A contents-API 200
+  alone never counts as live.
+- Tests: `python3 -m pytest scripts/tests -q` (catalog contract, builder, mirrors,
+  metadata, Today page, navigation links, hub stats, publication classifier).
