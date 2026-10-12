@@ -29,7 +29,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_cards import detect_body_parts  # reuse the established classifier
-from catalog import card_id, catalog_summary, validate_catalog
+from catalog import card_id, catalog_summary, validate_catalog, validate_daily_metadata
 
 GYM_GEAR = {"machine", "cable", "barbell", "bench", "plate", "bosu", "bar"}
 HOME_GEAR = {"none", "mat", "wall"}
@@ -253,6 +253,8 @@ def main() -> int:
                     help="live-HEAD every guide route at BASE_URL instead of the cache")
     ap.add_argument("--check-only", action="store_true",
                     help="build, validate, compare to the output file; write nothing")
+    ap.add_argument("--metadata-report", default=None, metavar="PATH",
+                    help="write the daily-metadata gap report (complete/unknown/invalid)")
     args = ap.parse_args()
 
     repo = Path(args.repo)
@@ -269,8 +271,25 @@ def main() -> int:
 
     errs = validate_catalog(catalog, repo, args.icloud and Path(args.icloud))
     summary = catalog_summary(catalog, repo, Path(args.icloud) if args.icloud else repo)
+    meta = validate_daily_metadata(catalog)
     for e in errs:
         print(f"ERROR: {e}", file=sys.stderr)
+    for e in meta["invalid_errors"]:
+        print(f"METADATA: {e}", file=sys.stderr)
+
+    if args.metadata_report:
+        Path(args.metadata_report).write_text(json.dumps({
+            "schema_version": 1,
+            "generated_at": generated_at,
+            "counts": meta["counts"],
+            "complete": meta["complete"],
+            "unknown": meta["unknown"],
+            "invalid": meta["invalid"],
+            "invalid_errors": meta["invalid_errors"],
+        }, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+        print(f"metadata report: complete={meta['counts']['complete']} "
+              f"unknown={meta['counts']['unknown']} invalid={meta['counts']['invalid']} "
+              f"-> {args.metadata_report}")
 
     payload = dump_catalog(catalog)
     if args.check_only:

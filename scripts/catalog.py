@@ -13,6 +13,21 @@ from pathlib import Path
 
 ALLOWED_STATUSES = ("draft", "published", "deployment_pending", "blocked")
 
+# Daily-decision metadata enums (card t_749084c1 Phase 4). 'unknown' is always
+# legal but lands the guide in the report's unresolved bucket.
+INTENSITIES = ("recovery", "easy", "moderate", "hard", "unknown")
+LOCATIONS = ("home", "office", "gym", "outdoors", "unknown")
+BEST_FOR = ("morning", "desk-break", "pre-gym", "post-workout", "evening", "recovery", "unknown")
+
+# Unsupported medical claims must never appear in avoid_if (plain movement
+# cautions only — never diagnoses or treatment promises).
+_MEDICAL_RE = re.compile(
+    r"\b(sciatic\w*|herniat\w*|disc bulge|slipped disc|arthritis|arthrosis|"
+    r"osteoporos\w*|osteopenia|scoliosis|stenosis|spondylol\w*|meniscus\w*|"
+    r"rotator cuff tear|acl tear|acl repair|tendonitis|tendinitis|bursitis|"
+    r"cure\w*|treats?\b|heals?\b|reverses?\b|fixes my|rebuilds?\s+(acls?|menisc\w+)|"
+    r"rehabilit\w*|clinical|diagnos\w*|therapy for|pregnan\w*)\b", re.I)
+
 _CARD_ID_RE = re.compile(r"^.+#\d{2}$")
 
 
@@ -126,4 +141,83 @@ def catalog_summary(catalog: dict, repo_root: Path, icloud_root: Path) -> dict:
         "missing_mirror_ids": missing,
         "published": sum(1 for g in guides if g.get("status") == "published"),
         "deployment_pending": sum(1 for g in guides if g.get("status") == "deployment_pending"),
+    }
+
+
+def validate_daily_metadata(catalog: dict) -> dict:
+    """Bucket every guide's daily-decision metadata: complete / unknown / invalid.
+
+    invalid = enum violations, wrong types, or medical claims in avoid_if.
+    unknown = legal but unresolved (missing duration, intensity 'unknown',
+    empty locations/best_for). Legacy guides legitimately live in 'unknown'
+    and are reported separately — never silently fixed.
+    """
+    complete: list[str] = []
+    unknown: list[str] = []
+    invalid: list[str] = []
+    invalid_errors: list[str] = []
+
+    for g in catalog.get("guides", []):
+        if not isinstance(g, dict):
+            continue
+        gid = g.get("id", "<no-id>")
+        errs: list[str] = []
+
+        intensity = g.get("intensity")
+        if intensity not in INTENSITIES:
+            errs.append(f"intensity {intensity!r} not in {INTENSITIES}")
+
+        locations = g.get("locations", [])
+        if not isinstance(locations, list):
+            errs.append("locations must be a list")
+        else:
+            bad = [x for x in locations if x not in LOCATIONS]
+            if bad:
+                errs.append(f"locations values {bad!r} not in {LOCATIONS}")
+
+        best_for = g.get("best_for", [])
+        if not isinstance(best_for, list):
+            errs.append("best_for must be a list")
+        else:
+            bad = [x for x in best_for if x not in BEST_FOR]
+            if bad:
+                errs.append(f"best_for values {bad!r} not in {BEST_FOR}")
+
+        duration = g.get("duration_min")
+        if duration is not None and (not isinstance(duration, (int, float))
+                                     or isinstance(duration, bool) or duration < 0):
+            errs.append(f"duration_min must be null or non-negative number, got {duration!r}")
+
+        avoid_if = g.get("avoid_if", [])
+        if not isinstance(avoid_if, list):
+            errs.append("avoid_if must be a list")
+        else:
+            for term in avoid_if:
+                if isinstance(term, str) and _MEDICAL_RE.search(term):
+                    errs.append(f"avoid_if contains unsupported medical claim: {term!r}")
+
+        if errs:
+            invalid.append(gid)
+            invalid_errors.extend(f"guide {gid}: {e}" for e in errs)
+            continue
+
+        unresolved = (
+            duration is None
+            or intensity == "unknown"
+            or "unknown" in (locations or [])
+            or not locations
+            or not best_for
+        )
+        (unknown if unresolved else complete).append(gid)
+
+    return {
+        "complete": complete,
+        "unknown": unknown,
+        "invalid": invalid,
+        "invalid_errors": invalid_errors,
+        "counts": {
+            "complete": len(complete),
+            "unknown": len(unknown),
+            "invalid": len(invalid),
+        },
     }
