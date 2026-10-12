@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Today — Workout Guides</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, "SF Pro Text", Helvetica, Arial, sans-serif; background: #f4f6f8; color: #1c2128; line-height: 1.55; }
+  header { background: #fff; border-bottom: 1px solid #e3e7ee; padding: 26px 20px 20px; text-align: center; }
+  header h1 { font-size: 2rem; font-weight: 800; }
+  header .date { color: #5a6472; margin-top: 4px; }
+  header .back { display:inline-block; margin-top:12px; color:#2563eb; font-weight:600; margin-right: 14px; }
+  .presets { display:flex; gap:10px; flex-wrap:wrap; justify-content:center; padding: 18px 16px 4px; }
+  .presets button { border: 1px solid #e3e7ee; background:#fff; border-radius: 999px; padding: 9px 16px; font-size: .95rem; font-weight: 600; cursor: pointer; color:#1c2128; }
+  .presets button.active { background:#1c2128; color:#fff; border-color:#1c2128; }
+  .session { max-width: 720px; margin: 0 auto; padding: 18px 16px 60px; }
+  .session h2 { font-size: 1.25rem; margin: 8px 0 2px; }
+  .badge { display:inline-block; background:#fef3c7; color:#92400e; border-radius: 999px; font-size: .72rem; padding: 2px 10px; margin-left: 6px; vertical-align: middle; }
+  .meta { color: #5a6472; font-size: .9rem; margin-bottom: 14px; }
+  .card { background:#fff; border:1px solid #e3e7ee; border-radius:14px; padding:14px 16px; margin-bottom:10px; display:flex; gap:12px; align-items:flex-start; }
+  .card input[type=checkbox] { width: 20px; height: 20px; margin-top: 2px; }
+  .card a { color:#2563eb; font-weight:600; text-decoration:none; }
+  .card .dose { color:#5a6472; font-size:.85rem; }
+  .card .from { color:#8a93a1; font-size:.78rem; }
+  .done-true .card-title { text-decoration: line-through; color:#8a93a1; }
+  .toolbar { display:flex; gap:10px; align-items:center; margin: 16px 0 4px; }
+  .toolbar button { border:1px solid #e3e7ee; background:#fff; border-radius:10px; padding:8px 14px; font-weight:600; cursor:pointer; }
+  .note { color:#8a93a1; font-size:.8rem; margin-top: 14px; }
+  .empty { background:#fff; border:1px dashed #e3e7ee; border-radius:14px; padding:18px; color:#5a6472; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Today</h1>
+  <div class="date">Monday, 12 October 2026</div>
+  <div>
+    <a class="back" href="index.html">&larr; All guides</a>
+    <a class="back" href="cards.html">Exercise cards</a>
+  </div>
+</header>
+<div class="presets" id="presets"><button data-preset="morning" type="button">Morning reset</button>
+<button data-preset="desk-break" type="button">Desk break</button>
+<button data-preset="gym" type="button">Gym warm-up</button>
+<button data-preset="recovery" type="button">Recovery</button></div>
+<div class="session" id="session"></div>
+<script>
+var DATE = "2026-10-12";
+var SESSIONS = {"morning": {"label": "Morning reset", "flexible": false, "total_min": 5, "equipment": ["box", "mat", "none"], "locations": ["home", "office"], "intensities": ["unspecified"], "guides": [{"title": "Seated 90/90 pigeon hip-rotation drill", "cards": [{"id": "seated-90-90-pigeon-hip-rotation-drill#01", "name": "Set up seated in 90/90 on the floor (no equipment)", "dose": "", "url": "seated-90-90-pigeon-hip-rotation-drill/#ex1"}, {"id": "seated-90-90-pigeon-hip-rotation-drill#02", "name": "COIL — side compression", "dose": "", "url": "seated-90-90-pigeon-hip-rotation-drill/#ex2"}, {"id": "seated-90-90-pigeon-hip-rotation-drill#03", "name": "OPEN — hip drive stand", "dose": "", "url": "seated-90-90-pigeon-hip-rotation-drill/#ex3"}]}, {"title": "Feet-Elevated Pelvic Reset — Ground the Waistband & Breathe", "cards": [{"id": "zaccupples-feet-elevated-pelvic-reset-c7chczgrri2#01", "name": "Pelvic Position Check — Find the Compensation", "dose": "Use as an assessment cue, not a diagnosis", "url": "zaccupples-feet-elevated-pelvic-reset-c7chczgrri2/#ex1"}, {"id": "zaccupples-feet-elevated-pelvic-reset-c7chczgrri2#02", "name": "Feet-Elevated Exhale Hold — Ground the Waistband", "dose": "Hold 60s · inhale 5–10s through the nose · exhale 5s through the mouth", "url": "zaccupples-feet-elevated-pelvic-reset-c7chczgrri2/#ex2"}]}, {"title": "Thoracic Expansion — Asymmetrical Ribcage & Scapula Drill", "cards": [{"id": "lebedanyaa-thoracic-expansion-asymmetrical-ribcage-drill_Dd9FNcSNEAx#01", "name": "Shoulder Drop Check — Identify the Position", "dose": "Observe only · no forced correction", "url": "lebedanyaa-thoracic-expansion-asymmetrical-ribcage-drill_Dd9FNcSNEAx/#ex1"}, {"id": "lebedanyaa-thoracic-expansion-asymmetrical-ribcage-drill_Dd9FNcSNEAx#02", "name": "Folded-Towel Setup — Support the Left Chest", "dose": "Set up once · adjust towel height for comfort", "url": "lebedanyaa-thoracic-expansion-asymmetrical-ribcage-drill_Dd9FNcSNEAx/#ex2"}, {"id": "lebedanyaa-thoracic-expansion-asymmetrical-ribcage-drill_Dd9FNcSNEAx#03", "name": "Prone Y-Raise — Exhale Into Thoracic Expansion", "dose": "Several slow exhalations · stop before compensation", "url": "lebedanyaa-thoracic-expansion-asymmetrical-ribcage-drill_Dd9FNcSNEAx/#ex3"}]}]}, "desk-break": {"label": "Desk break", "flexible": false, "total_min": 10, "equipment": ["mat", "none", "wall"], "locations": ["home"], "intensities": ["unspecified"], "guides": [{"title": "Supported Knee Tuck — Train the Lower Core", "cards": [{"id": "kenzo-121-supported-knee-tuck-lower-core-db-dm-n51sjxp#01", "name": "Supported Knee Tuck + Leg Extension — Control the Trunk", "dose": "Reference demonstration; no source dosage", "url": "kenzo-121-supported-knee-tuck-lower-core-db-dm-n51sjxp/#ex1"}]}, {"title": "Seated Wall-Supported Leg Lift — Build Hip & Adductor Control", "cards": [{"id": "sachinhrfitness-seated-wall-supported-adductor-lift-dzpyzyxzw1x#01", "name": "Seated Wall-Supported Leg Lift — Control the Adductor Range", "dose": "4×20 both sides (source overlay; exact counting convention not clarified)", "url": "sachinhrfitness-seated-wall-supported-adductor-lift-dzpyzyxzw1x/#ex1"}]}, {"title": "Ribcage–Pelvis Stack — Breathe Without Pushing Forward", "cards": [{"id": "ribcage-pelvis-breathing-stack#01", "name": "Stacked Ribcage–Pelvis Position", "dose": "Understand the position before moving", "url": "ribcage-pelvis-breathing-stack/#ex1"}, {"id": "ribcage-pelvis-breathing-stack#02", "name": "Supported Ball Sit + Pelvic-Floor Release", "dose": "Slow breathing; no fixed rep prescription", "url": "ribcage-pelvis-breathing-stack/#ex2"}, {"id": "ribcage-pelvis-breathing-stack#03", "name": "Basketball Ribcage Repositioning", "dose": "Slow inhale and slow exhale", "url": "ribcage-pelvis-breathing-stack/#ex3"}]}]}, "gym": {"label": "Gym warm-up", "flexible": false, "total_min": 6, "equipment": ["bench", "cable", "kettlebell", "none"], "locations": ["gym"], "intensities": ["unspecified"], "guides": [{"title": "Cable Arm Workout — 6 Moves for Biceps + Triceps", "cards": [{"id": "lucasell-arm-workout-dbxqzxanj-o#01", "name": "Z-Bar Cable Curl", "dose": "3 sets × 8–12 reps", "url": "lucasell-arm-workout-dbxqzxanj-o/#ex1"}, {"id": "lucasell-arm-workout-dbxqzxanj-o#02", "name": "Overhead Extension", "dose": "3 sets × 8–12 reps", "url": "lucasell-arm-workout-dbxqzxanj-o/#ex2"}, {"id": "lucasell-arm-workout-dbxqzxanj-o#03", "name": "Rope Hammer Curl", "dose": "3 sets × 8–12 reps", "url": "lucasell-arm-workout-dbxqzxanj-o/#ex3"}]}, {"title": "Kettlebell Grip Fix — Corner Hold + Knuckles to Ceiling", "cards": [{"id": "kettlebell-grip-corner-knuckles-ceiling#01", "name": "Corner Grip — Not the Middle of the Handle", "dose": "Use for swings, cleans, and overhead work", "url": "kettlebell-grip-corner-knuckles-ceiling/#ex1"}, {"id": "kettlebell-grip-corner-knuckles-ceiling#02", "name": "Knuckles to the Ceiling Overhead", "dose": "Use whenever the kettlebell is overhead", "url": "kettlebell-grip-corner-knuckles-ceiling/#ex2"}, {"id": "kettlebell-grip-corner-knuckles-ceiling#03", "name": "Apply the Cue to Snatch, Press, or Get-Up", "dose": "Rehearse the position before loading", "url": "kettlebell-grip-corner-knuckles-ceiling/#ex3"}]}, {"title": "Pec Minor Release + Lower-Trap Raise — Restore Scapular Position", "cards": [{"id": "pec-minor-lower-trap-reset#01", "name": "Pec-Minor Wall Ball Release", "dose": "Gentle, brief pass per side", "url": "pec-minor-lower-trap-reset/#ex1"}, {"id": "pec-minor-lower-trap-reset#02", "name": "Wide Floor Raise", "dose": "About 10 reps; hold each raise about 3 seconds", "url": "pec-minor-lower-trap-reset/#ex2"}, {"id": "pec-minor-lower-trap-reset#03", "name": "Bench-Supported Wide Raise", "dose": "Controlled reps; use the creator's 10-rep suggestion as a starting reference", "url": "pec-minor-lower-trap-reset/#ex3"}]}]}, "recovery": {"label": "Recovery", "flexible": false, "total_min": 15, "equipment": ["dumbbell", "mat", "none"], "locations": ["gym", "home"], "intensities": ["unspecified"], "guides": [{"title": "Five Posture Moves — Mobilize What Desk Work Stiffens", "cards": [{"id": "ade-dangour-five-moves-to-fix-posture-dbgqd24o3l1#01", "name": "Reverse Desk Posture — Extend What Sitting Folds", "dose": "30 sec. each! (source wording; meaning unspecified)", "url": "ade-dangour-five-moves-to-fix-posture-dbgqd24o3l1/#ex1"}, {"id": "ade-dangour-five-moves-to-fix-posture-dbgqd24o3l1#02", "name": "Hammies + Hip Flexors — Lengthen Both Sides", "dose": "30 sec. each! (source wording; meaning unspecified)", "url": "ade-dangour-five-moves-to-fix-posture-dbgqd24o3l1/#ex2"}, {"id": "ade-dangour-five-moves-to-fix-posture-dbgqd24o3l1#03", "name": "Glutes + Outer Hip — Settle into a Supported Pigeon", "dose": "30 sec. each! (source wording; meaning unspecified)", "url": "ade-dangour-five-moves-to-fix-posture-dbgqd24o3l1/#ex3"}]}, {"title": "Weighted Deep Core Routine — Build Control Through the Trunk", "cards": [{"id": "alexisemilythompson-weighted-deep-core-abs-routine-dxh9l4vkq7w#01", "name": "Supine Leg-Core Pattern — Keep the Trunk Controlled", "dose": "10 reps · 3 sets", "url": "alexisemilythompson-weighted-deep-core-abs-routine-dxh9l4vkq7w/#ex1"}, {"id": "alexisemilythompson-weighted-deep-core-abs-routine-dxh9l4vkq7w#02", "name": "Side-Lying Weighted Core — Stay Long Through the Side", "dose": "10 reps · 3 sets", "url": "alexisemilythompson-weighted-deep-core-abs-routine-dxh9l4vkq7w/#ex2"}, {"id": "alexisemilythompson-weighted-deep-core-abs-routine-dxh9l4vkq7w#03", "name": "Supine Weighted Arm Pattern — Hold the Core Position", "dose": "10 reps · 3 sets", "url": "alexisemilythompson-weighted-deep-core-abs-routine-dxh9l4vkq7w/#ex3"}]}, {"title": "Four Bedtime Hip Exercises — Rotate, Open, Relax", "cards": [{"id": "anthony-green-four-bedtime-hip-exercises-dcmkekfo78b#01", "name": "Reclined Butterfly — Let the Hips Open", "dose": "Reference demonstration; no source dosage", "url": "anthony-green-four-bedtime-hip-exercises-dcmkekfo78b/#ex1"}, {"id": "anthony-green-four-bedtime-hip-exercises-dcmkekfo78b#02", "name": "Supine Hip Rotation — Wipers Without Forcing", "dose": "Reference demonstration; no source dosage", "url": "anthony-green-four-bedtime-hip-exercises-dcmkekfo78b/#ex2"}, {"id": "anthony-green-four-bedtime-hip-exercises-dcmkekfo78b#03", "name": "Supine Bent-Knee Rotation — Explore Internal Range", "dose": "Reference demonstration; no source dosage", "url": "anthony-green-four-bedtime-hip-exercises-dcmkekfo78b/#ex3"}]}]}};
+function doneKey(cid) { return "wg.done." + DATE + "." + cid; }
+function pick(pid) {
+  var s = SESSIONS[pid];
+  document.querySelectorAll(".presets button").forEach(function (b) {
+    b.classList.toggle("active", b.dataset.preset === pid);
+  });
+  var el = document.getElementById("session");
+  if (!s || !s.guides.length) { el.innerHTML = '<div class="empty">No guides matched this preset yet.</div>'; return; }
+  var h = "<h2>" + s.label + (s.flexible ? '<span class="badge">flexible match</span>' : '') + "</h2>";
+  h += '<div class="meta">' + (s.total_min ? "~" + s.total_min + " min total &middot; " : "") +
+       "equipment: " + s.equipment.join(", ") + " &middot; location: " + s.locations.join(", ") +
+       " &middot; intensity: " + s.intensities.join(", ") + "</div>";
+  var n = 0;
+  s.guides.forEach(function (g) {
+    g.cards.forEach(function (c) {
+      n++;
+      h += '<label class="card" id="row-' + n + '">' +
+           '<input type="checkbox" data-cid="' + c.id + '"/>' +
+           '<span><a href="' + c.url + '">' + (c.name || "Move") + '</a>' +
+           (c.dose ? '<div class="dose">' + c.dose + '</div>' : '') +
+           '<div class="from">from ' + g.title + '</div></span></label>';
+    });
+  });
+  h += '<div class="toolbar"><button id="reset">Reset today</button></div>';
+  h += '<div class="note">Checkmarks are stored device-local (localStorage) for ' + DATE + ' — no account, no sync. Links open the guide at the exact drill.</div>';
+  el.innerHTML = h;
+  el.querySelectorAll("input[type=checkbox]").forEach(function (cb) {
+    cb.checked = localStorage.getItem(doneKey(cb.dataset.cid)) === "1";
+    cb.addEventListener("change", function () {
+      if (cb.checked) { localStorage.setItem(doneKey(cb.dataset.cid), "1"); }
+      else { localStorage.removeItem(doneKey(cb.dataset.cid)); }
+      cb.closest(".card").classList.toggle("done-true", cb.checked);
+    });
+    cb.closest(".card").classList.toggle("done-true", cb.checked);
+  });
+  document.getElementById("reset").addEventListener("click", function () {
+    el.querySelectorAll("input[type=checkbox]").forEach(function (cb) {
+      localStorage.removeItem(doneKey(cb.dataset.cid));
+      cb.checked = false;
+      cb.closest(".card").classList.remove("done-true");
+    });
+  });
+}
+(function init() {
+  var ids = Object.keys(SESSIONS);
+  var pre = ids[0];
+  document.querySelectorAll(".presets button").forEach(function (b) {
+    b.addEventListener("click", function () { pick(b.dataset.preset); });
+  });
+  pick(pre);
+})();
+</script>
+</body>
+</html>

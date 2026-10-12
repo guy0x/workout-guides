@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "presets": [
+    {"id": "morning", "label": "Morning reset", "duration_max": 12, "goals": ["mobility", "posture"]},
+    {"id": "desk-break", "label": "Desk break", "duration_max": 8, "locations": ["office", "home"], "intensity": ["recovery", "easy"]},
+    {"id": "gym", "label": "Gym warm-up", "duration_max": 12, "best_for": ["pre-gym"]},
+    {"id": "recovery", "label": "Recovery", "duration_max": 15, "intensity": ["recovery", "easy"]}
+  ]
+}
