@@ -317,6 +317,7 @@ __CSS__</style>
   </span>
   <div class="navline">
     <a href="index.html">← Guides</a>
+    <a href="today.html" style="color:#10b981;font-weight:700">Today</a>
     <a href="cards.html" class="on">Cards</a>
   </div>
 </header>

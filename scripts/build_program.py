@@ -161,6 +161,7 @@ def build_program_html(db, program, y, w, slots):
   <div class="meta">{meta_line}</div>
   <div class="nav">
     <a class="home" href="index.html">← Guides</a>
+    <a class="home" href="today.html" style="color:#10b981;font-weight:700">Today</a>
     <a href="cards.html">Cards</a>
     <a href="mixes.html">Mixes</a>
     <a class="on" href="program.html">Program</a>
@@ -216,12 +217,17 @@ def patch_index_link():
 
 
 def main():
+    import argparse
+    ap = argparse.ArgumentParser(description="Build program.html (weekly rotation).")
+    ap.add_argument("--date", default=None, help="YYYY-MM-DD override for the ISO week (default: today)")
+    args = ap.parse_args()
     if not PROGRAM_F.exists():
         print("no data/program.json — nothing to build", file=__import__("sys").stderr)
         return 1
     program = json.load(open(PROGRAM_F))
     db = load_specs()
-    y, w = iso_week()
+    today = date.fromisoformat(args.date) if args.date else None
+    y, w = iso_week(today)
     seed = y * 100 + w
     slots = {}
     for pid, entries in program["pools"].items():

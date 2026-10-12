@@ -181,7 +181,7 @@ def main():
 <header>
   <h1>Curated Mixes</h1>
   <p>Ready-to-run circuits assembled from exercise cards across the library.</p>
-  <a class="back" href="index.html">← Workout Guides</a> <a class="back" href="program.html" style="margin-left:10px">This Week's Program →</a>
+  <a class="back" href="index.html">← Workout Guides</a> <a class="back" href="today.html" style="color:#10b981;font-weight:700">Today</a> <a class="back" href="program.html" style="margin-left:10px">This Week's Program →</a>
 </header>
 <main class="grid">
   {chr(10).join(cards)}
