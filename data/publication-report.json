@@ -1,13 +1,13 @@
 {
  "schema_version": 1,
- "generated_at": "2026-10-12T15:48:36Z",
+ "generated_at": "2026-10-31T14:05:49Z",
  "pages_base": "https://guides.guyovadia.com",
  "counts": {
-  "verified": 174,
+  "verified": 223,
   "deployment_pending": 0,
   "failed": 0
  },
- "missing_mirrors": 43,
+ "missing_mirrors": 0,
  "guides": [
   {
    "id": "10-minute-morning-movement-flow-qi",
@@ -25,9 +25,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "3-hour-week-strength-shred-blueprint",
@@ -45,9 +45,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "abs-circuit",
@@ -85,9 +85,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "anonymous_apt-anterior-pelvic-tilt-fix_DdJsHjhN748",
@@ -160,6 +160,56 @@
    "missing_mirror": false
   },
   {
+   "id": "assisted-split-squat-hip-internal-rotation-drill",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "athlete-hip-strength-mobility-routine-deack0zrxu9",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "athletic-physique-four-signal-areas-dxq-xsykzzn",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "athletic-strength-force-hamstrings-deceleration-de0r3vau1ku",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "audio-is-music-dbyucyabvss",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
    "id": "ayo-five-minute-routine-to-open",
    "local_html": true,
    "local_gifs": true,
@@ -195,9 +245,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "bench-knee-tuck-core-control-serratus",
@@ -230,7 +280,37 @@
    "missing_mirror": false
   },
   {
+   "id": "big-toe-extension-knee-drive-dcd4oobkup1",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "block-knee-squat-hip-symmetry-drill",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
    "id": "bossyourgame",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "cable-face-pulls-for-rear-delts-and-posture",
    "local_html": true,
    "local_gifs": true,
    "github_contents": 200,
@@ -245,9 +325,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "calisthenics-core-foundations",
@@ -255,9 +335,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "carpal-tunnel-prevention-wrist-stretches",
@@ -265,9 +345,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "chest-lats-shoulders-30-min",
@@ -275,9 +355,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "core-circuit-boat-hollow-crunch-plank",
@@ -310,7 +390,27 @@
    "missing_mirror": false
   },
   {
+   "id": "core-pelvic-control-hip-lower-back-mobility-3-part",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
    "id": "cossack-squat-weighted-gait-mobility",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "creator-argues-that-a-visibly",
    "local_html": true,
    "local_gifs": true,
    "github_contents": 200,
@@ -330,7 +430,47 @@
    "missing_mirror": false
   },
   {
+   "id": "creator-explains-that-core-strength",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "creator-frames-the-reel-as",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "creator-frames-the-routine-around",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
    "id": "creator-presents-a-short-jaw-relaxation",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "creator-presents-two-exercises-for-the-core-and-a",
    "local_html": true,
    "local_gifs": true,
    "github_contents": 200,
@@ -405,9 +545,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "desk-hip-mobility-reset-dz-chtkskas",
@@ -440,6 +580,16 @@
    "missing_mirror": false
   },
   {
+   "id": "dog-pounds-gymnast-chest-flies-lower-chest-cable",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
    "id": "dreamchaserr",
    "local_html": true,
    "local_gifs": true,
@@ -460,14 +610,34 @@
    "missing_mirror": false
   },
   {
+   "id": "dumbbell-shoulder-rotator-cuff-training",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "educational-mobility-reel-explaining-a",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
    "id": "elbows-on-box-stretch",
    "local_html": true,
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "extreme-isometric-glute-minimus",
@@ -475,9 +645,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "fast-cut-educational-reel-about-lower-abdominal-posture",
@@ -505,9 +675,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "finger-hand-conditioning-for-musicians",
@@ -530,14 +700,24 @@
    "missing_mirror": false
   },
   {
+   "id": "five-exercise-home-kettlebell-workout-presented-as-20",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
    "id": "five-upper-body-exercises",
    "local_html": true,
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "fix-anterior-pelvic-tilt",
@@ -555,12 +735,32 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "flutter-kick-doming-fix-deep-core",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "flutter-kick-doming-fix-deep-core-engagement",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "full-body-mobility-flow-hironori-dcqyywkviiq",
    "local_html": true,
    "local_gifs": true,
    "github_contents": 200,
@@ -600,14 +800,24 @@
    "missing_mirror": false
   },
   {
+   "id": "golf-hip-mobility-hip-cars-dznzrim7bt",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
    "id": "hackenschmidt-bulletproof-knee",
    "local_html": true,
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "hackenschmidt-squat-runner-knee-pain",
@@ -655,9 +865,19 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
+  },
+  {
+   "id": "home-dumbbell-shoulder-workout",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
   },
   {
    "id": "i-lost-over-45-pounds-and-whenever-i-cant-make-it-to",
@@ -695,9 +915,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "if-i-told-you-that",
@@ -745,9 +965,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "if-youre-too-poor-to-afford-a-terahertz-glashot",
@@ -790,6 +1010,16 @@
    "missing_mirror": false
   },
   {
+   "id": "is-a-workout-demonstration",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
    "id": "is-not-a-single-workout-tutorial",
    "local_html": true,
    "local_gifs": true,
@@ -805,9 +1035,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "jeury-salcedo-rounded-shoulder-mobility-and-upper-back-strength-db-hc-vwus8vz",
@@ -831,6 +1061,16 @@
   },
   {
    "id": "karin-avi-happier-spine-four-wall-mobility-drills_DeUvd7COzVv",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "karin-bensabat-spine-mobility-reel",
    "local_html": true,
    "local_gifs": true,
    "github_contents": 200,
@@ -895,9 +1135,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "knee-pain-causes-and-fixes_DdU8LMSua07",
@@ -905,9 +1145,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "knee-pain-part-3-strength-training",
@@ -935,9 +1175,19 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
+  },
+  {
+   "id": "lean-aesthetic-physique-upper-lower-split-meal-plan",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
   },
   {
    "id": "lean-aesthetic-upper-lower-split-meal-plan",
@@ -960,7 +1210,27 @@
    "missing_mirror": false
   },
   {
+   "id": "lebedev-daniil-asymmetrical-thoracic-mobility-reel-dd9fncsneax",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
    "id": "lennys-morning-mobility-flow",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "longer-reel-presents-an-athletic-physique",
    "local_html": true,
    "local_gifs": true,
    "github_contents": 200,
@@ -975,9 +1245,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "lower-back-posterior-chain-training",
@@ -1025,9 +1295,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "mastery-01-legs-knees",
@@ -1035,9 +1305,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "mastery-02-core-abs",
@@ -1045,9 +1315,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "mastery-03-obliques-rotation",
@@ -1055,9 +1325,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "mastery-04-shoulders-spine",
@@ -1065,9 +1335,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "mastery-05-hips-balance",
@@ -1075,9 +1345,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "mathiaspegueroeriksen-six-move-abs-routine-dzyp9xgsgl",
@@ -1105,9 +1375,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "morning-mobility-reset",
@@ -1115,9 +1385,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "my-lower-belly-always-sticks-out-and-crunches-arent",
@@ -1145,9 +1415,29 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
+  },
+  {
+   "id": "no-equipment-leg-strength-circuit-run-with-a-soccer-team",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "numbered-core-dead-bug-progression-duydlmxdrpn",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
   },
   {
    "id": "numbered-promotional-reel-showing-four",
@@ -1210,6 +1500,26 @@
    "missing_mirror": false
   },
   {
+   "id": "persistent-banner-reads-unlocked-hip-joint-dbrnnesbfef",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "physical-therapist-demonstrates-the-five-minute",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
    "id": "pooch-belly-fix-chair-assisted-breathing",
    "local_html": true,
    "local_gifs": true,
@@ -1235,9 +1545,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "pre-gym-mobility-warmup",
@@ -1255,9 +1565,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "quadratus-lumborum-release-rebuild",
@@ -1265,9 +1575,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "rachelschinazi-nd-chair-assisted-lower-belly-core-routine-dan0heosuxj",
@@ -1300,6 +1610,26 @@
    "missing_mirror": false
   },
   {
+   "id": "recounts-the-origin-story-of-the-ball-work-training",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "reel-argues-that-the-lower",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
    "id": "reel-is-a-playful-comparison",
    "local_html": true,
    "local_gifs": true,
@@ -1320,6 +1650,26 @@
    "missing_mirror": false
   },
   {
+   "id": "reel-opens-with-5-moves",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "reel-opens-with-5-moves-dbgqd24o3l1",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
    "id": "reel-opens-with-a-flat",
    "local_html": true,
    "local_gifs": true,
@@ -1331,6 +1681,26 @@
   },
   {
    "id": "reel-shows-a-shirtless-performer-on-an-adjustable-bench",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "reel-summary-dfconsqdcsk",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "rep-calisthenics-leg-day",
    "local_html": true,
    "local_gifs": true,
    "github_contents": 200,
@@ -1385,9 +1755,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "sachinhrfitness-seated-wall-supported-adductor-lift-dzpyzyxzw1x",
@@ -1450,14 +1820,44 @@
    "missing_mirror": false
   },
   {
+   "id": "short-day-1-chest-focused-routine-showing-four-push-up",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "shoulder-hypertrophy-lateral-raises-press-rear-delts",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "shoulder-mobility-overhead-coordination-da-lkeqsen-u",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
    "id": "shoulder-savers-warmup-before-lifts",
    "local_html": true,
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "silent-educational-reel-using-anatomical",
@@ -1485,9 +1885,19 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
+  },
+  {
+   "id": "simple-push-pull-legs-muscle-building-dcfxeromr4o",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
   },
   {
    "id": "single-kettlebell-room-shred",
@@ -1495,12 +1905,32 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "solo-core-plank-routine",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "source-is-a-garage-gym-workout-reel",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "spoken-audio-is-only-an-intro",
    "local_html": true,
    "local_gifs": true,
    "github_contents": 200,
@@ -1525,9 +1955,19 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
+  },
+  {
+   "id": "stability-and-balance-training",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
   },
   {
    "id": "the-angel-workout",
@@ -1540,7 +1980,47 @@
    "missing_mirror": false
   },
   {
+   "id": "the-anti-bitchass-dad-at-home-protocol",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
    "id": "the-japanese-towel-method-posture-waist-r2-d4",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "tibial-internal-rotation-knee-and-foot-mechanics-drill",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "tibialis-raises-30-day-shin-strength-progression",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "title-overlay-reads-4-exercises-your-hips-need-before-dcmkekfo78b",
    "local_html": true,
    "local_gifs": true,
    "github_contents": 200,
@@ -1590,14 +2070,24 @@
    "missing_mirror": false
   },
   {
+   "id": "train-your-core-to-rotate-not-just-crunch-in-a-straight",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
    "id": "train-your-hips-hard",
    "local_html": true,
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "train-your-shoulders-with-only-2-dumbbells",
@@ -1615,9 +2105,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "trevorsinstinct-morning-mobility-flow-dyfukupbae-u",
@@ -1645,9 +2135,9 @@
    "local_gifs": true,
    "github_contents": 200,
    "pages_route": 200,
-   "icloud_mirror": false,
+   "icloud_mirror": true,
    "status": "verified",
-   "missing_mirror": true
+   "missing_mirror": false
   },
   {
    "id": "walking-gait-toe-tucks",
