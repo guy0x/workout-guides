@@ -1,9 +1,9 @@
 {
  "schema_version": 1,
- "generated_at": "2026-10-31T14:05:49Z",
+ "generated_at": "2026-10-31T14:22:58Z",
  "pages_base": "https://guides.guyovadia.com",
  "counts": {
-  "verified": 223,
+  "verified": 226,
   "deployment_pending": 0,
   "failed": 0
  },
@@ -51,6 +51,16 @@
   },
   {
    "id": "abs-circuit",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "abs-of-steel-at-work-three-standing-core-moves_de7bqscbxoh",
    "local_html": true,
    "local_gifs": true,
    "github_contents": 200,
@@ -291,6 +301,16 @@
   },
   {
    "id": "block-knee-squat-hip-symmetry-drill",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "bodyweight-legs-plyometrics_dep-xhwttxn",
    "local_html": true,
    "local_gifs": true,
    "github_contents": 200,
@@ -1161,6 +1181,16 @@
   },
   {
    "id": "knee-rebuild-acl-4-phase-program",
+   "local_html": true,
+   "local_gifs": true,
+   "github_contents": 200,
+   "pages_route": 200,
+   "icloud_mirror": true,
+   "status": "verified",
+   "missing_mirror": false
+  },
+  {
+   "id": "knock-knee-lower-body-alignment-montage_dfctjk1cks8",
    "local_html": true,
    "local_gifs": true,
    "github_contents": 200,
