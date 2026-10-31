@@ -937,18 +937,20 @@
     "cat": "rehab legs",
     "desc": "If your knees hurt more than they used to, it isn't age — it's one of three mechanical causes: a weak VMO, a weak glute medius, or stiff ankles. Three causes, three specific drills, all fixable. From @thekneedoctor (Instagram reel DdU8LMSua07).",
     "gear": [
-      "none"
+      "band",
+      "wall"
     ],
     "meta": [
-      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>~10 min",
-      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>3 fixes",
-      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>No equipment"
+      "<svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12,7 12,12 15,14\"/></svg>3 fixes",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M13 2 L3 14 h7 l-1 8 10-12 h-7z\"/></svg>Band + wall",
+      "<svg viewBox=\"0 0 24 24\"><path d=\"M2 12 a10 10 0 0 1 20 0Z\"/><path d=\"M2 12 a10 10 0 0 0 20 0\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg>Band + wall"
     ],
-    "search": "knee pain causes and fixes the knee doctor thekneedoctor knee pain knee hurt VMO glute medius ankle mobility short arc quad extension banded lateral walk wall ankle rocks rehab legs fix it before it gets worse DdU8LMSua07 Knee Pain — 3 Causes & 3 Fixes",
+    "search": "knee pain causes and fixes the knee doctor thekneedoctor knee pain knee hurt VMO glute medius ankle mobility short arc quad extension banded lateral walk wall ankle rocks rehab legs band wall fix it before it gets worse DdU8LMSua07 Knee Pain — 3 Causes & 3 Fixes",
     "tags": [
       "Rehab",
       "Legs & Knees",
-      "No equipment"
+      "Band",
+      "Wall"
     ],
     "title": "Knee Pain — 3 Causes & 3 Fixes"
   },

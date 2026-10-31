@@ -1,6 +1,6 @@
 # Workout Guides
 
-Self-contained, offline-capable fitness workout guides (dark-themed HTML, GIFs inlined as base64). Live at **https://guy0x.github.io/workout-guides/**
+Self-contained, offline-capable fitness workout guides (dark-themed HTML, GIFs inlined as base64). Live at **https://guides.guyovadia.com/**
 
 ## Guides
 - **Calisthenics Core Foundations — How It's Actually Built** — the boring stuff that builds the core, in the order the reel says it: dead hang → active hang, hanging knee raise, ledge straight-body lever (the strength behind a dragon flag), floor seated leg raise (L-sit prep) — then where they lead (front lever, planch). No equipment beyond a bar, a low ledge and the floor. From Antoine Marneffe (@antoine.calisthenics) → `calisthenics-core-foundations/`

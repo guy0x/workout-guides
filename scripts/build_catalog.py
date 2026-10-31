@@ -165,10 +165,16 @@ def build_catalog(repo: Path, specs_dir: Path, icloud_root: Path,
         cards = []
         body_parts: set = set()
         gear_text = " ".join(equipment)
+        keywords = list((spec or {}).get("keywords") or [])
+        tags = []
         for i, c in enumerate(raw_cards, start=1):
             safe = {"name": c.get("name") or "", "tag": c.get("tag") or "",
                     "desc": c.get("desc") or "", "cues": c.get("cues") or []}
             body_parts.update(detect_body_parts(safe, categories, gear_text))
+            if c.get("tag"):
+                tags.append(str(c["tag"]))
+            if c.get("name"):
+                keywords.extend(re.findall(r"[a-z][a-z0-9'-]{2,}", str(c["name"]).lower()))
             cards.append({
                 "id": card_id(slug, i),
                 "position": i,
@@ -188,6 +194,10 @@ def build_catalog(repo: Path, specs_dir: Path, icloud_root: Path,
         else:
             status = "published" if pages_codes.get(slug) == 200 else "deployment_pending"
 
+        keywords = list(dict.fromkeys(str(x).strip().lower() for x in keywords if str(x).strip()))
+        tags = list(dict.fromkeys(tags))
+        gif_count = len(list(gdir.glob("gif-*.gif")))
+
         guides.append({
             "id": slug,
             "title": (spec or {}).get("title") or ov.get("title") or slug,
@@ -195,7 +205,8 @@ def build_catalog(repo: Path, specs_dir: Path, icloud_root: Path,
             "source_reel_id": reel,
             "source_url": source_url,
             "public_path": f"{slug}/",
-            "icloud_path": match_icloud_folder(slug, reel, Path(icloud_root)),
+            "public_url": f"https://guides.guyovadia.com/{slug}/",
+            "icloud_path": match_icloud_folder(slug, reel, Path(icloud_root)) or f"{slug}/",
             "status": status,
             "goals": list(categories),
             "body_parts": sorted(body_parts),
@@ -206,6 +217,11 @@ def build_catalog(repo: Path, specs_dir: Path, icloud_root: Path,
             "intensity": "unknown",
             "best_for": [],
             "avoid_if": [],
+            "keywords": keywords,
+            "tags": tags,
+            "thumbnail_path": f"thumbs/{slug}.jpg" if (Path(repo) / "thumbs" / f"{slug}.jpg").is_file() else None,
+            "gif_count": gif_count,
+            "media_complete": gif_count >= len(cards) and gif_count > 0,
             "cards": cards,
         })
 
