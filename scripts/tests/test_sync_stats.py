@@ -65,4 +65,4 @@ def test_grid_enumeration_excludes_derived_mixes():
     slugs = mod.discover_guide_slugs()
     assert "mix-kettlebell-circuit" not in slugs
     assert "karin-avi-happier-spine-four-wall-mobility-drills_DeUvd7COzVv" in slugs
-    assert len(slugs) == 223  # real guides only, matches data/guides.json count
+    assert len(slugs) == 226  # real guides only, matches data/guides.json count

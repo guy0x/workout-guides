@@ -581,6 +581,101 @@
       ]
     },
     {
+      "id": "abs-of-steel-at-work-three-standing-core-moves_de7bqscbxoh",
+      "title": "Abs of Steel at Work — 3 Standing Core Moves",
+      "author": "madelynbelle",
+      "source_reel_id": "De7bQsCBxoH",
+      "source_url": "https://www.instagram.com/reel/De7bQsCBxoH/",
+      "public_path": "abs-of-steel-at-work-three-standing-core-moves_de7bqscbxoh/",
+      "public_url": "https://guides.guyovadia.com/abs-of-steel-at-work-three-standing-core-moves_de7bqscbxoh/",
+      "icloud_path": "abs-of-steel-at-work-three-standing-core-moves_de7bqscbxoh/",
+      "status": "deployment_pending",
+      "goals": [
+        "core",
+        "gym"
+      ],
+      "body_parts": [
+        "back",
+        "core",
+        "hips",
+        "knees",
+        "shoulders"
+      ],
+      "equipment": [
+        "none"
+      ],
+      "locations": [
+        "gym"
+      ],
+      "duration_min": null,
+      "intensity": "unknown",
+      "best_for": [],
+      "avoid_if": [],
+      "keywords": [
+        "standing core",
+        "workout at work",
+        "office-safe",
+        "elbow to knee",
+        "counter push-up",
+        "controlled weight arc",
+        "standing",
+        "elbow-to-knee",
+        "crunch",
+        "counter",
+        "push-up",
+        "lean",
+        "controlled",
+        "weight",
+        "arc"
+      ],
+      "tags": [
+        "CORE · STANDING",
+        "CORE · COUNTER",
+        "CORE · CONTROL"
+      ],
+      "thumbnail_path": "thumbs/abs-of-steel-at-work-three-standing-core-moves_de7bqscbxoh.jpg",
+      "gif_count": 3,
+      "media_complete": true,
+      "cards": [
+        {
+          "id": "abs-of-steel-at-work-three-standing-core-moves_de7bqscbxoh#01",
+          "position": 1,
+          "name": "Standing Elbow-to-Knee Crunch",
+          "dose": "About 10 per side; slow tempo",
+          "tag": "CORE · STANDING",
+          "clip": {
+            "start": 10.88,
+            "duration": 6.0
+          },
+          "url": "abs-of-steel-at-work-three-standing-core-moves_de7bqscbxoh/#ex1"
+        },
+        {
+          "id": "abs-of-steel-at-work-three-standing-core-moves_de7bqscbxoh#02",
+          "position": 2,
+          "name": "Counter Push-Up Lean",
+          "dose": "About 10 reps",
+          "tag": "CORE · COUNTER",
+          "clip": {
+            "start": 27.76,
+            "duration": 7.0
+          },
+          "url": "abs-of-steel-at-work-three-standing-core-moves_de7bqscbxoh/#ex2"
+        },
+        {
+          "id": "abs-of-steel-at-work-three-standing-core-moves_de7bqscbxoh#03",
+          "position": 3,
+          "name": "Controlled Weight Arc",
+          "dose": "Repeat the set 3 times",
+          "tag": "CORE · CONTROL",
+          "clip": {
+            "start": 43.84,
+            "duration": 8.0
+          },
+          "url": "abs-of-steel-at-work-three-standing-core-moves_de7bqscbxoh/#ex3"
+        }
+      ]
+    },
+    {
       "id": "ade-dangour-five-moves-to-fix-posture-dbgqd24o3l1",
       "title": "Five Posture Moves — Mobilize What Desk Work Stiffens",
       "author": "the.wellness.ade",
@@ -1753,7 +1848,7 @@
       "public_path": "assisted-split-squat-hip-internal-rotation-drill/",
       "public_url": "https://guides.guyovadia.com/assisted-split-squat-hip-internal-rotation-drill/",
       "icloud_path": "assisted-split-squat-hip-internal-rotation-drill/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "mobility",
         "hips"
@@ -1908,7 +2003,7 @@
       "public_path": "athlete-hip-strength-mobility-routine-deack0zrxu9/",
       "public_url": "https://guides.guyovadia.com/athlete-hip-strength-mobility-routine-deack0zrxu9/",
       "icloud_path": "athlete-hip-strength-mobility-routine-deack0zrxu9/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "mobility",
         "hips"
@@ -2049,7 +2144,7 @@
       "public_path": "athletic-physique-four-signal-areas-dxq-xsykzzn/",
       "public_url": "https://guides.guyovadia.com/athletic-physique-four-signal-areas-dxq-xsykzzn/",
       "icloud_path": "athletic-physique-four-signal-areas-dxq-xsykzzn/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "upper",
         "gym"
@@ -2175,7 +2270,7 @@
       "public_path": "athletic-strength-force-hamstrings-deceleration-de0r3vau1ku/",
       "public_url": "https://guides.guyovadia.com/athletic-strength-force-hamstrings-deceleration-de0r3vau1ku/",
       "icloud_path": "athletic-strength-force-hamstrings-deceleration-de0r3vau1ku/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "legs",
         "gym"
@@ -2307,7 +2402,7 @@
       "public_path": "audio-is-music-dbyucyabvss/",
       "public_url": "https://guides.guyovadia.com/audio-is-music-dbyucyabvss/",
       "icloud_path": "audio-is-music-dbyucyabvss/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "hips"
       ],
@@ -3550,7 +3645,7 @@
       "public_path": "big-toe-extension-knee-drive-dcd4oobkup1/",
       "public_url": "https://guides.guyovadia.com/big-toe-extension-knee-drive-dcd4oobkup1/",
       "icloud_path": "big-toe-extension-knee-drive-dcd4oobkup1/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "mobility",
         "legs"
@@ -3625,7 +3720,7 @@
       "public_path": "block-knee-squat-hip-symmetry-drill/",
       "public_url": "https://guides.guyovadia.com/block-knee-squat-hip-symmetry-drill/",
       "icloud_path": "block-knee-squat-hip-symmetry-drill/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "legs",
         "hips"
@@ -3745,6 +3840,64 @@
       ]
     },
     {
+      "id": "bodyweight-legs-plyometrics_dep-xhwttxn",
+      "title": "Bodyweight Legs — Consecutive Plyometrics",
+      "author": "prison.workout",
+      "source_reel_id": "Dep-XHwTtxN",
+      "source_url": "https://www.instagram.com/reel/Dep-XHwTtxN/",
+      "public_path": "bodyweight-legs-plyometrics_dep-xhwttxn/",
+      "public_url": "https://guides.guyovadia.com/bodyweight-legs-plyometrics_dep-xhwttxn/",
+      "icloud_path": "bodyweight-legs-plyometrics_dep-xhwttxn/",
+      "status": "deployment_pending",
+      "goals": [
+        "legs",
+        "rehab"
+      ],
+      "body_parts": [
+        "knees"
+      ],
+      "equipment": [
+        "none"
+      ],
+      "locations": [
+        "home"
+      ],
+      "duration_min": null,
+      "intensity": "unknown",
+      "best_for": [],
+      "avoid_if": [],
+      "keywords": [
+        "bodyweight legs",
+        "plyometrics",
+        "consecutive jumps",
+        "jump training",
+        "leg conditioning",
+        "consecutive",
+        "bodyweight",
+        "jumps"
+      ],
+      "tags": [
+        "LEGS · PLYOMETRICS"
+      ],
+      "thumbnail_path": "thumbs/bodyweight-legs-plyometrics_dep-xhwttxn.jpg",
+      "gif_count": 1,
+      "media_complete": true,
+      "cards": [
+        {
+          "id": "bodyweight-legs-plyometrics_dep-xhwttxn#01",
+          "position": 1,
+          "name": "Consecutive Bodyweight Jumps",
+          "dose": "Not specified in reel",
+          "tag": "LEGS · PLYOMETRICS",
+          "clip": {
+            "start": 7.8,
+            "duration": 6.0
+          },
+          "url": "bodyweight-legs-plyometrics_dep-xhwttxn/#ex1"
+        }
+      ]
+    },
+    {
       "id": "bossyourgame",
       "title": "@bossyourgame",
       "author": "anonymous",
@@ -3855,7 +4008,7 @@
       "public_path": "cable-face-pulls-for-rear-delts-and-posture/",
       "public_url": "https://guides.guyovadia.com/cable-face-pulls-for-rear-delts-and-posture/",
       "icloud_path": "cable-face-pulls-for-rear-delts-and-posture/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "rehab"
       ],
@@ -4820,7 +4973,7 @@
       "public_path": "core-pelvic-control-hip-lower-back-mobility-3-part/",
       "public_url": "https://guides.guyovadia.com/core-pelvic-control-hip-lower-back-mobility-3-part/",
       "icloud_path": "core-pelvic-control-hip-lower-back-mobility-3-part/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "core",
         "mobility"
@@ -5035,7 +5188,7 @@
       "public_path": "creator-argues-that-a-visibly/",
       "public_url": "https://guides.guyovadia.com/creator-argues-that-a-visibly/",
       "icloud_path": "creator-argues-that-a-visibly/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "mobility"
       ],
@@ -5318,7 +5471,7 @@
       "public_path": "creator-explains-that-core-strength/",
       "public_url": "https://guides.guyovadia.com/creator-explains-that-core-strength/",
       "icloud_path": "creator-explains-that-core-strength/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "core"
       ],
@@ -5407,7 +5560,7 @@
       "public_path": "creator-frames-the-reel-as/",
       "public_url": "https://guides.guyovadia.com/creator-frames-the-reel-as/",
       "icloud_path": "creator-frames-the-reel-as/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "core"
       ],
@@ -5538,7 +5691,7 @@
       "public_path": "creator-frames-the-routine-around/",
       "public_url": "https://guides.guyovadia.com/creator-frames-the-routine-around/",
       "icloud_path": "creator-frames-the-routine-around/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "mobility"
       ],
@@ -5758,7 +5911,7 @@
       "public_path": "creator-presents-two-exercises-for-the-core-and-a/",
       "public_url": "https://guides.guyovadia.com/creator-presents-two-exercises-for-the-core-and-a/",
       "icloud_path": "creator-presents-two-exercises-for-the-core-and-a/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "core"
       ],
@@ -7065,7 +7218,7 @@
       "public_path": "dog-pounds-gymnast-chest-flies-lower-chest-cable/",
       "public_url": "https://guides.guyovadia.com/dog-pounds-gymnast-chest-flies-lower-chest-cable/",
       "icloud_path": "dog-pounds-gymnast-chest-flies-lower-chest-cable/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "gym",
         "upper"
@@ -7399,7 +7552,7 @@
       "public_path": "dumbbell-shoulder-rotator-cuff-training/",
       "public_url": "https://guides.guyovadia.com/dumbbell-shoulder-rotator-cuff-training/",
       "icloud_path": "dumbbell-shoulder-rotator-cuff-training/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "upper"
       ],
@@ -7574,7 +7727,7 @@
       "public_path": "educational-mobility-reel-explaining-a/",
       "public_url": "https://guides.guyovadia.com/educational-mobility-reel-explaining-a/",
       "icloud_path": "educational-mobility-reel-explaining-a/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "mobility"
       ],
@@ -8411,7 +8564,7 @@
       "public_path": "five-exercise-home-kettlebell-workout-presented-as-20/",
       "public_url": "https://guides.guyovadia.com/five-exercise-home-kettlebell-workout-presented-as-20/",
       "icloud_path": "five-exercise-home-kettlebell-workout-presented-as-20/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "gym"
       ],
@@ -9181,7 +9334,7 @@
       "public_path": "flutter-kick-doming-fix-deep-core-engagement/",
       "public_url": "https://guides.guyovadia.com/flutter-kick-doming-fix-deep-core-engagement/",
       "icloud_path": "flutter-kick-doming-fix-deep-core-engagement/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "core"
       ],
@@ -9264,7 +9417,7 @@
       "public_path": "full-body-mobility-flow-hironori-dcqyywkviiq/",
       "public_url": "https://guides.guyovadia.com/full-body-mobility-flow-hironori-dcqyywkviiq/",
       "icloud_path": "full-body-mobility-flow-hironori-dcqyywkviiq/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "mobility",
         "hips",
@@ -9770,7 +9923,7 @@
       "public_path": "golf-hip-mobility-hip-cars-dznzrim7bt/",
       "public_url": "https://guides.guyovadia.com/golf-hip-mobility-hip-cars-dznzrim7bt/",
       "icloud_path": "golf-hip-mobility-hip-cars-dznzrim7bt/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "mobility",
         "hips"
@@ -10485,7 +10638,7 @@
       "public_path": "home-dumbbell-shoulder-workout/",
       "public_url": "https://guides.guyovadia.com/home-dumbbell-shoulder-workout/",
       "icloud_path": "home-dumbbell-shoulder-workout/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "upper"
       ],
@@ -12600,7 +12753,7 @@
       "public_path": "is-a-workout-demonstration/",
       "public_url": "https://guides.guyovadia.com/is-a-workout-demonstration/",
       "icloud_path": "is-a-workout-demonstration/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "mobility"
       ],
@@ -13535,7 +13688,7 @@
       "public_path": "karin-bensabat-spine-mobility-reel/",
       "public_url": "https://guides.guyovadia.com/karin-bensabat-spine-mobility-reel/",
       "icloud_path": "karin-bensabat-spine-mobility-reel/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "mobility"
       ],
@@ -14734,6 +14887,134 @@
       ]
     },
     {
+      "id": "knock-knee-lower-body-alignment-montage_dfctjk1cks8",
+      "title": "Knock-Knee / Lower-Body Alignment — Visual Montage",
+      "author": "media",
+      "source_reel_id": "DfCtJk1CkS8",
+      "source_url": "https://www.instagram.com/reel/DfCtJk1CkS8/",
+      "public_path": "knock-knee-lower-body-alignment-montage_dfctjk1cks8/",
+      "public_url": "https://guides.guyovadia.com/knock-knee-lower-body-alignment-montage_dfctjk1cks8/",
+      "icloud_path": "knock-knee-lower-body-alignment-montage_dfctjk1cks8/",
+      "status": "deployment_pending",
+      "goals": [
+        "rehab",
+        "legs",
+        "mobility"
+      ],
+      "body_parts": [
+        "knees"
+      ],
+      "equipment": [
+        "dumbbell",
+        "kettlebell",
+        "band",
+        "none"
+      ],
+      "locations": [],
+      "duration_min": null,
+      "intensity": "unknown",
+      "best_for": [],
+      "avoid_if": [],
+      "keywords": [
+        "knock knees",
+        "lower-body alignment",
+        "knee valgus",
+        "rehab visual reference",
+        "movement montage",
+        "lower-body",
+        "movement",
+        "scene",
+        "unidentified",
+        "supported",
+        "strength",
+        "kettlebell",
+        "banded",
+        "squat",
+        "hinge",
+        "row"
+      ],
+      "tags": [
+        "VISUAL CATALOG"
+      ],
+      "thumbnail_path": "thumbs/knock-knee-lower-body-alignment-montage_dfctjk1cks8.jpg",
+      "gif_count": 6,
+      "media_complete": true,
+      "cards": [
+        {
+          "id": "knock-knee-lower-body-alignment-montage_dfctjk1cks8#01",
+          "position": 1,
+          "name": "Lower-Body Movement Scene 1 — Unidentified",
+          "dose": "Not specified in reel",
+          "tag": "VISUAL CATALOG",
+          "clip": {
+            "start": 0.0,
+            "duration": 5.5
+          },
+          "url": "knock-knee-lower-body-alignment-montage_dfctjk1cks8/#ex1"
+        },
+        {
+          "id": "knock-knee-lower-body-alignment-montage_dfctjk1cks8#02",
+          "position": 2,
+          "name": "Supported Strength Scene 2 — Unidentified",
+          "dose": "Not specified in reel",
+          "tag": "VISUAL CATALOG",
+          "clip": {
+            "start": 5.5,
+            "duration": 5.5
+          },
+          "url": "knock-knee-lower-body-alignment-montage_dfctjk1cks8/#ex2"
+        },
+        {
+          "id": "knock-knee-lower-body-alignment-montage_dfctjk1cks8#03",
+          "position": 3,
+          "name": "Kettlebell Scene 3 — Unidentified",
+          "dose": "Not specified in reel",
+          "tag": "VISUAL CATALOG",
+          "clip": {
+            "start": 11.0,
+            "duration": 5.5
+          },
+          "url": "knock-knee-lower-body-alignment-montage_dfctjk1cks8/#ex3"
+        },
+        {
+          "id": "knock-knee-lower-body-alignment-montage_dfctjk1cks8#04",
+          "position": 4,
+          "name": "Banded Lower-Body Scene 4 — Unidentified",
+          "dose": "Not specified in reel",
+          "tag": "VISUAL CATALOG",
+          "clip": {
+            "start": 16.5,
+            "duration": 5.5
+          },
+          "url": "knock-knee-lower-body-alignment-montage_dfctjk1cks8/#ex4"
+        },
+        {
+          "id": "knock-knee-lower-body-alignment-montage_dfctjk1cks8#05",
+          "position": 5,
+          "name": "Squat / Hinge Scene 5 — Unidentified",
+          "dose": "Not specified in reel",
+          "tag": "VISUAL CATALOG",
+          "clip": {
+            "start": 22.0,
+            "duration": 5.5
+          },
+          "url": "knock-knee-lower-body-alignment-montage_dfctjk1cks8/#ex5"
+        },
+        {
+          "id": "knock-knee-lower-body-alignment-montage_dfctjk1cks8#06",
+          "position": 6,
+          "name": "Supported Row Scene 6 — Unidentified",
+          "dose": "Not specified in reel",
+          "tag": "VISUAL CATALOG",
+          "clip": {
+            "start": 27.5,
+            "duration": 6.0
+          },
+          "url": "knock-knee-lower-body-alignment-montage_dfctjk1cks8/#ex6"
+        }
+      ]
+    },
+    {
       "id": "korea-wrestlers-kettlebell-training",
       "title": "Korea Wrestlers Kettlebell Training — @wrestling_physi",
       "author": "wrestling_physi",
@@ -14837,7 +15118,7 @@
       "public_path": "lean-aesthetic-physique-upper-lower-split-meal-plan/",
       "public_url": "https://guides.guyovadia.com/lean-aesthetic-physique-upper-lower-split-meal-plan/",
       "icloud_path": "lean-aesthetic-physique-upper-lower-split-meal-plan/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "gym"
       ],
@@ -15360,7 +15641,7 @@
       "public_path": "lebedev-daniil-asymmetrical-thoracic-mobility-reel-dd9fncsneax/",
       "public_url": "https://guides.guyovadia.com/lebedev-daniil-asymmetrical-thoracic-mobility-reel-dd9fncsneax/",
       "icloud_path": "lebedev-daniil-asymmetrical-thoracic-mobility-reel-dd9fncsneax/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "mobility"
       ],
@@ -15567,7 +15848,7 @@
       "public_path": "longer-reel-presents-an-athletic-physique/",
       "public_url": "https://guides.guyovadia.com/longer-reel-presents-an-athletic-physique/",
       "icloud_path": "longer-reel-presents-an-athletic-physique/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "upper"
       ],
@@ -17849,7 +18130,7 @@
       "public_path": "no-equipment-leg-strength-circuit-run-with-a-soccer-team/",
       "public_url": "https://guides.guyovadia.com/no-equipment-leg-strength-circuit-run-with-a-soccer-team/",
       "icloud_path": "no-equipment-leg-strength-circuit-run-with-a-soccer-team/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "legs"
       ],
@@ -17973,7 +18254,7 @@
       "public_path": "numbered-core-dead-bug-progression-duydlmxdrpn/",
       "public_url": "https://guides.guyovadia.com/numbered-core-dead-bug-progression-duydlmxdrpn/",
       "icloud_path": "numbered-core-dead-bug-progression-duydlmxdrpn/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "core"
       ],
@@ -18833,7 +19114,7 @@
       "public_path": "persistent-banner-reads-unlocked-hip-joint-dbrnnesbfef/",
       "public_url": "https://guides.guyovadia.com/persistent-banner-reads-unlocked-hip-joint-dbrnnesbfef/",
       "icloud_path": "persistent-banner-reads-unlocked-hip-joint-dbrnnesbfef/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "hips"
       ],
@@ -18954,7 +19235,7 @@
       "public_path": "physical-therapist-demonstrates-the-five-minute/",
       "public_url": "https://guides.guyovadia.com/physical-therapist-demonstrates-the-five-minute/",
       "icloud_path": "physical-therapist-demonstrates-the-five-minute/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "mobility"
       ],
@@ -20249,7 +20530,7 @@
       "public_path": "recounts-the-origin-story-of-the-ball-work-training/",
       "public_url": "https://guides.guyovadia.com/recounts-the-origin-story-of-the-ball-work-training/",
       "icloud_path": "recounts-the-origin-story-of-the-ball-work-training/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "mobility"
       ],
@@ -20439,7 +20720,7 @@
       "public_path": "reel-argues-that-the-lower/",
       "public_url": "https://guides.guyovadia.com/reel-argues-that-the-lower/",
       "icloud_path": "reel-argues-that-the-lower/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "mobility"
       ],
@@ -20812,7 +21093,7 @@
       "public_path": "reel-opens-with-5-moves/",
       "public_url": "https://guides.guyovadia.com/reel-opens-with-5-moves/",
       "icloud_path": "reel-opens-with-5-moves/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "mobility"
       ],
@@ -20932,7 +21213,7 @@
       "public_path": "reel-opens-with-5-moves-dbgqd24o3l1/",
       "public_url": "https://guides.guyovadia.com/reel-opens-with-5-moves-dbgqd24o3l1/",
       "icloud_path": "reel-opens-with-5-moves-dbgqd24o3l1/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "mobility"
       ],
@@ -21267,7 +21548,7 @@
       "public_path": "reel-summary-dfconsqdcsk/",
       "public_url": "https://guides.guyovadia.com/reel-summary-dfconsqdcsk/",
       "icloud_path": "reel-summary-dfconsqdcsk/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "mobility"
       ],
@@ -21461,7 +21742,7 @@
       "public_path": "rep-calisthenics-leg-day/",
       "public_url": "https://guides.guyovadia.com/rep-calisthenics-leg-day/",
       "icloud_path": "rep-calisthenics-leg-day/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "legs"
       ],
@@ -22690,7 +22971,7 @@
       "public_path": "short-day-1-chest-focused-routine-showing-four-push-up/",
       "public_url": "https://guides.guyovadia.com/short-day-1-chest-focused-routine-showing-four-push-up/",
       "icloud_path": "short-day-1-chest-focused-routine-showing-four-push-up/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "upper"
       ],
@@ -22791,7 +23072,7 @@
       "public_path": "shoulder-hypertrophy-lateral-raises-press-rear-delts/",
       "public_url": "https://guides.guyovadia.com/shoulder-hypertrophy-lateral-raises-press-rear-delts/",
       "icloud_path": "shoulder-hypertrophy-lateral-raises-press-rear-delts/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "upper"
       ],
@@ -22897,7 +23178,7 @@
       "public_path": "shoulder-mobility-overhead-coordination-da-lkeqsen-u/",
       "public_url": "https://guides.guyovadia.com/shoulder-mobility-overhead-coordination-da-lkeqsen-u/",
       "icloud_path": "shoulder-mobility-overhead-coordination-da-lkeqsen-u/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "mobility",
         "upper"
@@ -23624,7 +23905,7 @@
       "public_path": "simple-push-pull-legs-muscle-building-dcfxeromr4o/",
       "public_url": "https://guides.guyovadia.com/simple-push-pull-legs-muscle-building-dcfxeromr4o/",
       "icloud_path": "simple-push-pull-legs-muscle-building-dcfxeromr4o/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "upper",
         "legs",
@@ -24088,7 +24369,7 @@
       "public_path": "source-is-a-garage-gym-workout-reel/",
       "public_url": "https://guides.guyovadia.com/source-is-a-garage-gym-workout-reel/",
       "icloud_path": "source-is-a-garage-gym-workout-reel/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "mobility"
       ],
@@ -24228,7 +24509,7 @@
       "public_path": "spoken-audio-is-only-an-intro/",
       "public_url": "https://guides.guyovadia.com/spoken-audio-is-only-an-intro/",
       "icloud_path": "spoken-audio-is-only-an-intro/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "mobility"
       ],
@@ -24537,7 +24818,7 @@
       "public_path": "stability-and-balance-training/",
       "public_url": "https://guides.guyovadia.com/stability-and-balance-training/",
       "icloud_path": "stability-and-balance-training/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "mobility"
       ],
@@ -24684,7 +24965,7 @@
       "public_path": "the-anti-bitchass-dad-at-home-protocol/",
       "public_url": "https://guides.guyovadia.com/the-anti-bitchass-dad-at-home-protocol/",
       "icloud_path": "coachedbyev_the-anti-bitchass-dad-at-home-protocol_DeaO3EpJFID/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "mobility"
       ],
@@ -24872,7 +25153,7 @@
       "public_path": "tibial-internal-rotation-knee-and-foot-mechanics-drill/",
       "public_url": "https://guides.guyovadia.com/tibial-internal-rotation-knee-and-foot-mechanics-drill/",
       "icloud_path": "tibial-internal-rotation-knee-and-foot-mechanics-drill/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "mobility",
         "legs"
@@ -25008,7 +25289,7 @@
       "public_path": "tibialis-raises-30-day-shin-strength-progression/",
       "public_url": "https://guides.guyovadia.com/tibialis-raises-30-day-shin-strength-progression/",
       "icloud_path": "tibialis-raises-30-day-shin-strength-progression/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "legs"
       ],
@@ -25117,7 +25398,7 @@
       "public_path": "title-overlay-reads-4-exercises-your-hips-need-before-dcmkekfo78b/",
       "public_url": "https://guides.guyovadia.com/title-overlay-reads-4-exercises-your-hips-need-before-dcmkekfo78b/",
       "icloud_path": "title-overlay-reads-4-exercises-your-hips-need-before-dcmkekfo78b/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "hips"
       ],
@@ -25715,7 +25996,7 @@
       "public_path": "train-your-core-to-rotate-not-just-crunch-in-a-straight/",
       "public_url": "https://guides.guyovadia.com/train-your-core-to-rotate-not-just-crunch-in-a-straight/",
       "icloud_path": "train-your-core-to-rotate-not-just-crunch-in-a-straight/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "core"
       ],
