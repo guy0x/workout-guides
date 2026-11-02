@@ -55,6 +55,7 @@ CSS = """
   .desc { font-size:.92rem; color:#cdd2de; margin-bottom:10px; }
   .cues { margin:0 0 0 18px; color:#aab0c0; font-size:.9rem; }
   .cues li { margin-bottom:4px; }
+  .gif { width:100%; border-radius:10px; margin:10px 0 4px; background:#000; display:block; }
   .src { display:inline-block; margin-top:10px; background:#223; border:1px solid #3a3f4d; padding:4px 10px; border-radius:20px; font-size:.8rem; color:#b8c0ff; word-break:break-all; }
   .badges { display:flex; flex-wrap:wrap; gap:5px; margin-bottom:8px; }
   .badges span { display:inline-block; font-size:.66rem; font-weight:700; padding:2px 8px; border-radius:10px; letter-spacing:.3px; }
@@ -65,12 +66,31 @@ CSS = """
   footer a { color:#34d399; text-decoration:underline; }
 """
 
-def build_mix(mix, db):
+def load_guide_gifs():
+    """Map each published guide's card title -> its gif filename (gif-NN.gif)
+    by parsing the guide index.html <img class='gif' src=.. alt=..> pairs."""
+    mapping = {}
+    for d in REPO.iterdir():
+        idx = d / "index.html"
+        if not d.is_dir() or not idx.exists():
+            continue
+        try:
+            t = idx.read_text(encoding="utf-8")
+        except Exception:
+            continue
+        pairs = re.findall(r'<img class="gif" src="(gif-\d+\.gif)"[^>]*alt="([^"]*)"', t)
+        if pairs:
+            mapping[d.name] = {alt: src for src, alt in pairs}
+    return mapping
+
+
+def build_mix(mix, db, gif_map=None):
     slug = mix["slug"]
     title = mix["title"]
     intent = mix["intent"]
     steps = mix["steps"]
     cards_html = []
+    gif_map = gif_map or {}
     nav = '<a class="home" href="../index.html">← Guides</a><a href="../cards.html">Cards</a>'
     # Card-directory cross-link (preserved by regeneration — see G1 gate, 2026-09-22)
     card_dir_link = '<a href="../cards.html" class="card-dir-link" style="background:#10b981;color:#fff;font-weight:700">← Cards</a>'
@@ -98,12 +118,19 @@ def build_mix(mix, db):
         elif guy_ctx.needs_gym(gear):
             badges.append('<span class="b-gym">needs gym</span>')
         badge_html = f'<div class="badges">{"".join(badges)}</div>' if badges else ""
+        # --- inline the card's demo GIF from its source guide ---
+        gif_html = ""
+        if spec and gif_map.get(src):
+            gif_src = gif_map[src].get(card_name) or gif_map[src].get(card.get("name"))
+            if gif_src:
+                gif_html = f'<img class="gif" src="../{src}/{gif_src}" alt="{card_name}" loading="lazy"/>'
         link = f'<a class="src" href="../{src}/">From: {spec["title"] if spec else src}</a>' if spec else ""
         cards_html.append(
             f'<div class="card">\n  <div class="card-num">{i}</div>\n'
             f'  <div class="card-body">\n'
             f'    <div class="card-title-row"><h2>{card["name"]}</h2>{tag}</div>\n'
             f'    {badge_html}\n'
+            f'    {gif_html}\n'
             f'    {dose}\n'
             f'    <p class="desc">{card.get("desc") or step.get("text", "")}</p>\n'
             + (f'    <ol class="cues">{cues}</ol>\n' if cues else "")
@@ -145,9 +172,10 @@ def main():
         print("no data/mixes.json — nothing to build", file=sys.stderr)
         return 1
     db = load_specs()
+    gif_map = load_guide_gifs()
     mixes = json.load(open(mixes_f))
     for mix in mixes:
-        build_mix(mix, db)
+        build_mix(mix, db, gif_map)
     # Mixes index page
     cards = []
     for mix in mixes:
