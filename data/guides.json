@@ -21150,8 +21150,8 @@
     },
     {
       "id": "reel-is-a-rapid-montage-headed-unfck-your-mobility",
-      "title": "Reel is a rapid montage headed UNFCK YOUR MOBILITY",
-      "author": "anonymous",
+      "title": "Unf*ck Your Mobility — Ankles, Hips, Spine, Shoulders",
+      "author": "Roland Gloekler",
       "source_reel_id": "DZDeT-NtEZA",
       "source_url": "https://www.instagram.com/reel/DZDeT-NtEZA/",
       "public_path": "reel-is-a-rapid-montage-headed-unfck-your-mobility/",
@@ -21159,36 +21159,67 @@
       "icloud_path": "anonymous_reel-is-a-rapid-montage-headed-unfck-your-mobility_DZDeT-NtEZA/",
       "status": "published",
       "goals": [
-        "mobility"
+        "mobility",
+        "upper"
       ],
-      "body_parts": [],
+      "body_parts": [
+        "back",
+        "feet-ankles",
+        "hips",
+        "knees",
+        "shoulders",
+        "wrists-hands"
+      ],
       "equipment": [
-        "none",
-        "band"
+        "band",
+        "dumbbell",
+        "bench",
+        "none"
       ],
       "locations": [
-        "home",
-        "office"
+        "gym"
       ],
-      "duration_min": null,
+      "duration_min": 8,
       "intensity": "unknown",
       "best_for": [],
       "avoid_if": [],
       "keywords": [
-        "reel",
-        "rapid",
-        "montage",
-        "headed",
-        "unfck",
-        "your",
         "mobility",
-        "anonymous",
-        "none",
+        "ankles",
+        "hips",
+        "spine",
+        "shoulders",
+        "scapular",
+        "y-raise",
+        "bench",
+        "ankle",
+        "deep",
+        "squat",
+        "seated",
+        "dorsiflexion",
+        "rock",
+        "front-knee",
+        "shift",
+        "prone",
+        "raise",
+        "lower-trap",
+        "hip",
+        "stability",
         "band",
-        "movement"
+        "kneeling",
+        "positions",
+        "dumbbell",
+        "shoulder",
+        "raises",
+        "bench-supported",
+        "press",
+        "lateral"
       ],
       "tags": [
-        "MOBILITY"
+        "MOBILITY",
+        "Shoulder · Scapular",
+        "SPINE · HIPS",
+        "SHOULDERS"
       ],
       "thumbnail_path": "thumbs/reel-is-a-rapid-montage-headed-unfck-your-mobility.jpg",
       "gif_count": 5,
@@ -21197,7 +21228,7 @@
         {
           "id": "reel-is-a-rapid-montage-headed-unfck-your-mobility#01",
           "position": 1,
-          "name": "Movement 1",
+          "name": "Ankle Mobility — Deep Squat / Seated Dorsiflexion",
           "dose": "Not specified in reel",
           "tag": "MOBILITY",
           "clip": {
@@ -21209,7 +21240,7 @@
         {
           "id": "reel-is-a-rapid-montage-headed-unfck-your-mobility#02",
           "position": 2,
-          "name": "Movement 2",
+          "name": "Ankle Squat Rock — Front-Knee Shift",
           "dose": "Not specified in reel",
           "tag": "MOBILITY",
           "clip": {
@@ -21221,9 +21252,9 @@
         {
           "id": "reel-is-a-rapid-montage-headed-unfck-your-mobility#03",
           "position": 3,
-          "name": "Movement 3",
+          "name": "Prone Y Raise on Bench — Scapular / Lower-Trap",
           "dose": "Not specified in reel",
-          "tag": "MOBILITY",
+          "tag": "Shoulder · Scapular",
           "clip": {
             "start": 3.6,
             "duration": 1.3
@@ -21233,9 +21264,9 @@
         {
           "id": "reel-is-a-rapid-montage-headed-unfck-your-mobility#04",
           "position": 4,
-          "name": "Movement 4",
+          "name": "Spine & Hip Stability — Band / Kneeling Positions",
           "dose": "Not specified in reel",
-          "tag": "MOBILITY",
+          "tag": "SPINE · HIPS",
           "clip": {
             "start": 4.9,
             "duration": 1.5
@@ -21245,12 +21276,12 @@
         {
           "id": "reel-is-a-rapid-montage-headed-unfck-your-mobility#05",
           "position": 5,
-          "name": "Movement 5",
+          "name": "Dumbbell Shoulder Raises — Bench-Supported Press / Lateral Raise",
           "dose": "Not specified in reel",
-          "tag": "MOBILITY",
+          "tag": "SHOULDERS",
           "clip": {
             "start": 6.4,
-            "duration": 1.8
+            "duration": 1.567
           },
           "url": "reel-is-a-rapid-montage-headed-unfck-your-mobility/#ex5"
         }
