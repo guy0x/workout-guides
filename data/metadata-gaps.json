@@ -1,9 +1,9 @@
 {
  "schema_version": 1,
- "generated_at": "2026-10-31T00:00:00Z",
+ "generated_at": "2026-11-02T00:00:00Z",
  "counts": {
   "complete": 0,
-  "unknown": 226,
+  "unknown": 227,
   "invalid": 0
  },
  "complete": [],
@@ -85,6 +85,7 @@
   "flat-feet-overpronation-banded-calf-raise",
   "flutter-kick-doming-fix-deep-core",
   "flutter-kick-doming-fix-deep-core-engagement",
+  "foot-arch-and-big-toe-positioning",
   "full-body-mobility-flow-hironori-dcqyywkviiq",
   "gait-heel-flick-hip-stretch-rocker-pulse",
   "garrettmerrill-one-kettlebell-amrap-dbbv6wgjen2",

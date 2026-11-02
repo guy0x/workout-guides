@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-31T00:00:00Z",
+  "generated_at": "2026-11-02T00:00:00Z",
   "guides": [
     {
       "id": "10-minute-morning-movement-flow-qi",
@@ -589,7 +589,7 @@
       "public_path": "abs-of-steel-at-work-three-standing-core-moves_de7bqscbxoh/",
       "public_url": "https://guides.guyovadia.com/abs-of-steel-at-work-three-standing-core-moves_de7bqscbxoh/",
       "icloud_path": "abs-of-steel-at-work-three-standing-core-moves_de7bqscbxoh/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "core",
         "gym"
@@ -3848,7 +3848,7 @@
       "public_path": "bodyweight-legs-plyometrics_dep-xhwttxn/",
       "public_url": "https://guides.guyovadia.com/bodyweight-legs-plyometrics_dep-xhwttxn/",
       "icloud_path": "bodyweight-legs-plyometrics_dep-xhwttxn/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "legs",
         "rehab"
@@ -9409,6 +9409,178 @@
       ]
     },
     {
+      "id": "foot-arch-and-big-toe-positioning",
+      "title": "Foot Arch and Big-Toe Positioning",
+      "author": "anonymous",
+      "source_reel_id": "DfKi14eCb-V",
+      "source_url": "https://www.instagram.com/reel/DfKi14eCb-V/",
+      "public_path": "foot-arch-and-big-toe-positioning/",
+      "public_url": "https://guides.guyovadia.com/foot-arch-and-big-toe-positioning/",
+      "icloud_path": "foot-arch-and-big-toe-positioning/",
+      "status": "deployment_pending",
+      "goals": [
+        "mobility"
+      ],
+      "body_parts": [],
+      "equipment": [
+        "none"
+      ],
+      "locations": [
+        "home"
+      ],
+      "duration_min": null,
+      "intensity": "unknown",
+      "best_for": [],
+      "avoid_if": [],
+      "keywords": [
+        "foot",
+        "arch",
+        "and",
+        "big",
+        "toe",
+        "positioning",
+        "movement"
+      ],
+      "tags": [],
+      "thumbnail_path": "thumbs/foot-arch-and-big-toe-positioning.jpg",
+      "gif_count": 11,
+      "media_complete": true,
+      "cards": [
+        {
+          "id": "foot-arch-and-big-toe-positioning#01",
+          "position": 1,
+          "name": "Movement 1",
+          "dose": "",
+          "tag": "",
+          "clip": {
+            "start": 0.3,
+            "duration": 2.3
+          },
+          "url": "foot-arch-and-big-toe-positioning/#ex1"
+        },
+        {
+          "id": "foot-arch-and-big-toe-positioning#02",
+          "position": 2,
+          "name": "Movement 2",
+          "dose": "",
+          "tag": "",
+          "clip": {
+            "start": 2.6,
+            "duration": 1.6
+          },
+          "url": "foot-arch-and-big-toe-positioning/#ex2"
+        },
+        {
+          "id": "foot-arch-and-big-toe-positioning#03",
+          "position": 3,
+          "name": "Movement 4",
+          "dose": "",
+          "tag": "",
+          "clip": {
+            "start": 5.0,
+            "duration": 1.5
+          },
+          "url": "foot-arch-and-big-toe-positioning/#ex3"
+        },
+        {
+          "id": "foot-arch-and-big-toe-positioning#04",
+          "position": 4,
+          "name": "Movement 5",
+          "dose": "",
+          "tag": "",
+          "clip": {
+            "start": 6.5,
+            "duration": 2.1
+          },
+          "url": "foot-arch-and-big-toe-positioning/#ex4"
+        },
+        {
+          "id": "foot-arch-and-big-toe-positioning#05",
+          "position": 5,
+          "name": "Movement 6",
+          "dose": "",
+          "tag": "",
+          "clip": {
+            "start": 8.6,
+            "duration": 6.0
+          },
+          "url": "foot-arch-and-big-toe-positioning/#ex5"
+        },
+        {
+          "id": "foot-arch-and-big-toe-positioning#06",
+          "position": 6,
+          "name": "Movement 7",
+          "dose": "",
+          "tag": "",
+          "clip": {
+            "start": 22.8,
+            "duration": 6.0
+          },
+          "url": "foot-arch-and-big-toe-positioning/#ex6"
+        },
+        {
+          "id": "foot-arch-and-big-toe-positioning#07",
+          "position": 7,
+          "name": "Movement 8",
+          "dose": "",
+          "tag": "",
+          "clip": {
+            "start": 32.7,
+            "duration": 6.0
+          },
+          "url": "foot-arch-and-big-toe-positioning/#ex7"
+        },
+        {
+          "id": "foot-arch-and-big-toe-positioning#08",
+          "position": 8,
+          "name": "Movement 9",
+          "dose": "",
+          "tag": "",
+          "clip": {
+            "start": 39.2,
+            "duration": 3.7
+          },
+          "url": "foot-arch-and-big-toe-positioning/#ex8"
+        },
+        {
+          "id": "foot-arch-and-big-toe-positioning#09",
+          "position": 9,
+          "name": "Movement 10",
+          "dose": "",
+          "tag": "",
+          "clip": {
+            "start": 42.9,
+            "duration": 4.1
+          },
+          "url": "foot-arch-and-big-toe-positioning/#ex9"
+        },
+        {
+          "id": "foot-arch-and-big-toe-positioning#10",
+          "position": 10,
+          "name": "Movement 11",
+          "dose": "",
+          "tag": "",
+          "clip": {
+            "start": 47.0,
+            "duration": 4.1
+          },
+          "url": "foot-arch-and-big-toe-positioning/#ex10"
+        },
+        {
+          "id": "foot-arch-and-big-toe-positioning#11",
+          "position": 11,
+          "name": "Movement 12",
+          "dose": "",
+          "tag": "",
+          "clip": {
+            "start": 51.1,
+            "duration": 6.0
+          },
+          "url": "foot-arch-and-big-toe-positioning/#ex11"
+        }
+      ]
+    },
+    {
       "id": "full-body-mobility-flow-hironori-dcqyywkviiq",
       "title": "Full-Body Mobility Flow — Posterior Chain, Spine, Hips & Core",
       "author": "hironori_nakajima",
@@ -14895,7 +15067,7 @@
       "public_path": "knock-knee-lower-body-alignment-montage_dfctjk1cks8/",
       "public_url": "https://guides.guyovadia.com/knock-knee-lower-body-alignment-montage_dfctjk1cks8/",
       "icloud_path": "knock-knee-lower-body-alignment-montage_dfctjk1cks8/",
-      "status": "deployment_pending",
+      "status": "published",
       "goals": [
         "rehab",
         "legs",
