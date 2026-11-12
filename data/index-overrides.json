@@ -4453,5 +4453,24 @@
       "7 exercises"
     ],
     "search": "hip-focused floor movement flow @hironori_nakajima @hironori_nakajima djmf-gsthpm hip focused floor movement flow standing single-leg knee raise hands-and-knees hips-high fold quadruped-to-low-lunge transition prone bent-knee leg lift half-kneeling upright position supine knees-bent floor position kneeling forward fold"
+  },
+  "four-shot-gym-movement-montage": {
+    "title": "Four-shot gym movement montage",
+    "desc": "A four-shot gym montage. On-screen labels reading 4 x 50, 4 x 20, and 4 x 15 are reported as creator text only, not endorsed prescriptions.",
+    "tags": [
+      "Mobility",
+      "Dumbbells",
+      "Bench"
+    ],
+    "cat": "mobility",
+    "gear": [
+      "dumbbell",
+      "bench"
+    ],
+    "meta": [
+      "~None min",
+      "4 exercises"
+    ],
+    "search": "four-shot gym movement montage @theshocktroop @theshocktroop dl7fpn9rsrc four shot gym movement montage half-kneeling dumbbell curl seated lateral arm raise seated dumbbell lateral raise lying dumbbell press"
   }
 }
