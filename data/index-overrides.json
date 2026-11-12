@@ -4418,5 +4418,23 @@
       "1 exercises"
     ],
     "search": "standing plate front raise @ryo__oya @ryo__oya dkudgg4tjvh standing plate front raise standing plate front raise"
+  },
+  "gym-movement-montage": {
+    "title": "Gym movement montage",
+    "desc": "A fast gym montage showing several distinct loaded and bodyweight movements. Names below are descriptive visual labels only; the reel provides no verified programming details.",
+    "tags": [
+      "Mobility",
+      "Kettlebell"
+    ],
+    "cat": "mobility",
+    "gear": [
+      "none",
+      "kettlebell"
+    ],
+    "meta": [
+      "~None min",
+      "5 exercises"
+    ],
+    "search": "gym movement montage @ballwit_nana @ballwit_nana dl-atqxs9rp gym movement montage gorilla-style dumbbell row loaded lunge plank pull supine medicine-ball toss pull-up"
   }
 }
