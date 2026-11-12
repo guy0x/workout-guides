@@ -4472,5 +4472,21 @@
       "4 exercises"
     ],
     "search": "four-shot gym movement montage @theshocktroop @theshocktroop dl7fpn9rsrc four shot gym movement montage half-kneeling dumbbell curl seated lateral arm raise seated dumbbell lateral raise lying dumbbell press"
+  },
+  "push-up-demonstration": {
+    "title": "Push-up demonstration",
+    "desc": "A bodyweight push-up demonstration with music-only audio and no visible program details.",
+    "tags": [
+      "Mobility"
+    ],
+    "cat": "mobility",
+    "gear": [
+      "none"
+    ],
+    "meta": [
+      "~None min",
+      "1 exercises"
+    ],
+    "search": "push-up demonstration @therealburpeesking @therealburpeesking dbu39w6yehz push demonstration push-up"
   }
 }
