@@ -4402,5 +4402,21 @@
       "3 exercises"
     ],
     "search": "workout — dajpiwvqfrt shrednoir shrednoir dajpiwvqfrt workout dajpiwvqfrt movement 1 movement 2 movement 3"
+  },
+  "standing-plate-front-raise": {
+    "title": "Standing plate front raise",
+    "desc": "A single-weight-plate raise shown in a gym. The source has no usable spoken instruction; this guide records only the visible movement.",
+    "tags": [
+      "Mobility"
+    ],
+    "cat": "mobility",
+    "gear": [
+      "plate"
+    ],
+    "meta": [
+      "~None min",
+      "1 exercises"
+    ],
+    "search": "standing plate front raise @ryo__oya @ryo__oya dkudgg4tjvh standing plate front raise standing plate front raise"
   }
 }
