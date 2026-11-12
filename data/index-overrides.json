@@ -4436,5 +4436,22 @@
       "5 exercises"
     ],
     "search": "gym movement montage @ballwit_nana @ballwit_nana dl-atqxs9rp gym movement montage gorilla-style dumbbell row loaded lunge plank pull supine medicine-ball toss pull-up"
+  },
+  "hip-focused-floor-movement-flow": {
+    "title": "Hip-focused floor movement flow",
+    "desc": "A mat-based sequence labeled HIP with no spoken instruction. The cards preserve visible positions only, without programming or benefit claims.",
+    "tags": [
+      "Hips",
+      "Mat only"
+    ],
+    "cat": "hips",
+    "gear": [
+      "mat"
+    ],
+    "meta": [
+      "~None min",
+      "7 exercises"
+    ],
+    "search": "hip-focused floor movement flow @hironori_nakajima @hironori_nakajima djmf-gsthpm hip focused floor movement flow standing single-leg knee raise hands-and-knees hips-high fold quadruped-to-low-lunge transition prone bent-knee leg lift half-kneeling upright position supine knees-bent floor position kneeling forward fold"
   }
 }
